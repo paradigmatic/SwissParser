@@ -44,15 +44,16 @@ module Swiss
       line.chomp!
       if line == @separator
         :end
-      elsif line =~ /^([A-Z][A-Z])\s+(.*)$/
+      elsif line =~ /^(\S+)\s+(.*)$/
         key,value = $1,$2
+        @last_key = key
         if @actions[key]
           @actions[key].call( value, holder )
         end
         :parsing
       else
         if @actions[:text]
-          @actions[:text].call( line, holder )
+          @actions[:text].call( line, holder, key )
         end
         :parsing
       end

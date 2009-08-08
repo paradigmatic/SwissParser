@@ -37,7 +37,7 @@ def uniprot_parser
     protein.taxonomy += ary
   end
  
-  parser.with_text do |content,protein|
+  parser.with_text do |content,protein,last_key|
     seq = content.strip.gsub(" ","")
     protein.sequence += seq
   end
@@ -55,8 +55,8 @@ if $0 == __FILE__
 
   puts entries.size
 
-  #entries.each do |e|
-  #  puts e.to_yaml
-  #end
+  entries.each do |e|
+    puts e.to_yaml
+  end
 
 end
