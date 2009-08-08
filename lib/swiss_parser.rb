@@ -23,34 +23,29 @@ module Swiss
   end
 
   class Parser
-
+    
     DEFAULT_SEPARATOR = "//"
-    
-    def self.define( &proc )
-      p = Parser.new
-      p.instance_eval( &proc )
-      p
-    end
 
-    def initialize
-      @actions = {}
-      @actions[:text] = {}
-      @separator = DEFAULT_SEPARATOR
-      @before = Proc.new do
-        []
-      end
-      @begin = Proc.new do 
-        {}
-      end
-      @end = Proc.new do |entry,context|
-        context << entry
-      end
-      @after = Proc.new do |context|
-        context
+
+    def initialize(*args)
+      if args.size == 0
+        @separator = DEFAULT_SEPARATOR
+        @actions = {}
+        @actions[:text] = {}
+      elsif args.size == 6
+        actions,separator,before,the_begin,the_end,after = *args
+        @actions = actions.clone
+        @actions[:text] = actions[:text].clone
+        @separator = separator
+        @before = before
+        @end = the_end
+        @begin = the_begin
+        @after = after
+      else
+        raise "Wrong arg number, either 0 or 6."
       end
     end
 
-    
     def new_entry(&proc)
        @begin = proc
     end
@@ -69,20 +64,36 @@ module Swiss
     def rules(&proc)
       r = ParsingRules.new
       r.instance_eval(&proc)
-      p r.actions
       r.actions.each do |k,v|
         if k == :text
           next
         end
         @actions[k] = v
+        r.actions[:text].each do |k,v|
+          @actions[:text][k] = v
+        end
+        if r.separator
+          @separator = r.separator
+        end
       end
-      r.actions[:text].each do |k,v|
-        @actions[:text][k] = v
-      end
-      p @actions
-      if r.separator
-        @separator = r.separator
-      end
+    end
+
+    PROTOTYPE = Parser.new
+    PROTOTYPE.instance_eval do
+      before { [] }
+      new_entry { {} }
+      finish_entry {|e,c| c << e }
+      after {|c| c }
+    end
+
+    def extend(&proc)
+      clone = Parser.new( @actions, @separator, @before, @begin, @end, @after )
+      clone.instance_eval( &proc )
+      clone
+    end
+                    
+    def self.define( &proc )
+      PROTOTYPE.extend( &proc )
     end
 
     def parse_file( filename )
@@ -101,7 +112,7 @@ module Swiss
     end
 
     private
-
+    
     def parse_line( line, holder )
       line.chomp!
       if line == @separator
