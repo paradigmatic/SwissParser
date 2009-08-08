@@ -14,35 +14,33 @@ class Protein
 
 end
 
-def uniprot_parser
-  parser = Swiss::Parser.new
 
-  parser.new_entry do
+uniprot_parser = Swiss::Parser.define do |p|
+
+  p.new_entry do
     Protein.new
   end
 
-  parser.with("ID") do |content,protein|
+  p.with("ID") do |content,protein|
     content =~ /([A-Z]\w+)\D+(\d+)/
     protein.id = $1
     protein.size = $2.to_i
   end
 
-  parser.with("OS") do |content,protein|
+  p.with("OS") do |content,protein|
     content =~ /(\w+ \w+)/
     protein.species = $1
   end
 
-  parser.with("OC") do |content,protein|
+  p.with("OC") do |content,protein|
     ary = content.gsub(".","").split("; ")
     protein.taxonomy += ary
   end
  
-  parser.with_text_after("SQ") do |content,protein,last_key|
+  p.with_text_after("SQ") do |content,protein,last_key|
     seq = content.strip.gsub(" ","")
     protein.sequence += seq
   end
-
-  parser
 
 end
 

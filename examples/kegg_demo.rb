@@ -5,81 +5,70 @@ class Enzyme
  
   attr_accessor :id, :genes
   
-  def initialize()
-    @genes = []
-  end
-
-  def is_human?()
-    @genes.size > 0
-  end
-
-
 end
 
 
-def enzyme_parser()
-
-  human = "HSA"
-
-  parser = Swiss::Parser.new
+enzyme_parser = Swiss::Parser.define do |p|
   
-  parser.separator = "///"
-  
-  parser.new_entry do
-    { :enzyme => Enzyme.new }
-  end
-  
-  parser.with("ENTRY") do |content,entry|
-    content =~ /((\d+|-)\.(\d+|-)\.(\d+|-)\.(\d+|-))/
-    entry[:enzyme].id = $1
-  end
-
-  def parse_gene_ids( string, enzyme )
+  def parse_gene_ids( string, entry )
     string.split(" ").each do |item|
       if item =~ /(\d+)\(\w+\)/
-       enzyme.genes << $1
+        entry[:genes] << $1
       end
     end
   end
-
-
-  parser.with("GENES") do |content,entry|
+  
+  human = "HSA"
+  
+  p.separator = "///"
+  
+  p.new_entry do
+    { :genes => [] }
+  end
+  
+  p.with("ENTRY") do |content,entry|
+    content =~ /((\d+|-)\.(\d+|-)\.(\d+|-)\.(\d+|-))/
+    entry[:id] = $1
+  end
+  
+  p.with("GENES") do |content,entry|
     content =~ /^([A-Z]+): (.*)/  
     org,genes = $1,$2
     entry[:last_organism] = org
     if org == human
-      parse_gene_ids( genes, entry[:enzyme] )
+      parse_gene_ids( genes, entry )
     end
   end
-
-  parser.with_text_after("GENES") do |content,entry|
+  
+  p.with_text_after("GENES") do |content,entry|
     if content =~ /([A-Z]+): (.*)/
       org,genes = $1,$2
       entry[:last_organism] = org
       if org == human
-        parse_gene_ids( genes, entry[:enzyme] )
-        end
+        parse_gene_ids( genes, entry )
+      end
     elsif entry[:last_organism] == human
-      parse_gene_ids( content, entry[:enzyme] )
+      parse_gene_ids( content, entry )
     end      
   end
   
-  parser
+  p.finish_entry do |entry,container|
+    if entry[:genes].size > 0
+      e = Enzyme.new
+      e.id = entry[:id]
+      e.genes = entry[:genes]
+      container << entry
+    end
+  end
   
 end
+
 
 if $0 == __FILE__
 
   filename = ARGV.shift
 
-  entries = enzyme_parser.parse_file( filename )
-
-  enzymes = entries.inject([]) do |ary,entry|
-    if entry[:enzyme].is_human?
-      ary << entry[:enzyme]
-    end
-    ary
-  end
+  enzymes = enzyme_parser.parse_file( filename )
 
   enzymes.each do |e|
     puts e.to_yaml

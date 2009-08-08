@@ -6,6 +6,12 @@ module Swiss
     
     attr_accessor :separator
 
+    def self.define( &proc )
+      p = Parser.new
+      proc.call( p )
+      p
+    end
+
     def initialize
       @actions = {}
       @actions[:text] = {}
