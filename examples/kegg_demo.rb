@@ -8,7 +8,7 @@ class Enzyme
 end
 
 
-enzyme_parser = Swiss::Parser.define do |p|
+enzyme_parser = Swiss::Parser.define do
   
   def parse_gene_ids( string, entry )
     string.split(" ").each do |item|
@@ -20,18 +20,18 @@ enzyme_parser = Swiss::Parser.define do |p|
   
   human = "HSA"
   
-  p.separator = "///"
+  set_separator( "///" )
   
-  p.new_entry do
+  new_entry do
     { :genes => [] }
   end
   
-  p.with("ENTRY") do |content,entry|
+  with("ENTRY") do |content,entry|
     content =~ /((\d+|-)\.(\d+|-)\.(\d+|-)\.(\d+|-))/
     entry[:id] = $1
   end
   
-  p.with("GENES") do |content,entry|
+  with("GENES") do |content,entry|
     content =~ /^([A-Z]+): (.*)/  
     org,genes = $1,$2
     entry[:last_organism] = org
@@ -40,7 +40,7 @@ enzyme_parser = Swiss::Parser.define do |p|
     end
   end
   
-  p.with_text_after("GENES") do |content,entry|
+  with_text_after("GENES") do |content,entry|
     if content =~ /([A-Z]+): (.*)/
       org,genes = $1,$2
       entry[:last_organism] = org
@@ -52,7 +52,7 @@ enzyme_parser = Swiss::Parser.define do |p|
     end      
   end
   
-  p.finish_entry do |entry,container|
+  finish_entry do |entry,container|
     if entry[:genes].size > 0
       e = Enzyme.new
       e.id = entry[:id]

@@ -4,11 +4,9 @@ module Swiss
 
     DEFAULT_SEPARATOR = "//"
     
-    attr_accessor :separator
-
     def self.define( &proc )
       p = Parser.new
-      proc.call( p )
+      p.instance_eval( &proc )
       p
     end
 
@@ -28,6 +26,10 @@ module Swiss
       @after = Proc.new do |context|
         context
       end
+    end
+
+    def set_separator(string)
+      @separator = string
     end
 
     def new_entry(&proc)
