@@ -1,0 +1,2855 @@
+ID   PPBT_HUMAN              Reviewed;         524 AA.
+AC   P05186; A1A4E7; B2RMP8; O75090; Q2TAI7; Q59EJ7; Q5BKZ5; Q5VTG5;
+AC   Q6NZI8; Q8WU32; Q9UBK0;
+DT   13-AUG-1987, integrated into UniProtKB/Swiss-Prot.
+DT   21-JUN-2005, sequence version 4.
+DT   28-JUL-2009, entry version 125.
+DE   RecName: Full=Alkaline phosphatase, tissue-nonspecific isozyme;
+DE            EC=3.1.3.1;
+DE   AltName: Full=AP-TNAP;
+DE   AltName: Full=TNSALP;
+DE   AltName: Full=Alkaline phosphatase liver/bone/kidney isozyme;
+DE   Flags: Precursor;
+GN   Name=ALPL;
+OS   Homo sapiens (Human).
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+OC   Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+OC   Catarrhini; Hominidae; Homo.
+OX   NCBI_TaxID=9606;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [MRNA].
+RC   TISSUE=Osteosarcoma;
+RX   MEDLINE=87016911; PubMed=3532105; DOI=10.1073/pnas.83.19.7182;
+RA   Weiss M.J., Henthorn P.S., Lafferty M.A., Slaughter C., Raducha M.,
+RA   Harris H.;
+RT   "Isolation and characterization of a cDNA encoding a human
+RT   liver/bone/kidney-type alkaline phosphatase.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 83:7182-7186(1986).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA].
+RC   TISSUE=Osteosarcoma;
+RX   MEDLINE=88298884; PubMed=3165380;
+RA   Weiss M.J., Ray K., Henthorn P.S., Lamb B., Kadesch T., Harris H.;
+RT   "Structure of the human liver/bone/kidney alkaline phosphatase gene.";
+RL   J. Biol. Chem. 263:12002-12010(1988).
+RN   [3]
+RP   NUCLEOTIDE SEQUENCE [MRNA], AND VARIANT HIS-263.
+RC   TISSUE=Liver;
+RX   MEDLINE=89183624; PubMed=2928120; DOI=10.1093/nar/17.5.2129;
+RA   Kishi F., Matsuura S., Kajii T.;
+RT   "Nucleotide sequence of the human liver-type alkaline phosphatase
+RT   cDNA.";
+RL   Nucleic Acids Res. 17:2129-2129(1989).
+RN   [4]
+RP   NUCLEOTIDE SEQUENCE [MRNA], AND VARIANT HYPOPHOSPHATASIA PHE-289.
+RX   MEDLINE=98419164; PubMed=9747027; DOI=10.1007/s100380050061;
+RA   Sugimoto N., Iwamoto S., Hoshino Y., Kajii E.;
+RT   "A novel missense mutation of the tissue-nonspecific alkaline
+RT   phosphatase gene detected in a patient with hypophosphatasia.";
+RL   J. Hum. Genet. 43:160-164(1998).
+RN   [5]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA], AND VARIANT HIS-152.
+RC   TISSUE=Brain;
+RA   Totoki Y., Toyoda A., Takeda T., Sakaki Y., Tanaka A., Yokoyama S.,
+RA   Ohara O., Nagase T., Kikuno R.F.;
+RL   Submitted (MAR-2005) to the EMBL/GenBank/DDBJ databases.
+RN   [6]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RX   PubMed=16710414; DOI=10.1038/nature04727;
+RA   Gregory S.G., Barlow K.F., McLay K.E., Kaul R., Swarbreck D.,
+RA   Dunham A., Scott C.E., Howe K.L., Woodfine K., Spencer C.C.A.,
+RA   Jones M.C., Gillson C., Searle S., Zhou Y., Kokocinski F.,
+RA   McDonald L., Evans R., Phillips K., Atkinson A., Cooper R., Jones C.,
+RA   Hall R.E., Andrews T.D., Lloyd C., Ainscough R., Almeida J.P.,
+RA   Ambrose K.D., Anderson F., Andrew R.W., Ashwell R.I.S., Aubin K.,
+RA   Babbage A.K., Bagguley C.L., Bailey J., Beasley H., Bethel G.,
+RA   Bird C.P., Bray-Allen S., Brown J.Y., Brown A.J., Buckley D.,
+RA   Burton J., Bye J., Carder C., Chapman J.C., Clark S.Y., Clarke G.,
+RA   Clee C., Cobley V., Collier R.E., Corby N., Coville G.J., Davies J.,
+RA   Deadman R., Dunn M., Earthrowl M., Ellington A.G., Errington H.,
+RA   Frankish A., Frankland J., French L., Garner P., Garnett J., Gay L.,
+RA   Ghori M.R.J., Gibson R., Gilby L.M., Gillett W., Glithero R.J.,
+RA   Grafham D.V., Griffiths C., Griffiths-Jones S., Grocock R.,
+RA   Hammond S., Harrison E.S.I., Hart E., Haugen E., Heath P.D.,
+RA   Holmes S., Holt K., Howden P.J., Hunt A.R., Hunt S.E., Hunter G.,
+RA   Isherwood J., James R., Johnson C., Johnson D., Joy A., Kay M.,
+RA   Kershaw J.K., Kibukawa M., Kimberley A.M., King A., Knights A.J.,
+RA   Lad H., Laird G., Lawlor S., Leongamornlert D.A., Lloyd D.M.,
+RA   Loveland J., Lovell J., Lush M.J., Lyne R., Martin S.,
+RA   Mashreghi-Mohammadi M., Matthews L., Matthews N.S.W., McLaren S.,
+RA   Milne S., Mistry S., Moore M.J.F., Nickerson T., O'Dell C.N.,
+RA   Oliver K., Palmeiri A., Palmer S.A., Parker A., Patel D., Pearce A.V.,
+RA   Peck A.I., Pelan S., Phelps K., Phillimore B.J., Plumb R., Rajan J.,
+RA   Raymond C., Rouse G., Saenphimmachak C., Sehra H.K., Sheridan E.,
+RA   Shownkeen R., Sims S., Skuce C.D., Smith M., Steward C.,
+RA   Subramanian S., Sycamore N., Tracey A., Tromans A., Van Helmond Z.,
+RA   Wall M., Wallis J.M., White S., Whitehead S.L., Wilkinson J.E.,
+RA   Willey D.L., Williams H., Wilming L., Wray P.W., Wu Z., Coulson A.,
+RA   Vaudin M., Sulston J.E., Durbin R.M., Hubbard T., Wooster R.,
+RA   Dunham I., Carter N.P., McVean G., Ross M.T., Harrow J., Olson M.V.,
+RA   Beck S., Rogers J., Bentley D.R.;
+RT   "The DNA sequence and biological annotation of human chromosome 1.";
+RL   Nature 441:315-321(2006).
+RN   [7]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA], AND VARIANT HIS-263.
+RC   TISSUE=Brain, Cerebellum, Lymphoma, and Peripheral nerve;
+RX   PubMed=15489334; DOI=10.1101/gr.2596504;
+RG   The MGC Project Team;
+RT   "The status, quality, and expansion of the NIH full-length cDNA
+RT   project: the Mammalian Gene Collection (MGC).";
+RL   Genome Res. 14:2121-2127(2004).
+RN   [8]
+RP   PROTEIN SEQUENCE OF 18-49.
+RC   TISSUE=Liver;
+RX   MEDLINE=86157574; PubMed=3954357; DOI=10.1016/0003-9861(86)90223-7;
+RA   Garattini E., Hua J.-C., Pan Y.C.E., Udenfriend S.;
+RT   "Human liver alkaline phosphatase, purification and partial
+RT   sequencing: homology with the placental isozyme.";
+RL   Arch. Biochem. Biophys. 245:331-337(1986).
+RN   [9]
+RP   PROTEIN SEQUENCE OF 18-32, AND GLYCOSYLATION.
+RX   PubMed=1458595;
+RA   Nishihara Y., Hayashi Y., Adachi T., Koyama I., Stigbrand T.,
+RA   Hirano K.;
+RT   "Chemical nature of intestinal-type alkaline phosphatase in human
+RT   kidney.";
+RL   Clin. Chem. 38:2539-2542(1992).
+RN   [10]
+RP   GPI-ANCHOR [LARGE SCALE ANALYSIS], AND MASS SPECTROMETRY.
+RX   PubMed=14517339; DOI=10.1074/mcp.M300079-MCP200;
+RA   Elortza F., Nuehse T.S., Foster L.J., Stensballe A., Peck S.C.,
+RA   Jensen O.N.;
+RT   "Proteomic analysis of glycosylphosphatidylinositol-anchored membrane
+RT   proteins.";
+RL   Mol. Cell. Proteomics 2:1261-1270(2003).
+RN   [11]
+RP   GPI-ANCHOR [LARGE SCALE ANALYSIS], AND MASS SPECTROMETRY.
+RX   PubMed=16602701; DOI=10.1021/pr050419u;
+RA   Elortza F., Mohammed S., Bunkenborg J., Foster L.J., Nuehse T.S.,
+RA   Brodbeck U., Peck S.C., Jensen O.N.;
+RT   "Modification-specific proteomics of plasma membrane proteins:
+RT   identification and characterization of glycosylphosphatidylinositol-
+RT   anchored proteins released upon phospholipase D treatment.";
+RL   J. Proteome Res. 5:935-943(2006).
+RN   [12]
+RP   GLYCOSYLATION [LARGE SCALE ANALYSIS] AT ASN-430, AND MASS
+RP   SPECTROMETRY.
+RC   TISSUE=Liver;
+RX   PubMed=19159218; DOI=10.1021/pr8008012;
+RA   Chen R., Jiang X., Sun D., Han G., Wang F., Ye M., Wang L., Zou H.;
+RT   "Glycoproteomics analysis of human liver tissue by combination of
+RT   multiple enzyme digestion and hydrazide chemistry.";
+RL   J. Proteome Res. 8:651-661(2009).
+RN   [13]
+RP   VARIANT HYPOPHOSPHATASIA THR-179.
+RX   MEDLINE=89017258; PubMed=3174660; DOI=10.1073/pnas.85.20.7666;
+RA   Weiss M.J., Cole D.E.C., Ray K., Whyte M.P., Lafferty M.A.,
+RA   Mulivor R.A., Harris H.;
+RT   "A missense mutation in the human liver/bone/kidney alkaline
+RT   phosphatase gene causing a lethal form of hypophosphatasia.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 85:7666-7669(1988).
+RN   [14]
+RP   VARIANTS HYPOPHOSPHATASIA VAL-33; CYS-71; PRO-71; LYS-191; PRO-207;
+RP   ALA-294; VAL-378 AND HIS-436, AND VARIANT HIS-263.
+RX   MEDLINE=93028575; PubMed=1409720; DOI=10.1073/pnas.89.20.9924;
+RA   Henthorn P.S., Raducha M., Fedde K.N., Lafferty M.A., Whyte M.P.;
+RT   "Different missense mutations at the tissue-nonspecific alkaline
+RT   phosphatase gene locus in autosomal recessively inherited forms of
+RT   mild and severe hypophosphatasia.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 89:9924-9928(1992).
+RN   [15]
+RP   VARIANT HYPOPHOSPHATASIA ASP-334.
+RX   MEDLINE=94010889; PubMed=8406453; DOI=10.1006/geno.1993.1305;
+RA   Greenberg C.R., Taylor C.L., Haworth J.C., Seargeant L.E.,
+RA   Philipps S., Triggs-Raine B., Chodirker B.N.;
+RT   "A homoallelic Gly317-->Asp mutation in ALPL causes the perinatal
+RT   (lethal) form of hypophosphatasia in Canadian mennonites.";
+RL   Genomics 17:215-217(1993).
+RN   [16]
+RP   VARIANT HYPOPHOSPHATASIA LYS-298.
+RX   PubMed=7833929; DOI=10.1093/hmg/3.9.1683;
+RA   Orimo H., Hayashi Z., Watanabe A., Hirayama T., Hirayama T.,
+RA   Shimada T.;
+RT   "Novel missense and frameshift mutations in the tissue-nonspecific
+RT   alkaline phosphatase gene in a Japanese patient with
+RT   hypophosphatasia.";
+RL   Hum. Mol. Genet. 3:1683-1684(1994).
+RN   [17]
+RP   VARIANTS HYPOPHOSPHATASIA LEU-327 AND ARG-456.
+RX   MEDLINE=97112379; PubMed=8954059; DOI=10.1210/jc.81.12.4458;
+RA   Ozono K., Yamagata M., Michigami T., Nakajima S., Sakai N., Cai G.,
+RA   Satomura K., Yasui N., Okada S., Nakayama M.;
+RT   "Identification of novel missense mutations (Phe310Leu and Gly439Arg)
+RT   in a neonatal case of hypophosphatasia.";
+RL   J. Clin. Endocrinol. Metab. 81:4458-4461(1996).
+RN   [18]
+RP   VARIANTS HYPOPHOSPHATASIA PHE-17; VAL-40; SER-75; ARG-120; ARG-129;
+RP   ASP-170; TRP-184; LYS-191; TRP-223; LYS-291; ASP-334; PRO-445;
+RP   CYS-450; SER-473 AND ARG-491, AND VARIANT HIS-263.
+RX   PubMed=9781036; DOI=10.1038/sj.ejhg.5200190;
+RA   Mornet E., Taillandier A., Peyramaure S., Kaper F., Muller F.,
+RA   Brenner R., Bussiere P., Freisinger P., Godard J., Le Merrer M.,
+RA   Oury J.F., Plauchu H., Puddu R., Rival J.M., Superti-Furga A.,
+RA   Touraine R.L., Serre J.L., Simon-Bouy B.;
+RT   "Identification of fifteen novel mutations in the tissue-nonspecific
+RT   alkaline phosphatase (TNSALP) gene in European patients with severe
+RT   hypophosphatasia.";
+RL   Eur. J. Hum. Genet. 6:308-314(1998).
+RN   [19]
+RP   VARIANTS HYPOPHOSPHATASIA THR-111; THR-177; GLY-191; LEU-327 AND
+RP   ILE-382.
+RX   MEDLINE=98112484; PubMed=9452105;
+RA   Goseki-Sone M., Orimo H., Iimura T., Takagi Y., Watanabe H.,
+RA   Taketa K., Sato S., Mayanagi H., Shimada T., Oida S.;
+RT   "Hypophosphatasia: identification of five novel missense mutations
+RT   (G507A, G705A, A748G, T1155C, G1320A) in the tissue-nonspecific
+RT   alkaline phosphatase gene among Japanese patients.";
+RL   Hum. Mutat. Suppl. 1:S263-S267(1998).
+RN   [20]
+RP   VARIANTS HYPOPHOSPHATASIA VAL-40; LEU-62; SER-75; THR-111; ARG-120;
+RP   ARG-129; HIS-136; VAL-162; ASP-170; TYR-171; TRP-184; LYS-191;
+RP   TRP-223; VAL-249; LYS-291; VAL-306; ASP-334; CYS-391; PRO-445;
+RP   CYS-450; SER-473; LYS-476 AND ARG-491, 3D-STRUCTURE MODELING, AND
+RP   CHARACTERIZATION OF VARIANTS.
+RX   MEDLINE=99265919; PubMed=10332035; DOI=10.1093/hmg/8.6.1039;
+RA   Zurutuza L., Muller F., Gibrat J.F., Taillandier A., Simon-Bouy B.,
+RA   Serre J.L., Mornet E.;
+RT   "Correlations of genotype and phenotype in hypophosphatasia.";
+RL   Hum. Mol. Genet. 8:1039-1046(1999).
+RN   [21]
+RP   VARIANTS HYPOPHOSPHATASIA LEU-62; HIS-136; VAL-162; TYR-171; LYS-191;
+RP   TYR-201; VAL-249; VAL-306 AND LYS-476.
+RX   MEDLINE=99140268; PubMed=10094560;
+RX   DOI=10.1002/(SICI)1098-1004(1999)13:2<171::AID-HUMU16>3.0.CO;2-T;
+RA   Taillandier A., Zurutuza L., Muller F., Simon-Bouy B., Serre J.L.,
+RA   Bird L., Brenner R., Boute O., Cousin J., Gaillard D., Heidemann P.H.,
+RA   Steinmann B., Wallot M., Mornet E.;
+RT   "Characterization of eleven novel mutations (M45L, R119H, 544delG,
+RT   G145V, H154Y, C184Y, D289V, 862+5A, 1172delC, R411X, E459K) in the
+RT   tissue-nonspecific alkaline phosphatase (TNSALP) gene in patients with
+RT   severe hypophosphatasia.";
+RL   Hum. Mutat. 13:171-172(1999).
+RN   [22]
+RP   VARIANTS HYPOPHOSPHATASIA GLU-224 AND CYS-426.
+RX   MEDLINE=20292359; PubMed=10834525; DOI=10.1007/s004310051290;
+RA   Mochizuki H., Saito M., Michigami T., Ohashi H., Koda N.,
+RA   Yamaguchi S., Ozono K.;
+RT   "Severe hypercalcaemia and respiratory insufficiency associated with
+RT   infantile hypophosphatasia caused by two novel mutations of the
+RT   tissue-nonspecific alkaline phosphatase gene.";
+RL   Eur. J. Pediatr. 159:375-379(2000).
+RN   [23]
+RP   VARIANTS HYPOPHOSPHATASIA VAL-40; THR-111; ASN-134; THR-176; LYS-191;
+RP   TYR-201; SER-246; THR-348; ARG-381; GLY-406; HIS-450; ILE-478 AND
+RP   SER-489.
+RX   MEDLINE=20146218; PubMed=10679946;
+RX   DOI=10.1002/(SICI)1098-1004(200003)15:3<293::AID-HUMU11>3.0.CO;2-Q;
+RA   Taillandier A., Cozien E., Muller F., Merrien Y., Bonnin E.,
+RA   Fribourg C., Simon-Bouy B., Serre J.L., Bieth E., Brenner R.,
+RA   Cordier M.P., De Bie S., Fellmann F., Freisinger P., Hesse V.,
+RA   Hennekam R.C.M., Josifova D., Kerzin-Storrar L., Leporrier N.,
+RA   Zabot M.-T., Mornet E.;
+RT   "Fifteen new mutations (-195C>T, L-12X, 298-2A>G, T117N, A159T, R229S,
+RT   997+2T>A, E274X, A331T, H364R, D389G, 1256delC, R433H, N461I, C472S)
+RT   in the tissue-nonspecific alkaline phosphatase (TNSALP) gene in
+RT   patients with hypophosphatasia.";
+RL   Hum. Mutat. 15:293-293(2000).
+RN   [24]
+RP   VARIANT HYPOPHOSPHATASIA VAL-378, AND VARIANT ALA-522.
+RX   MEDLINE=20152744; PubMed=10690885; DOI=10.1210/jc.85.2.743;
+RA   Mueller H.L., Yamazaki M., Michigami T., Kageyama T., Schoenau E.,
+RA   Schneider P., Ozono K.;
+RT   "Asp361Val mutant of alkaline phosphatase found in patients with
+RT   dominantly inherited hypophosphatasia inhibits the activity of the
+RT   wild-type enzyme.";
+RL   J. Clin. Endocrinol. Metab. 85:743-747(2000).
+RN   [25]
+RP   VARIANT HYPOPHOSPHATASIA SER-417.
+RX   PubMed=11745997; DOI=10.1002/ajmg.1541.abs;
+RA   Sergi C., Mornet E., Troeger J., Voigtlaender T.;
+RT   "Perinatal hypophosphatasia: radiology, pathology and molecular
+RT   biology studies in a family harboring a splicing mutation (648+1A) and
+RT   a novel missense mutation (N400S) in the tissue-nonspecific alkaline
+RT   phosphatase (TNSALP) gene.";
+RL   Am. J. Med. Genet. 103:235-240(2001).
+RN   [26]
+RP   CHARACTERIZATION OF VARIANTS HYPOPHOSPHATASIA VAL-40; VAL-63; THR-116;
+RP   LEU-181; TRP-184; TRP-223; VAL-249; VAL-378; ILE-478 AND PHE-490.
+RX   MEDLINE=21372078; PubMed=11479741; DOI=10.1007/s004390100546;
+RA   Lia-Baldini A.S., Muller F., Taillandier A., Gibrat J.F., Mouchard M.,
+RA   Robin B., Simon-Bouy B., Serre J.L., Aylsworth A.S., Bieth E.,
+RA   Delanote S., Freisinger P., Hu J.C.-C., Krohn H.-P., Nunes M.E.,
+RA   Mornet E.;
+RT   "A molecular approach to dominance in hypophosphatasia.";
+RL   Hum. Genet. 109:99-108(2001).
+RN   [27]
+RP   VARIANTS HYPOPHOSPHATASIA CYS-28; VAL-40; VAL-51; HIS-71; THR-116;
+RP   HIS-136; HIS-152; THR-176; THR-179; LYS-191; ASP-211; VAL-220;
+RP   GLY-235; TYR-294; GLY-327; SER-399; ALA-423 AND MET-459.
+RX   MEDLINE=21331694; PubMed=11438998; DOI=10.1002/humu.1154;
+RA   Taillandier A., Lia-Baldini A.S., Mouchard M., Robin B., Muller F.,
+RA   Simon-Bouy B., Serre J.L., Bera-Louville A., Bonduelle M.,
+RA   Eckhardt J., Gaillard D., Myhre A.G., Koertge-Jung S., Larget-Piet L.,
+RA   Malou E., Sillence D., Temple I.K., Viot G., Mornet E.;
+RT   "Twelve novel mutations in the tissue-nonspecific alkaline phosphatase
+RT   gene (ALPL) in patients with various forms of hypophosphatasia.";
+RL   Hum. Mutat. 18:83-84(2001).
+RN   [28]
+RP   VARIANTS HYPOPHOSPHATASIA MET-68; SER-71; THR-177; TRP-223; PRO-275
+RP   AND HIS-391, CHARACTERIZATION OF VARIANTS HYPOPHOSPHATASIA MET-68;
+RP   SER-71; THR-177; TRP-223; PRO-275 AND HIS-391, VARIANT ALA-522, AND
+RP   CHARACTERIZATION OF VARIANT ALA-522.
+RX   PubMed=11760847; DOI=10.1359/jbmr.2001.16.12.2313;
+RA   Orimo H., Girschick H.J., Goseki-Sone M., Ito M., Oda K., Shimada T.;
+RT   "Mutational analysis and functional correlation with phenotype in
+RT   German patients with childhood-type hypophosphatasia.";
+RL   J. Bone Miner. Res. 16:2313-2319(2001).
+RN   [29]
+RP   VARIANT HYPOPHOSPHATASIA VAL-132.
+RX   MEDLINE=21821416; PubMed=11834095;
+RX   DOI=10.1034/j.1601-0825.2001.00740.x;
+RA   Watanabe H., Hashimoto-Uoshima M., Goseki-Sone M., Orimo H.,
+RA   Ishikawa I.;
+RT   "A novel point mutation (C571T) in the tissue-non-specific alkaline
+RT   phosphatase gene in a case of adult-type hypophosphatasia.";
+RL   Oral Dis. 7:331-335(2001).
+RN   [30]
+RP   VARIANTS HYPOPHOSPHATASIA LYS-291 AND ARG-326.
+RX   MEDLINE=21994639; PubMed=11999978; DOI=10.1023/A:1015121414782;
+RA   Litmanovitz I., Reish O., Dolfin T., Arnon S., Regev R., Grinshpan G.,
+RA   Yamazaki M., Ozono K.;
+RT   "Glu274Lys/Gly309Arg mutation of the tissue-nonspecific alkaline
+RT   phosphatase gene in neonatal hypophosphatasia associated with
+RT   convulsions.";
+RL   J. Inherit. Metab. Dis. 25:35-40(2002).
+RN   [31]
+RP   VARIANTS HYPOPHOSPHATASIA SER-51; HIS-71; THR-111; MET-128; HIS-134;
+RP   HIS-136; THR-176; LYS-191; GLN-223; TRP-223; SER-246; ALA-294;
+RP   PRO-299; PHE-327 DEL; ARG-339; THR-348; VAL-378; MET-414; ASP-426 AND
+RP   LYS-476, AND VARIANTS HIS-263 AND ALA-522.
+RX   PubMed=11855933; DOI=10.1006/mgme.2001.3283;
+RA   Mumm S., Jones J., Finnegan P., Henthorn P.S., Podgornik M.N.,
+RA   Whyte M.P.;
+RT   "Denaturing gradient gel electrophoresis analysis of the tissue
+RT   nonspecific alkaline phosphatase isoenzyme gene in hypophosphatasia.";
+RL   Mol. Genet. Metab. 75:143-153(2002).
+RN   [32]
+RP   VARIANTS HYPOPHOSPHATASIA VAL-62; ARG-63; THR-111; ILE-148; SER-162;
+RP   GLU-189; ALA-220; LEU-272; GLY-293-294-ASP DEL; LYS-311; LYS-452 AND
+RP   THR-468.
+RX   PubMed=12815606; DOI=10.1002/humu.9159;
+RA   Spentchian M., Merrien Y., Herasse M., Dobbie Z., Glaeser D.,
+RA   Holder S.E., Ivarsson S.-A., Kostiner D., Mansour S., Norman A.,
+RA   Roth J., Stipoljev F., Taillemite J.-L., van der Smagt J.J.,
+RA   Serre J.-L., Simon-Bouy B., Taillandier A., Mornet E.;
+RT   "Severe hypophosphatasia: characterization of fifteen novel mutations
+RT   in the ALPL gene.";
+RL   Hum. Mutat. 22:105-106(2003).
+RN   [33]
+RP   VARIANTS HYPOPHOSPHATASIA LEU-108; THR-116 AND MET-414, AND
+RP   CHARACTERIZATION OF VARIANT HYPOPHOSPHATASIA LEU-108.
+RX   PubMed=12920074; DOI=10.1136/jmg.40.8.605;
+RA   Herasse M., Spentchian M., Taillandier A., Keppler-Noreuil K.,
+RA   Fliorito A.N.M., Bergoffen J., Wallerstein R., Muti C., Simon-Bouy B.,
+RA   Mornet E.;
+RT   "Molecular study of three cases of odontohypophosphatasia resulting
+RT   from heterozygosity for mutations in the tissue non-specific alkaline
+RT   phosphatase gene.";
+RL   J. Med. Genet. 40:605-609(2003).
+RN   [34]
+RP   VARIANT HYPOPHOSPHATASIA GLY-114.
+RX   PubMed=15135428; DOI=10.1016/j.arcped.2004.02.018;
+RA   Draguet C., Gillerot Y., Mornet E.;
+RT   "Childhood hypophosphatasia: a case report due to a novel mutation.";
+RL   Arch. Pediatr. 11:440-443(2004).
+RN   [35]
+RP   VARIANTS HYPOPHOSPHATASIA VAL-33; HIS-136; GLN-223; TRP-223; HIS-272;
+RP   THR-292; ALA-294; THR-295; ASP-297; ASP-334 AND ALA-411, AND
+RP   CHARACTERIZATION OF VARIANTS HYPOPHOSPHATASIA VAL-33; HIS-272;
+RP   THR-292; THR-295; ASP-297 AND ALA-411.
+RX   PubMed=15694177; DOI=10.1016/j.ymgme.2004.11.003;
+RA   Brun-Heath I., Taillandier A., Serre J.-L., Mornet E.;
+RT   "Characterization of 11 novel mutations in the tissue non-specific
+RT   alkaline phosphatase gene responsible for hypophosphatasia and
+RT   genotype-phenotype correlations.";
+RL   Mol. Genet. Metab. 84:273-277(2005).
+CC   -!- FUNCTION: This isozyme may play a role in skeletal mineralization.
+CC   -!- CATALYTIC ACTIVITY: A phosphate monoester + H(2)O = an alcohol +
+CC       phosphate.
+CC   -!- COFACTOR: Binds 1 magnesium ion (By similarity).
+CC   -!- COFACTOR: Binds 2 zinc ions (By similarity).
+CC   -!- SUBUNIT: Homodimer.
+CC   -!- SUBCELLULAR LOCATION: Cell membrane; Lipid-anchor, GPI-anchor.
+CC   -!- PTM: Glycosylated.
+CC   -!- DISEASE: Defects in ALPL are a cause of hypophosphatasia infantile
+CC       (hypophosphatasia) [MIM:241500]; an inherited metabolic bone
+CC       disease characterized by defective skeletal mineralization. Four
+CC       hypophosphatasia forms are distinguished, depending on the age of
+CC       onset: perinatal, infantile, childhood and adult type. The
+CC       perinatal form is the most severe and is almost always fatal.
+CC       Patients with only premature loss of deciduous teeth, but with no
+CC       bone disease are regarded as having odontohypophosphatasia
+CC       (odonto).
+CC   -!- DISEASE: Defects in ALPL are a cause of hypophosphatasia childhood
+CC       (hypophosphatasia) [MIM:241510].
+CC   -!- DISEASE: Defects in ALPL are a cause of hypophosphatasia adult
+CC       type (hypophosphatasia) [MIM:146300].
+CC   -!- MISCELLANEOUS: In most mammals there are four different isozymes:
+CC       placental, placental-like, intestinal and tissue non-specific
+CC       (liver/bone/kidney).
+CC   -!- SIMILARITY: Belongs to the alkaline phosphatase family.
+CC   -!- WEB RESOURCE: Name=ALPL; Note=Tissue nonspecific alkaline
+CC       phosphatase gene mutations database;
+CC       URL="http://www.sesep.uvsq.fr/Database.html";
+CC   -!- WEB RESOURCE: Name=GeneReviews;
+CC       URL="http://www.genetests.org/query?gene=ALPL";
+CC   -!- WEB RESOURCE: Name=Wikipedia; Note=Alkaline phosphatase entry;
+CC       URL="http://en.wikipedia.org/wiki/Alkaline_phosphatase";
+CC   -----------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see http://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution-NoDerivs License
+CC   -----------------------------------------------------------------------
+DR   EMBL; M24439; AAB59378.1; -; Genomic_DNA.
+DR   EMBL; M24429; AAB59378.1; JOINED; Genomic_DNA.
+DR   EMBL; M24430; AAB59378.1; JOINED; Genomic_DNA.
+DR   EMBL; M24431; AAB59378.1; JOINED; Genomic_DNA.
+DR   EMBL; M24432; AAB59378.1; JOINED; Genomic_DNA.
+DR   EMBL; M24433; AAB59378.1; JOINED; Genomic_DNA.
+DR   EMBL; M24434; AAB59378.1; JOINED; Genomic_DNA.
+DR   EMBL; M24435; AAB59378.1; JOINED; Genomic_DNA.
+DR   EMBL; M24436; AAB59378.1; JOINED; Genomic_DNA.
+DR   EMBL; M24437; AAB59378.1; JOINED; Genomic_DNA.
+DR   EMBL; M24438; AAB59378.1; JOINED; Genomic_DNA.
+DR   EMBL; X14174; CAA32376.1; -; mRNA.
+DR   EMBL; AB011406; BAA32129.1; -; mRNA.
+DR   EMBL; AB209814; BAD93051.1; ALT_INIT; mRNA.
+DR   EMBL; AL592309; CAH72079.1; -; Genomic_DNA.
+DR   EMBL; AL359815; CAH72079.1; JOINED; Genomic_DNA.
+DR   EMBL; AL359815; CAI16259.1; -; Genomic_DNA.
+DR   EMBL; AL592309; CAI16259.1; JOINED; Genomic_DNA.
+DR   EMBL; BC021289; AAH21289.3; -; mRNA.
+DR   EMBL; BC066116; AAH66116.2; -; mRNA.
+DR   EMBL; BC090861; AAH90861.2; -; mRNA.
+DR   EMBL; BC110909; AAI10910.2; -; mRNA.
+DR   EMBL; BC126165; AAI26166.1; -; mRNA.
+DR   EMBL; BC136325; AAI36326.1; -; mRNA.
+DR   IPI; IPI00419916; -.
+DR   PIR; S03613; PAHUH.
+DR   RefSeq; NP_000469.3; -.
+DR   RefSeq; NP_001120973.1; -.
+DR   UniGene; Hs.75431; -.
+DR   HSSP; P05187; 1EW2.
+DR   IntAct; P05186; 1.
+DR   PhosphoSite; P05186; -.
+DR   PeptideAtlas; P05186; -.
+DR   PRIDE; P05186; -.
+DR   Ensembl; ENST00000374832; ENSP00000363965; ENSG00000162551; Homo sapiens.
+DR   Ensembl; ENST00000374840; ENSP00000363973; ENSG00000162551; Homo sapiens.
+DR   GeneID; 249; -.
+DR   KEGG; hsa:249; -.
+DR   NMPDR; fig|9606.3.peg.484; -.
+DR   UCSC; uc001bet.1; human.
+DR   GeneCards; GC01P021708; -.
+DR   H-InvDB; HIX0000225; -.
+DR   HGNC; HGNC:438; ALPL.
+DR   HPA; HPA007105; -.
+DR   HPA; HPA008765; -.
+DR   MIM; 146300; phenotype.
+DR   MIM; 171760; gene.
+DR   MIM; 241500; phenotype.
+DR   MIM; 241510; phenotype.
+DR   Orphanet; 436; Hypophosphatasia.
+DR   PharmGKB; PA24729; -.
+DR   HOVERGEN; P05186; -.
+DR   OMA; P05186; MISPFLV.
+DR   BRENDA; 3.1.3.1; 247.
+DR   DrugBank; DB01143; Amifostine.
+DR   NextBio; 997; -.
+DR   ArrayExpress; P05186; -.
+DR   Bgee; P05186; -.
+DR   GermOnline; ENSG00000162551; Homo sapiens.
+DR   GO; GO:0031225; C:anchored to membrane; IEA:UniProtKB-KW.
+DR   GO; GO:0005737; C:cytoplasm; IDA:HPA.
+DR   GO; GO:0016021; C:integral to membrane; IEA:UniProtKB-KW.
+DR   GO; GO:0005886; C:plasma membrane; IEA:UniProtKB-SubCell.
+DR   GO; GO:0004035; F:alkaline phosphatase activity; IEA:EC.
+DR   GO; GO:0000287; F:magnesium ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0008152; P:metabolic process; IEA:InterPro.
+DR   GO; GO:0001503; P:ossification; IEA:UniProtKB-KW.
+DR   GO; GO:0033280; P:response to vitamin D; IEP:UniProtKB.
+DR   InterPro; IPR017849; Alkaline_Pase-like_a/b/a.
+DR   InterPro; IPR001952; Alkaline_phosphatase.
+DR   InterPro; IPR018299; Alkaline_phosphatase_AS.
+DR   Gene3D; G3DSA:3.40.720.10; Alk_phosphtse; 1.
+DR   Pfam; PF00245; Alk_phosphatase; 1.
+DR   PRINTS; PR00113; ALKPHPHTASE.
+DR   SMART; SM00098; alkPPc; 1.
+DR   PROSITE; PS00123; ALKALINE_PHOSPHATASE; 1.
+PE   1: Evidence at protein level;
+KW   Biomineralization; Cell membrane; Complete proteome;
+KW   Direct protein sequencing; Disease mutation; Glycoprotein; GPI-anchor;
+KW   Hydrolase; Lipoprotein; Magnesium; Membrane; Metal-binding;
+KW   Phosphoprotein; Polymorphism; Signal; Transmembrane; Zinc.
+FT   SIGNAL        1     17
+FT   CHAIN        18    502       Alkaline phosphatase, tissue-nonspecific
+FT                                isozyme.
+FT                                /FTId=PRO_0000024023.
+FT   PROPEP      503    524       Removed in mature form (Probable).
+FT                                /FTId=PRO_0000024024.
+FT   ACT_SITE    110    110       Phosphoserine intermediate.
+FT   METAL        60     60       Magnesium (Potential).
+FT   METAL        60     60       Zinc 2 (Potential).
+FT   METAL       173    173       Magnesium (Potential).
+FT   METAL       332    332       Magnesium (Potential).
+FT   METAL       337    337       Zinc 1 (Potential).
+FT   METAL       341    341       Zinc 1 (Potential).
+FT   METAL       378    378       Zinc 2 (Potential).
+FT   METAL       379    379       Zinc 2 (Potential).
+FT   METAL       454    454       Zinc 1 (Potential).
+FT   LIPID       502    502       GPI-anchor amidated serine (Probable).
+FT   CARBOHYD    140    140       N-linked (GlcNAc...) (Potential).
+FT   CARBOHYD    230    230       N-linked (GlcNAc...) (Potential).
+FT   CARBOHYD    271    271       N-linked (GlcNAc...) (Potential).
+FT   CARBOHYD    303    303       N-linked (GlcNAc...) (Potential).
+FT   CARBOHYD    430    430       N-linked (GlcNAc...).
+FT   VARIANT      17     17       S -> F (in hypophosphatasia).
+FT                                /FTId=VAR_025903.
+FT   VARIANT      28     28       Y -> C (in hypophosphatasia; infantile;
+FT                                7% of activity).
+FT                                /FTId=VAR_013972.
+FT   VARIANT      33     33       A -> V (in hypophosphatasia; 7.2% of
+FT                                wild-type activity).
+FT                                /FTId=VAR_006147.
+FT   VARIANT      40     40       A -> V (in hypophosphatasia; 2% of
+FT                                activity).
+FT                                /FTId=VAR_011081.
+FT   VARIANT      51     51       A -> S (in hypophosphatasia).
+FT                                /FTId=VAR_025904.
+FT   VARIANT      51     51       A -> V (in hypophosphatasia).
+FT                                /FTId=VAR_013973.
+FT   VARIANT      62     62       M -> L (in hypophosphatasia; moderate;
+FT                                27% of activity).
+FT                                /FTId=VAR_006148.
+FT   VARIANT      62     62       M -> V (in hypophosphatasia).
+FT                                /FTId=VAR_025905.
+FT   VARIANT      63     63       G -> R (in hypophosphatasia).
+FT                                /FTId=VAR_025906.
+FT   VARIANT      63     63       G -> V (in hypophosphatasia; loss of
+FT                                activity).
+FT                                /FTId=VAR_013974.
+FT   VARIANT      68     68       T -> M (in hypophosphatasia; childhood-
+FT                                type; severe allele).
+FT                                /FTId=VAR_025907.
+FT   VARIANT      71     71       R -> C (in hypophosphatasia).
+FT                                /FTId=VAR_006149.
+FT   VARIANT      71     71       R -> H (in hypophosphatasia).
+FT                                /FTId=VAR_013975.
+FT   VARIANT      71     71       R -> P (in hypophosphatasia).
+FT                                /FTId=VAR_006150.
+FT   VARIANT      71     71       R -> S (in hypophosphatasia; childhood-
+FT                                type; severe allele).
+FT                                /FTId=VAR_025908.
+FT   VARIANT      75     75       G -> S (in hypophosphatasia; severe; 3.5%
+FT                                of activity).
+FT                                /FTId=VAR_013976.
+FT   VARIANT      76     76       Q -> R (in hypophosphatasia).
+FT                                /FTId=VAR_025909.
+FT   VARIANT     108    108       P -> L (in hypophosphatasia; 0.4% of
+FT                                wild-type activity; severe allele).
+FT                                /FTId=VAR_025910.
+FT   VARIANT     111    111       A -> T (in hypophosphatasia; odonto).
+FT                                /FTId=VAR_006151.
+FT   VARIANT     114    114       A -> G (in hypophosphatasia).
+FT                                /FTId=VAR_025911.
+FT   VARIANT     116    116       A -> T (in hypophosphatasia; loss of
+FT                                activity).
+FT                                /FTId=VAR_013977.
+FT   VARIANT     120    120       G -> R (in hypophosphatasia).
+FT                                /FTId=VAR_013978.
+FT   VARIANT     128    128       V -> M (in hypophosphatasia).
+FT                                /FTId=VAR_025912.
+FT   VARIANT     129    129       G -> R (in hypophosphatasia).
+FT                                /FTId=VAR_013979.
+FT   VARIANT     132    132       A -> V (in hypophosphatasia).
+FT                                /FTId=VAR_013146.
+FT   VARIANT     134    134       T -> H (in hypophosphatasia; requires 2
+FT                                nucleotide substitutions).
+FT                                /FTId=VAR_025913.
+FT   VARIANT     134    134       T -> N (in hypophosphatasia; 9% of
+FT                                activity).
+FT                                /FTId=VAR_011082.
+FT   VARIANT     136    136       R -> H (in hypophosphatasia; moderate;
+FT                                33% of activity).
+FT                                /FTId=VAR_006152.
+FT   VARIANT     148    148       T -> I (in hypophosphatasia).
+FT                                /FTId=VAR_025914.
+FT   VARIANT     152    152       R -> H (in hypophosphatasia).
+FT                                /FTId=VAR_013980.
+FT   VARIANT     162    162       G -> S (in hypophosphatasia).
+FT                                /FTId=VAR_025915.
+FT   VARIANT     162    162       G -> V (in hypophosphatasia; severe; 1%
+FT                                of activity).
+FT                                /FTId=VAR_006153.
+FT   VARIANT     170    170       N -> D (in hypophosphatasia).
+FT                                /FTId=VAR_013981.
+FT   VARIANT     171    171       H -> R (in hypophosphatasia).
+FT                                /FTId=VAR_025916.
+FT   VARIANT     171    171       H -> Y (in hypophosphatasia; severe; 2%
+FT                                of activity).
+FT                                /FTId=VAR_006154.
+FT   VARIANT     176    176       A -> T (in hypophosphatasia).
+FT                                /FTId=VAR_011083.
+FT   VARIANT     177    177       A -> T (in hypophosphatasia; adult type;
+FT                                moderate allele).
+FT                                /FTId=VAR_006155.
+FT   VARIANT     179    179       A -> T (in hypophosphatasia).
+FT                                /FTId=VAR_006156.
+FT   VARIANT     181    181       S -> L (in hypophosphatasia; 1% OF
+FT                                activity).
+FT                                /FTId=VAR_013982.
+FT   VARIANT     184    184       R -> W (in hypophosphatasia; loss of
+FT                                activity).
+FT                                /FTId=VAR_013983.
+FT   VARIANT     189    189       D -> E (in hypophosphatasia).
+FT                                /FTId=VAR_025917.
+FT   VARIANT     191    191       E -> G (in hypophosphatasia; odonto).
+FT                                /FTId=VAR_006157.
+FT   VARIANT     191    191       E -> K (in hypophosphatasia; moderate;
+FT                                frequent mutation in European countries).
+FT                                /FTId=VAR_006158.
+FT   VARIANT     201    201       C -> Y (in hypophosphatasia).
+FT                                /FTId=VAR_006159.
+FT   VARIANT     207    207       Q -> P (in hypophosphatasia).
+FT                                /FTId=VAR_006160.
+FT   VARIANT     211    211       N -> D (in hypophosphatasia).
+FT                                /FTId=VAR_013984.
+FT   VARIANT     212    212       I -> F (in hypophosphatasia).
+FT                                /FTId=VAR_025918.
+FT   VARIANT     220    220       G -> A (in hypophosphatasia).
+FT                                /FTId=VAR_025919.
+FT   VARIANT     220    220       G -> V (in hypophosphatasia; odonto).
+FT                                /FTId=VAR_013985.
+FT   VARIANT     223    223       R -> Q (in hypophosphatasia).
+FT                                /FTId=VAR_025920.
+FT   VARIANT     223    223       R -> W (in hypophosphatasia; 3% of
+FT                                activity; severe allele).
+FT                                /FTId=VAR_013986.
+FT   VARIANT     224    224       K -> E (in hypophosphatasia; infantile;
+FT                                partial loss of activity).
+FT                                /FTId=VAR_011084.
+FT   VARIANT     235    235       E -> G (in hypophosphatasia).
+FT                                /FTId=VAR_013987.
+FT   VARIANT     246    246       R -> S (in hypophosphatasia; 4% of
+FT                                activity).
+FT                                /FTId=VAR_011085.
+FT   VARIANT     249    249       G -> V (in hypophosphatasia; partial loss
+FT                                of activity).
+FT                                /FTId=VAR_013988.
+FT   VARIANT     263    263       Y -> H (common polymorphism;
+FT                                dbSNP:rs3200254).
+FT                                /FTId=VAR_006161.
+FT   VARIANT     272    272       R -> H (in hypophosphatasia; 6.8% of
+FT                                wild-type activity).
+FT                                /FTId=VAR_025921.
+FT   VARIANT     272    272       R -> L (in hypophosphatasia).
+FT                                /FTId=VAR_025922.
+FT   VARIANT     275    275       L -> P (in hypophosphatasia; childhood-
+FT                                type; severe allele).
+FT                                /FTId=VAR_025923.
+FT   VARIANT     289    289       L -> F (in hypophosphatasia).
+FT                                /FTId=VAR_006162.
+FT   VARIANT     291    291       E -> K (in hypophosphatasia; moderate; 8%
+FT                                of activity).
+FT                                /FTId=VAR_013989.
+FT   VARIANT     292    292       P -> T (in hypophosphatasia; 4% of wild-
+FT                                type activity).
+FT                                /FTId=VAR_025924.
+FT   VARIANT     293    294       Missing (in hypophosphatasia).
+FT                                /FTId=VAR_025925.
+FT   VARIANT     294    294       D -> A (in hypophosphatasia).
+FT                                /FTId=VAR_006163.
+FT   VARIANT     294    294       D -> Y (in hypophosphatasia).
+FT                                /FTId=VAR_013990.
+FT   VARIANT     295    295       M -> T (in hypophosphatasia; 8.5% of
+FT                                wild-type activity).
+FT                                /FTId=VAR_025926.
+FT   VARIANT     297    297       Y -> D (in hypophosphatasia; 1.3% of
+FT                                wild-type activity).
+FT                                /FTId=VAR_025927.
+FT   VARIANT     298    298       E -> K (in hypophosphatasia).
+FT                                /FTId=VAR_025928.
+FT   VARIANT     299    299       L -> P (in hypophosphatasia).
+FT                                /FTId=VAR_025929.
+FT   VARIANT     306    306       D -> V (in hypophosphatasia).
+FT                                /FTId=VAR_006164.
+FT   VARIANT     311    311       E -> K (in hypophosphatasia).
+FT                                /FTId=VAR_025930.
+FT   VARIANT     326    326       G -> R (in hypophosphatasia; in a patient
+FT                                carrying also lys-291).
+FT                                /FTId=VAR_013991.
+FT   VARIANT     327    327       F -> G (in hypophosphatasia; requires 2
+FT                                nucleotide substitutions).
+FT                                /FTId=VAR_013992.
+FT   VARIANT     327    327       F -> L (in hypophosphatasia; childhood).
+FT                                /FTId=VAR_006165.
+FT   VARIANT     327    327       Missing (in hypophosphatasia).
+FT                                /FTId=VAR_025931.
+FT   VARIANT     334    334       G -> D (in hypophosphatasia).
+FT                                /FTId=VAR_006166.
+FT   VARIANT     339    339       G -> R (in hypophosphatasia).
+FT                                /FTId=VAR_025932.
+FT   VARIANT     348    348       A -> T (in hypophosphatasia).
+FT                                /FTId=VAR_011086.
+FT   VARIANT     354    354       E -> D (in hypophosphatasia).
+FT                                /FTId=VAR_025933.
+FT   VARIANT     378    378       D -> V (in hypophosphatasia; loss of
+FT                                activity).
+FT                                /FTId=VAR_006167.
+FT   VARIANT     381    381       H -> R (in hypophosphatasia).
+FT                                /FTId=VAR_011087.
+FT   VARIANT     382    382       V -> I (in hypophosphatasia).
+FT                                /FTId=VAR_006168.
+FT   VARIANT     391    391       R -> C (in hypophosphatasia; moderate;
+FT                                10% of activity).
+FT                                /FTId=VAR_013993.
+FT   VARIANT     391    391       R -> H (in hypophosphatasia; childhood-
+FT                                type; severe allele).
+FT                                /FTId=VAR_025934.
+FT   VARIANT     399    399       A -> S (in hypophosphatasia).
+FT                                /FTId=VAR_013994.
+FT   VARIANT     406    406       D -> G (in hypophosphatasia; 15% of
+FT                                activity).
+FT                                /FTId=VAR_011088.
+FT   VARIANT     411    411       T -> A (in hypophosphatasia; absence of
+FT                                residual enzymatic activity).
+FT                                /FTId=VAR_025935.
+FT   VARIANT     414    414       L -> M (in hypophosphatasia).
+FT                                /FTId=VAR_025936.
+FT   VARIANT     417    417       N -> S (in hypophosphatasia).
+FT                                /FTId=VAR_025937.
+FT   VARIANT     423    423       V -> A (in hypophosphatasia; 16% of
+FT                                activity).
+FT                                /FTId=VAR_013995.
+FT   VARIANT     426    426       G -> C (in hypophosphatasia; infantile;
+FT                                partial loss of activity).
+FT                                /FTId=VAR_011089.
+FT   VARIANT     426    426       G -> D (in hypophosphatasia).
+FT                                /FTId=VAR_025938.
+FT   VARIANT     436    436       Y -> H (in hypophosphatasia).
+FT                                /FTId=VAR_006169.
+FT   VARIANT     445    445       S -> P (in hypophosphatasia; severe; 2%
+FT                                of activity).
+FT                                /FTId=VAR_013996.
+FT   VARIANT     450    450       R -> C (in hypophosphatasia; severe; 4%
+FT                                of activity).
+FT                                /FTId=VAR_013997.
+FT   VARIANT     450    450       R -> H (in hypophosphatasia).
+FT                                /FTId=VAR_011090.
+FT   VARIANT     452    452       E -> K (in hypophosphatasia).
+FT                                /FTId=VAR_025939.
+FT   VARIANT     456    456       G -> R (in hypophosphatasia; loss of
+FT                                activity).
+FT                                /FTId=VAR_011091.
+FT   VARIANT     459    459       V -> M (in hypophosphatasia; infantile).
+FT                                /FTId=VAR_013998.
+FT   VARIANT     468    468       A -> T (in hypophosphatasia).
+FT                                /FTId=VAR_025940.
+FT   VARIANT     473    473       G -> S (in hypophosphatasia).
+FT                                /FTId=VAR_013999.
+FT   VARIANT     476    476       E -> K (in hypophosphatasia).
+FT                                /FTId=VAR_006170.
+FT   VARIANT     478    478       N -> I (in hypophosphatasia; 9% of
+FT                                activity).
+FT                                /FTId=VAR_011092.
+FT   VARIANT     489    489       C -> S (in hypophosphatasia; 9% of
+FT                                activity).
+FT                                /FTId=VAR_011093.
+FT   VARIANT     490    490       I -> F (in hypophosphatasia; odonto;
+FT                                partial loss of activity).
+FT                                /FTId=VAR_014000.
+FT   VARIANT     491    491       G -> R (in hypophosphatasia).
+FT                                /FTId=VAR_014001.
+FT   VARIANT     522    522       V -> A (in dbSNP:rs34605986).
+FT                                /FTId=VAR_011094.
+FT   CONFLICT     29     29       W -> A (in Ref. 8; AA sequence).
+FT   CONFLICT    104    104       N -> K (in Ref. 3; CAA32376).
+FT   CONFLICT    361    361       Q -> H (in Ref. 1; BAA32129).
+FT   CONFLICT    446    446       A -> P (in Ref. 1; BAA32129).
+SQ   SEQUENCE   524 AA;  57305 MW;  71B45F17F6211900 CRC64;
+     MISPFLVLAI GTCLTNSLVP EKEKDPKYWR DQAQETLKYA LELQKLNTNV AKNVIMFLGD
+     GMGVSTVTAA RILKGQLHHN PGEETRLEMD KFPFVALSKT YNTNAQVPDS AGTATAYLCG
+     VKANEGTVGV SAATERSRCN TTQGNEVTSI LRWAKDAGKS VGIVTTTRVN HATPSAAYAH
+     SADRDWYSDN EMPPEALSQG CKDIAYQLMH NIRDIDVIMG GGRKYMYPKN KTDVEYESDE
+     KARGTRLDGL DLVDTWKSFK PRYKHSHFIW NRTELLTLDP HNVDYLLGLF EPGDMQYELN
+     RNNVTDPSLS EMVVVAIQIL RKNPKGFFLL VEGGRIDHGH HEGKAKQALH EAVEMDRAIG
+     QAGSLTSSED TLTVVTADHS HVFTFGGYTP RGNSIFGLAP MLSDTDKKPF TAILYGNGPG
+     YKVVGGEREN VSMVDYAHNN YQAQSAVPLR HETHGGEDVA VFSKGPMAHL LHGVHEQNYV
+     PHVMAYAACI GANLGHCAPA SSAGSLAAGP LLLALALYPL SVLF
+//
+ID   PPB_ECOLI               Reviewed;         471 AA.
+AC   P00634; P77801; P78051; Q2MC42; Q47041;
+DT   21-JUL-1986, integrated into UniProtKB/Swiss-Prot.
+DT   13-AUG-1987, sequence version 1.
+DT   28-JUL-2009, entry version 117.
+DE   RecName: Full=Alkaline phosphatase;
+DE            Short=APase;
+DE            EC=3.1.3.1;
+DE   Flags: Precursor;
+GN   Name=phoA; OrderedLocusNames=b0383, JW0374;
+OS   Escherichia coli (strain K12).
+OC   Bacteria; Proteobacteria; Gammaproteobacteria; Enterobacteriales;
+OC   Enterobacteriaceae; Escherichia.
+OX   NCBI_TaxID=83333;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA].
+RC   STRAIN=ATCC 35607 / JM83;
+RX   MEDLINE=87066741; PubMed=3537962; DOI=10.1093/nar/14.21.8689;
+RA   Shuttleworth H., Taylor J., Minton N.;
+RT   "Sequence of the gene for alkaline phosphatase from Escherichia coli
+RT   JM83.";
+RL   Nucleic Acids Res. 14:8689-8689(1986).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA].
+RX   MEDLINE=87031576; PubMed=3533724; DOI=10.1016/0378-1119(86)90050-8;
+RA   Chang C.N., Kuang W.-J., Chen E.Y.;
+RT   "Nucleotide sequence of the alkaline phosphatase gene of Escherichia
+RT   coli.";
+RL   Gene 44:121-125(1986).
+RN   [3]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA].
+RX   MEDLINE=88320572; PubMed=3045828; DOI=10.1073/pnas.85.18.7036;
+RA   Dubose R.F., Dykhuizen D.E., Hartl D.L.;
+RT   "Genetic exchange among natural isolates of bacteria: recombination
+RT   within the phoA gene of Escherichia coli.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 85:7036-7040(1988).
+RN   [4]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=K12 / MG1655 / ATCC 47076;
+RA   Chung E., Allen E., Araujo R., Aparicio A.M., Davis K., Duncan M.,
+RA   Federspiel N., Hyman R., Kalman S., Komp C., Kurdi O., Lew H., Lin D.,
+RA   Namath A., Oefner P., Roberts D., Schramm S., Davis R.W.;
+RT   "Sequence of minutes 4-25 of Escherichia coli.";
+RL   Submitted (JAN-1997) to the EMBL/GenBank/DDBJ databases.
+RN   [5]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=K12 / MG1655 / ATCC 47076;
+RX   MEDLINE=97426617; PubMed=9278503; DOI=10.1126/science.277.5331.1453;
+RA   Blattner F.R., Plunkett G. III, Bloch C.A., Perna N.T., Burland V.,
+RA   Riley M., Collado-Vides J., Glasner J.D., Rode C.K., Mayhew G.F.,
+RA   Gregor J., Davis N.W., Kirkpatrick H.A., Goeden M.A., Rose D.J.,
+RA   Mau B., Shao Y.;
+RT   "The complete genome sequence of Escherichia coli K-12.";
+RL   Science 277:1453-1474(1997).
+RN   [6]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=K12 / W3110 / ATCC 27325 / DSM 5911;
+RX   PubMed=16738553; DOI=10.1038/msb4100049;
+RA   Hayashi K., Morooka N., Yamamoto Y., Fujita K., Isono K., Choi S.,
+RA   Ohtsubo E., Baba T., Wanner B.L., Mori H., Horiuchi T.;
+RT   "Highly accurate genome sequences of Escherichia coli K-12 strains
+RT   MG1655 and W3110.";
+RL   Mol. Syst. Biol. 2:E1-E5(2006).
+RN   [7]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA] OF 1-106.
+RX   MEDLINE=90264311; PubMed=2345142;
+RA   Agrawal D.K., Wanner B.L.;
+RT   "A phoA structural gene mutation that conditionally affects formation
+RT   of the enzyme bacterial alkaline phosphatase.";
+RL   J. Bacteriol. 172:3180-3190(1990).
+RN   [8]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA] OF 1-80.
+RX   MEDLINE=82081850; PubMed=6273802; DOI=10.1093/nar/9.21.5671;
+RA   Kikuchi Y., Yoda K., Yamasaki M., Tamura G.;
+RT   "The nucleotide sequence of the promoter and the amino-terminal region
+RT   of alkaline phosphatase structural gene (phoA) of Escherichia coli.";
+RL   Nucleic Acids Res. 9:5671-5678(1981).
+RN   [9]
+RP   PROTEIN SEQUENCE OF 23-471 (ISOZYME 3).
+RX   MEDLINE=81273081; PubMed=7022451; DOI=10.1073/pnas.78.6.3473;
+RA   Bradshaw R.A., Cancedda F., Ericsson L.H., Neumann P.A., Piccoli S.P.,
+RA   Schlesinger M.J., Shriefer K., Walsh K.A.;
+RT   "Amino acid sequence of Escherichia coli alkaline phosphatase.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 78:3473-3477(1981).
+RN   [10]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA] OF 162-193 AND 385-399.
+RX   MEDLINE=82119946; PubMed=7035431;
+RA   Inouye H., Barnes W., Beckwith J.;
+RT   "Signal sequence of alkaline phosphatase of Escherichia coli.";
+RL   J. Bacteriol. 149:434-439(1982).
+RN   [11]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA] OF 1-23.
+RX   MEDLINE=89340570; PubMed=2668291;
+RA   Laforet G.A., Kaiser E.T., Kendall D.A.;
+RT   "Signal peptide subsegments are not always functionally
+RT   interchangeable. M13 procoat hydrophobic core fails to transport
+RT   alkaline phosphatase in Escherichia coli.";
+RL   J. Biol. Chem. 264:14478-14485(1989).
+RN   [12]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA] OF 1-21.
+RX   MEDLINE=86137393; PubMed=3912261; DOI=10.1016/0378-1119(85)90319-1;
+RA   Gray G.L., Baldridge J.S., McKeown K.S., Heyneker H.L., Chang C.N.;
+RT   "Periplasmic production of correctly processed human growth hormone in
+RT   Escherichia coli: natural and bacterial signal sequences are
+RT   interchangeable.";
+RL   Gene 39:247-254(1985).
+RN   [13]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA] OF 1-21.
+RX   MEDLINE=86250586; PubMed=3522543;
+RA   Michaelis S., Hunt J.F., Beckwith J.;
+RT   "Effects of signal sequence mutations on the kinetics of alkaline
+RT   phosphatase export to the periplasm in Escherichia coli.";
+RL   J. Bacteriol. 167:160-167(1986).
+RN   [14]
+RP   X-RAY CRYSTALLOGRAPHY (2.8 ANGSTROMS).
+RX   MEDLINE=86115281; PubMed=3910843; DOI=10.1016/0022-2836(85)90115-9;
+RA   Sowadski J.M., Handschumacher M.D., Krishna Murthy H.M., Foster B.A.,
+RA   Wyckoff H.W.;
+RT   "Refined structure of alkaline phosphatase from Escherichia coli at
+RT   2.8-A resolution.";
+RL   J. Mol. Biol. 186:417-433(1985).
+RN   [15]
+RP   X-RAY CRYSTALLOGRAPHY (2.0 ANGSTROMS).
+RX   MEDLINE=91186406; PubMed=2010919; DOI=10.1016/0022-2836(91)90724-K;
+RA   Kim E.E., Wyckoff H.W.;
+RT   "Reaction mechanism of alkaline phosphatase based on crystal
+RT   structures. Two-metal ion catalysis.";
+RL   J. Mol. Biol. 218:449-464(1991).
+RN   [16]
+RP   X-RAY CRYSTALLOGRAPHY (2.5 ANGSTROMS) OF MUTANT GLY-175.
+RX   PubMed=7577993; DOI=10.1021/bi00043a001;
+RA   Dealwis C.G., Brennan C., Christianson K., Mandecki W.,
+RA   Abad-Zapatero C.;
+RT   "Crystallographic analysis of reversible metal binding observed in a
+RT   mutant (Asp153-->Gly) of Escherichia coli alkaline phosphatase.";
+RL   Biochemistry 34:13967-13973(1995).
+RN   [17]
+RP   X-RAY CRYSTALLOGRAPHY (2.25 ANGSTROMS) OF MUTANT GLN-434.
+RX   MEDLINE=96194161; PubMed=8652582; DOI=10.1021/bi9523421;
+RA   Ma L., Kantrowitz E.R.;
+RT   "Kinetic and X-ray structural studies of a mutant Escherichia coli
+RT   alkaline phosphatase (His-412-->Gln) at one of the zinc binding
+RT   sites.";
+RL   Biochemistry 35:2394-2402(1996).
+RN   [18]
+RP   X-RAY CRYSTALLOGRAPHY (2.3 ANGSTROMS).
+RX   MEDLINE=97397347; PubMed=9253408; DOI=10.1038/nsb0897-618;
+RA   Murphy J.E., Stec B., Ma L., Kantrowitz E.R.;
+RT   "Trapping and visualization of a covalent enzyme-phosphate
+RT   intermediate.";
+RL   Nat. Struct. Biol. 4:618-622(1997).
+RN   [19]
+RP   X-RAY CRYSTALLOGRAPHY (2.6 ANGSTROMS).
+RX   MEDLINE=98202577; PubMed=9533886; DOI=10.1006/jmbi.1998.1635;
+RA   Stec B., Hehir M.J., Brennan C., Nolte M., Kantrowitz E.R.;
+RT   "Kinetic and X-ray structural studies of three mutant E. coli alkaline
+RT   phosphatases: insights into the catalytic mechanism without the
+RT   nucleophile Ser102.";
+RL   J. Mol. Biol. 277:647-662(1998).
+RN   [20]
+RP   X-RAY CRYSTALLOGRAPHY (1.9 ANGSTROMS).
+RX   MEDLINE=99185045; PubMed=10085061; DOI=10.1074/jbc.274.13.8351;
+RA   Holtz K.M., Stec B., Kantrowitz E.R.;
+RT   "A model of the transition state in the alkaline phosphatase
+RT   reaction.";
+RL   J. Biol. Chem. 274:8351-8354(1999).
+CC   -!- CATALYTIC ACTIVITY: A phosphate monoester + H(2)O = an alcohol +
+CC       phosphate.
+CC   -!- COFACTOR: Binds 1 magnesium ion.
+CC   -!- COFACTOR: Binds 2 zinc ions.
+CC   -!- SUBUNIT: Isozymes 1 and 3 are a dimer of identical chains, isozyme
+CC       2 is a dimer of heterogeneous chains, one of each of the subunits
+CC       from isozymes 1 and 3.
+CC   -!- INTERACTION:
+CC       P0A6Y8:dnaK; NbExp=1; IntAct=EBI-552958, EBI-542092;
+CC       P10408:secA; NbExp=1; IntAct=EBI-552958, EBI-543213;
+CC   -!- SUBCELLULAR LOCATION: Periplasm.
+CC   -!- SIMILARITY: Belongs to the alkaline phosphatase family.
+CC   -----------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see http://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution-NoDerivs License
+CC   -----------------------------------------------------------------------
+DR   EMBL; X04586; CAA28257.1; -; Genomic_DNA.
+DR   EMBL; M13345; AAA83893.1; -; Genomic_DNA.
+DR   EMBL; M29664; AAA24364.1; -; Genomic_DNA.
+DR   EMBL; M29665; AAA24365.1; -; Genomic_DNA.
+DR   EMBL; U73857; AAB18107.1; -; Genomic_DNA.
+DR   EMBL; U00096; AAC73486.2; ALT_INIT; Genomic_DNA.
+DR   EMBL; AP009048; BAE76164.1; -; Genomic_DNA.
+DR   EMBL; M33536; AAA24372.1; -; Genomic_DNA.
+DR   EMBL; J01659; AAA24359.2; -; Genomic_DNA.
+DR   EMBL; J01660; AAA24360.1; -; Genomic_DNA.
+DR   EMBL; J01661; AAA24361.1; -; Genomic_DNA.
+DR   EMBL; J05005; AAA24362.1; -; Genomic_DNA.
+DR   EMBL; M14399; AAA23431.1; -; mRNA.
+DR   EMBL; M13763; AAA24358.1; -; Genomic_DNA.
+DR   PIR; A00776; PAECA.
+DR   RefSeq; AP_001034.1; -.
+DR   RefSeq; NP_414917.2; -.
+DR   PDB; 1AJA; X-ray; 2.50 A; A/B=23-471.
+DR   PDB; 1AJB; X-ray; 2.50 A; A/B=23-471.
+DR   PDB; 1AJC; X-ray; 2.50 A; A/B=23-471.
+DR   PDB; 1AJD; X-ray; 2.50 A; A/B=23-471.
+DR   PDB; 1ALH; X-ray; 2.50 A; A/B=26-471.
+DR   PDB; 1ALI; X-ray; 2.20 A; A/B=23-471.
+DR   PDB; 1ALJ; X-ray; 2.60 A; A/B=23-471.
+DR   PDB; 1ALK; X-ray; 2.00 A; A/B=23-471.
+DR   PDB; 1ANI; X-ray; 2.50 A; A/B=26-471.
+DR   PDB; 1ANJ; X-ray; 2.30 A; A/B=26-471.
+DR   PDB; 1B8J; X-ray; 1.90 A; A/B=23-471.
+DR   PDB; 1ED8; X-ray; 1.75 A; A/B=23-471.
+DR   PDB; 1ED9; X-ray; 1.75 A; A/B=23-471.
+DR   PDB; 1ELX; X-ray; 2.60 A; A/B=23-471.
+DR   PDB; 1ELY; X-ray; 2.80 A; A/B=23-471.
+DR   PDB; 1ELZ; X-ray; 2.80 A; A/B=23-471.
+DR   PDB; 1EW8; X-ray; 2.20 A; A/B=23-471.
+DR   PDB; 1EW9; X-ray; 2.00 A; A/B=23-471.
+DR   PDB; 1HJK; X-ray; 2.30 A; A/B=23-471.
+DR   PDB; 1HQA; X-ray; 2.25 A; A/B=23-471.
+DR   PDB; 1KH4; X-ray; 2.40 A; A/B=23-471.
+DR   PDB; 1KH5; X-ray; 2.00 A; A/B=23-471.
+DR   PDB; 1KH7; X-ray; 2.40 A; A/B=23-471.
+DR   PDB; 1KH9; X-ray; 2.50 A; A/B=23-471.
+DR   PDB; 1KHJ; X-ray; 2.30 A; A/B=23-471.
+DR   PDB; 1KHK; X-ray; 2.50 A; A/B=23-471.
+DR   PDB; 1KHL; X-ray; 2.50 A; A/B=23-471.
+DR   PDB; 1KHN; X-ray; 2.60 A; A/B=23-471.
+DR   PDB; 1URA; X-ray; 2.04 A; A/B=26-471.
+DR   PDB; 1URB; X-ray; 2.14 A; A/B=26-471.
+DR   PDB; 1Y6V; X-ray; 1.60 A; A/B=23-471.
+DR   PDB; 1Y7A; X-ray; 1.77 A; A/B=23-471.
+DR   PDB; 2ANH; X-ray; 2.40 A; A/B=26-471.
+DR   PDB; 2G9Y; X-ray; 2.00 A; A/B=23-471.
+DR   PDB; 2GA3; X-ray; 2.20 A; A/B=23-471.
+DR   PDB; 3BDF; X-ray; 1.40 A; A/B=22-471.
+DR   PDB; 3BDG; X-ray; 1.40 A; A=22-471, B=22-471.
+DR   PDB; 3BDH; X-ray; 1.85 A; A/B=22-471.
+DR   PDB; 3CMR; X-ray; 2.05 A; A/B=23-471.
+DR   PDB; 3DPC; X-ray; 2.30 A; A/B=23-471.
+DR   PDB; 3DYC; X-ray; 2.30 A; A/B=23-471.
+DR   PDBsum; 1AJA; -.
+DR   PDBsum; 1AJB; -.
+DR   PDBsum; 1AJC; -.
+DR   PDBsum; 1AJD; -.
+DR   PDBsum; 1ALH; -.
+DR   PDBsum; 1ALI; -.
+DR   PDBsum; 1ALJ; -.
+DR   PDBsum; 1ALK; -.
+DR   PDBsum; 1ANI; -.
+DR   PDBsum; 1ANJ; -.
+DR   PDBsum; 1B8J; -.
+DR   PDBsum; 1ED8; -.
+DR   PDBsum; 1ED9; -.
+DR   PDBsum; 1ELX; -.
+DR   PDBsum; 1ELY; -.
+DR   PDBsum; 1ELZ; -.
+DR   PDBsum; 1EW8; -.
+DR   PDBsum; 1EW9; -.
+DR   PDBsum; 1HJK; -.
+DR   PDBsum; 1HQA; -.
+DR   PDBsum; 1KH4; -.
+DR   PDBsum; 1KH5; -.
+DR   PDBsum; 1KH7; -.
+DR   PDBsum; 1KH9; -.
+DR   PDBsum; 1KHJ; -.
+DR   PDBsum; 1KHK; -.
+DR   PDBsum; 1KHL; -.
+DR   PDBsum; 1KHN; -.
+DR   PDBsum; 1URA; -.
+DR   PDBsum; 1URB; -.
+DR   PDBsum; 1Y6V; -.
+DR   PDBsum; 1Y7A; -.
+DR   PDBsum; 2ANH; -.
+DR   PDBsum; 2G9Y; -.
+DR   PDBsum; 2GA3; -.
+DR   PDBsum; 3BDF; -.
+DR   PDBsum; 3BDG; -.
+DR   PDBsum; 3BDH; -.
+DR   PDBsum; 3CMR; -.
+DR   PDBsum; 3DPC; -.
+DR   PDBsum; 3DYC; -.
+DR   DIP; DIP:10496N; -.
+DR   IntAct; P00634; 3.
+DR   ECO2DBASE; F046.6; 6TH EDITION.
+DR   GeneID; 945041; -.
+DR   GenomeReviews; AP009048_GR; JW0374.
+DR   GenomeReviews; U00096_GR; b0383.
+DR   KEGG; ecj:JW0374; -.
+DR   KEGG; eco:b0383; -.
+DR   EchoBASE; EB0720; -.
+DR   EcoGene; EG10727; phoA.
+DR   HOGENOM; P00634; -.
+DR   OMA; P00634; VKQSTIA.
+DR   BioCyc; EcoCyc:ALKAPHOSPHA-MON; -.
+DR   BioCyc; MetaCyc:ALKAPHOSPHA-MON; -.
+DR   GO; GO:0042597; C:periplasmic space; IEA:UniProtKB-SubCell.
+DR   GO; GO:0004035; F:alkaline phosphatase activity; IEA:EC.
+DR   GO; GO:0000287; F:magnesium ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0005515; F:protein binding; IPI:IntAct.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0008152; P:metabolic process; IEA:InterPro.
+DR   InterPro; IPR017849; Alkaline_Pase-like_a/b/a.
+DR   InterPro; IPR001952; Alkaline_phosphatase.
+DR   InterPro; IPR018299; Alkaline_phosphatase_AS.
+DR   Gene3D; G3DSA:3.40.720.10; Alk_phosphtse; 1.
+DR   Pfam; PF00245; Alk_phosphatase; 1.
+DR   PRINTS; PR00113; ALKPHPHTASE.
+DR   SMART; SM00098; alkPPc; 1.
+DR   PROSITE; PS00123; ALKALINE_PHOSPHATASE; 1.
+PE   1: Evidence at protein level;
+KW   3D-structure; Complete proteome; Direct protein sequencing;
+KW   Disulfide bond; Hydrolase; Magnesium; Metal-binding; Periplasm;
+KW   Phosphoprotein; Signal; Zinc.
+FT   SIGNAL        1     21
+FT   CHAIN        22    471       Alkaline phosphatase.
+FT                                /FTId=PRO_0000024012.
+FT   ACT_SITE    124    124       Phosphoserine intermediate.
+FT   METAL        73     73       Magnesium.
+FT   METAL        73     73       Zinc 2.
+FT   METAL       175    175       Magnesium.
+FT   METAL       177    177       Magnesium.
+FT   METAL       344    344       Magnesium.
+FT   METAL       349    349       Zinc 1.
+FT   METAL       353    353       Zinc 1.
+FT   METAL       391    391       Zinc 2.
+FT   METAL       392    392       Zinc 2.
+FT   METAL       434    434       Zinc 1.
+FT   DISULFID    190    200
+FT   DISULFID    308    358
+FT   VARIANT      22     22       Missing (in isozyme 3).
+FT   CONFLICT     10     10       L -> V (in Ref. 12; AAA23431).
+FT   CONFLICT     78     80       SEI -> WGS (in Ref. 8; AAA24359).
+FT   CONFLICT    198    198       E -> Q (in Ref. 9; AA sequence).
+FT   TURN         41     44
+FT   HELIX        52     56
+FT   STRAND       65     72
+FT   HELIX        77     88
+FT   TURN         95     98
+FT   STRAND      101    107
+FT   TURN        113    115
+FT   STRAND      118    121
+FT   HELIX       124    133
+FT   STRAND      142    144
+FT   HELIX       154    160
+FT   STRAND      164    172
+FT   HELIX       176    179
+FT   TURN        180    182
+FT   HELIX       193    199
+FT   HELIX       201    203
+FT   HELIX       205    207
+FT   HELIX       213    220
+FT   STRAND      223    228
+FT   HELIX       231    234
+FT   STRAND      235    240
+FT   HELIX       247    253
+FT   STRAND      257    259
+FT   HELIX       262    267
+FT   STRAND      272    275
+FT   STRAND      277    280
+FT   STRAND      282    285
+FT   STRAND      289    291
+FT   HELIX       299    302
+FT   HELIX       312    314
+FT   STRAND      316    318
+FT   HELIX       321    333
+FT   STRAND      339    345
+FT   HELIX       347    353
+FT   HELIX       357    381
+FT   STRAND      382    393
+FT   STRAND      397    399
+FT   STRAND      406    413
+FT   STRAND      417    424
+FT   STRAND      428    431
+FT   STRAND      439    445
+FT   HELIX       448    451
+FT   STRAND      452    456
+FT   HELIX       457    467
+SQ   SEQUENCE   471 AA;  49439 MW;  8A8DE1F29D9D9253 CRC64;
+     MKQSTIALAL LPLLFTPVTK ARTPEMPVLE NRAAQGDITA PGGARRLTGD QTAALRDSLS
+     DKPAKNIILL IGDGMGDSEI TAARNYAEGA GGFFKGIDAL PLTGQYTHYA LNKKTGKPDY
+     VTDSAASATA WSTGVKTYNG ALGVDIHEKD HPTILEMAKA AGLATGNVST AELQDATPAA
+     LVAHVTSRKC YGPSATSEKC PGNALEKGGK GSITEQLLNA RADVTLGGGA KTFAETATAG
+     EWQGKTLREQ AQARGYQLVS DAASLNSVTE ANQQKPLLGL FADGNMPVRW LGPKATYHGN
+     IDKPAVTCTP NPQRNDSVPT LAQMTDKAIE LLSKNEKGFF LQVEGASIDK QDHAANPCGQ
+     IGETVDLDEA VQRALEFAKK EGNTLVIVTA DHAHASQIVA PDTKAPGLTQ ALNTKDGAVM
+     VMSYGNSEED SQEHTGSQLR IAAYGPHAAN VVGLTDQTDL FYTMKAALGL K
+//
+ID   PPB1_HUMAN              Reviewed;         535 AA.
+AC   P05187; P05188; P06861; Q53S78; Q96DB7;
+DT   13-AUG-1987, integrated into UniProtKB/Swiss-Prot.
+DT   01-JUL-1989, sequence version 2.
+DT   28-JUL-2009, entry version 122.
+DE   RecName: Full=Alkaline phosphatase, placental type;
+DE            EC=3.1.3.1;
+DE   AltName: Full=PLAP-1;
+DE   AltName: Full=Alkaline phosphatase Regan isozyme;
+DE   Flags: Precursor;
+GN   Name=ALPP; Synonyms=PLAP;
+OS   Homo sapiens (Human).
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+OC   Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+OC   Catarrhini; Hominidae; Homo.
+OX   NCBI_TaxID=9606;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA].
+RX   MEDLINE=88298886; PubMed=3042787;
+RA   Knoll B.J., Rothblum K.N., Longley M.A.;
+RT   "Nucleotide sequence of the human placental alkaline phosphatase gene.
+RT   Evolution of the 5' flanking region by deletion/substitution.";
+RL   J. Biol. Chem. 263:12020-12027(1988).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE [MRNA], AND VARIANT PRO-231.
+RX   MEDLINE=86140079; PubMed=3512548;
+RA   Millan J.L.;
+RT   "Molecular cloning and sequence analysis of human placental alkaline
+RT   phosphatase.";
+RL   J. Biol. Chem. 261:3112-3115(1986).
+RN   [3]
+RP   NUCLEOTIDE SEQUENCE [MRNA], PARTIAL PROTEIN SEQUENCE, AND VARIANTS
+RP   LEU-25 AND HIS-263.
+RX   MEDLINE=86287303; PubMed=3461452; DOI=10.1073/pnas.83.15.5597;
+RA   Henthorn P.S., Knoll B.J., Raducha M., Rothblum K.N., Slaughter C.,
+RA   Weiss M., Lafferty M.A., Fischer T., Harris H.;
+RT   "Products of two common alleles at the locus for human placental
+RT   alkaline phosphatase differ by seven amino acids.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 83:5597-5601(1986).
+RN   [4]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RX   PubMed=15815621; DOI=10.1038/nature03466;
+RA   Hillier L.W., Graves T.A., Fulton R.S., Fulton L.A., Pepin K.H.,
+RA   Minx P., Wagner-McPherson C., Layman D., Wylie K., Sekhon M.,
+RA   Becker M.C., Fewell G.A., Delehaunty K.D., Miner T.L., Nash W.E.,
+RA   Kremitzki C., Oddy L., Du H., Sun H., Bradshaw-Cordum H., Ali J.,
+RA   Carter J., Cordes M., Harris A., Isak A., van Brunt A., Nguyen C.,
+RA   Du F., Courtney L., Kalicki J., Ozersky P., Abbott S., Armstrong J.,
+RA   Belter E.A., Caruso L., Cedroni M., Cotton M., Davidson T., Desai A.,
+RA   Elliott G., Erb T., Fronick C., Gaige T., Haakenson W., Haglund K.,
+RA   Holmes A., Harkins R., Kim K., Kruchowski S.S., Strong C.M.,
+RA   Grewal N., Goyea E., Hou S., Levy A., Martinka S., Mead K.,
+RA   McLellan M.D., Meyer R., Randall-Maher J., Tomlinson C.,
+RA   Dauphin-Kohlberg S., Kozlowicz-Reilly A., Shah N.,
+RA   Swearengen-Shahid S., Snider J., Strong J.T., Thompson J., Yoakum M.,
+RA   Leonard S., Pearman C., Trani L., Radionenko M., Waligorski J.E.,
+RA   Wang C., Rock S.M., Tin-Wollam A.-M., Maupin R., Latreille P.,
+RA   Wendl M.C., Yang S.-P., Pohl C., Wallis J.W., Spieth J., Bieri T.A.,
+RA   Berkowicz N., Nelson J.O., Osborne J., Ding L., Meyer R., Sabo A.,
+RA   Shotland Y., Sinha P., Wohldmann P.E., Cook L.L., Hickenbotham M.T.,
+RA   Eldred J., Williams D., Jones T.A., She X., Ciccarelli F.D.,
+RA   Izaurralde E., Taylor J., Schmutz J., Myers R.M., Cox D.R., Huang X.,
+RA   McPherson J.D., Mardis E.R., Clifton S.W., Warren W.C.,
+RA   Chinwalla A.T., Eddy S.R., Marra M.A., Ovcharenko I., Furey T.S.,
+RA   Miller W., Eichler E.E., Bork P., Suyama M., Torrents D.,
+RA   Waterston R.H., Wilson R.K.;
+RT   "Generation and annotation of the DNA sequences of human chromosomes 2
+RT   and 4.";
+RL   Nature 434:724-731(2005).
+RN   [5]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA], AND VARIANT LEU-89.
+RC   TISSUE=Cervix, and Placenta;
+RX   PubMed=15489334; DOI=10.1101/gr.2596504;
+RG   The MGC Project Team;
+RT   "The status, quality, and expansion of the NIH full-length cDNA
+RT   project: the Mammalian Gene Collection (MGC).";
+RL   Genome Res. 14:2121-2127(2004).
+RN   [6]
+RP   NUCLEOTIDE SEQUENCE [MRNA] OF 6-535, AND VARIANT LEU-25.
+RX   MEDLINE=86094295; PubMed=3001717; DOI=10.1073/pnas.82.24.8715;
+RA   Kam W., Clauser E., Kim Y.S., Kan Y.W., Rutter W.J.;
+RT   "Cloning, sequencing, and chromosomal localization of human term
+RT   placental alkaline phosphatase cDNA.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 82:8715-8719(1985).
+RN   [7]
+RP   PROTEIN SEQUENCE OF 23-64.
+RX   MEDLINE=84079906; PubMed=6651840; DOI=10.1016/S0006-291X(83)80252-6;
+RA   Ezra E., Blacher R., Udenfriend S.;
+RT   "Purification and partial sequencing of human placental alkaline
+RT   phosphatase.";
+RL   Biochem. Biophys. Res. Commun. 116:1076-1083(1983).
+RN   [8]
+RP   NUCLEOTIDE SEQUENCE OF 382-535.
+RX   MEDLINE=86233318; PubMed=3459156; DOI=10.1073/pnas.83.11.3781;
+RA   Ovitt C.E., Strauss A.W., Alpers D.H., Chou J.Y., Boime I.;
+RT   "Expression of different-sized placental alkaline phosphatase mRNAs in
+RT   placenta and choriocarcinoma cells.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 83:3781-3785(1986).
+RN   [9]
+RP   PROTEIN SEQUENCE OF 485-535.
+RX   MEDLINE=88144444; PubMed=3422741; DOI=10.1073/pnas.85.5.1398;
+RA   Micanovic R., Bailey C.A., Brink L., Gerber L., Pan Y.C.E.,
+RA   Hulmes J.D., Udenfriend S.;
+RT   "Aspartic acid-484 of nascent placental alkaline phosphatase condenses
+RT   with a phosphatidylinositol glycan to become the carboxyl terminus of
+RT   the mature enzyme.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 85:1398-1402(1988).
+RN   [10]
+RP   GPI-ANCHOR AT ASP-506.
+RX   MEDLINE=90115829; PubMed=2153284; DOI=10.1073/pnas.87.1.157;
+RA   Micanovic R., Gerber L.D., Berger J., Kodukula K., Udenfriend S.;
+RT   "Selectivity of the cleavage/attachment site of phosphatidylinositol-
+RT   glycan-anchored membrane proteins determined by site-specific
+RT   mutagenesis at Asp-484 of placental alkaline phosphatase.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 87:157-161(1990).
+RN   [11]
+RP   EFFECT OF MUTAGENESIS OF C-TERMINAL PEPTIDE ON GPI-ANCHORING.
+RX   MEDLINE=92113014; PubMed=1730777; DOI=10.1083/jcb.116.3.799;
+RA   Lowe M.E.;
+RT   "Site-specific mutations in the COOH-terminus of placental alkaline
+RT   phosphatase: a single amino acid change converts a
+RT   phosphatidylinositol-glycan-anchored protein to a secreted protein.";
+RL   J. Cell Biol. 116:799-807(1992).
+RN   [12]
+RP   DISULFIDE BONDS.
+RX   MEDLINE=22063279; PubMed=11937510; DOI=10.1074/jbc.M202298200;
+RA   Kozlenkov A., Manes T., Hoylaerts M.F., Millan J.L.;
+RT   "Function assignment to conserved residues in mammalian alkaline
+RT   phosphatases.";
+RL   J. Biol. Chem. 277:22992-22999(2002).
+RN   [13]
+RP   PHOSPHORYLATION [LARGE SCALE ANALYSIS] AT SER-114, AND MASS
+RP   SPECTROMETRY.
+RX   PubMed=18669648; DOI=10.1073/pnas.0805139105;
+RA   Dephoure N., Zhou C., Villen J., Beausoleil S.A., Bakalarski C.E.,
+RA   Elledge S.J., Gygi S.P.;
+RT   "A quantitative atlas of mitotic phosphorylation.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 105:10762-10767(2008).
+RN   [14]
+RP   X-RAY CRYSTALLOGRAPHY (1.82 ANGSTROMS) OF 56-535.
+RX   PubMed=11124260; DOI=10.1074/jbc.M009250200;
+RA   Le Du M.H., Stigbrand T., Taussig M.J., Menez A., Stura E.A.;
+RT   "Crystal structure of alkaline phosphatase from human placenta at 1.8
+RT   A resolution. Implication for a substrate specificity.";
+RL   J. Biol. Chem. 276:9158-9165(2001).
+CC   -!- CATALYTIC ACTIVITY: A phosphate monoester + H(2)O = an alcohol +
+CC       phosphate.
+CC   -!- COFACTOR: Binds 1 magnesium ion (By similarity).
+CC   -!- COFACTOR: Binds 2 zinc ions (By similarity).
+CC   -!- SUBUNIT: Homodimer.
+CC   -!- SUBCELLULAR LOCATION: Cell membrane; Lipid-anchor, GPI-anchor.
+CC   -!- POLYMORPHISM: Placental ALP is highly polymorphic, there are at
+CC       least three common alleles.
+CC   -!- MISCELLANEOUS: In most mammals there are four different isozymes:
+CC       placental, placental-like, intestinal and tissue non-specific
+CC       (liver/bone/kidney).
+CC   -!- SIMILARITY: Belongs to the alkaline phosphatase family.
+CC   -!- WEB RESOURCE: Name=Wikipedia; Note=Alkaline phosphatase entry;
+CC       URL="http://en.wikipedia.org/wiki/Alkaline_phosphatase";
+CC   -----------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see http://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution-NoDerivs License
+CC   -----------------------------------------------------------------------
+DR   EMBL; M19159; AAA51710.1; -; Genomic_DNA.
+DR   EMBL; M13077; AAC97139.1; -; mRNA.
+DR   EMBL; M14169; AAA51708.1; ALT_INIT; mRNA.
+DR   EMBL; M14170; AAA51709.1; -; mRNA.
+DR   EMBL; AC068134; AAY24087.1; -; Genomic_DNA.
+DR   EMBL; BC009647; AAH09647.1; -; mRNA.
+DR   EMBL; BC068501; AAH68501.1; -; mRNA.
+DR   EMBL; BC094743; AAH94743.1; -; mRNA.
+DR   EMBL; M12551; AAA51706.1; -; mRNA.
+DR   IPI; IPI00007289; -.
+DR   PIR; A31074; PAHUA.
+DR   RefSeq; NP_001623.3; -.
+DR   UniGene; Hs.284255; -.
+DR   PDB; 1EW2; X-ray; 1.82 A; A=23-535.
+DR   PDB; 1ZEB; X-ray; 1.90 A; A=23-506.
+DR   PDB; 1ZED; X-ray; 1.57 A; A=23-506.
+DR   PDB; 1ZEF; X-ray; 1.90 A; A=23-506.
+DR   PDB; 2GLQ; X-ray; 1.60 A; A=23-506.
+DR   PDBsum; 1EW2; -.
+DR   PDBsum; 1ZEB; -.
+DR   PDBsum; 1ZED; -.
+DR   PDBsum; 1ZEF; -.
+DR   PDBsum; 2GLQ; -.
+DR   PhosphoSite; P05187; -.
+DR   PRIDE; P05187; -.
+DR   Ensembl; ENST00000392027; ENSP00000375881; ENSG00000163283; Homo sapiens.
+DR   GeneID; 250; -.
+DR   KEGG; hsa:250; -.
+DR   NMPDR; fig|9606.3.peg.19512; -.
+DR   UCSC; uc002vsq.1; human.
+DR   GeneCards; GC02P232951; -.
+DR   H-InvDB; HIX0002924; -.
+DR   HGNC; HGNC:439; ALPP.
+DR   HPA; CAB000067; -.
+DR   MIM; 171800; gene.
+DR   PharmGKB; PA24730; -.
+DR   HOGENOM; P05187; -.
+DR   HOVERGEN; P05187; -.
+DR   OMA; P05187; EIPLAMD.
+DR   BRENDA; 3.1.3.1; 247.
+DR   NextBio; 1001; -.
+DR   ArrayExpress; P05187; -.
+DR   Bgee; P05187; -.
+DR   CleanEx; HS_ALPP; -.
+DR   GermOnline; ENSG00000163283; Homo sapiens.
+DR   GO; GO:0031225; C:anchored to membrane; IEA:UniProtKB-KW.
+DR   GO; GO:0009986; C:cell surface; IDA:UniProtKB.
+DR   GO; GO:0016021; C:integral to membrane; IEA:UniProtKB-KW.
+DR   GO; GO:0005886; C:plasma membrane; IEA:UniProtKB-SubCell.
+DR   GO; GO:0004035; F:alkaline phosphatase activity; NAS:UniProtKB.
+DR   GO; GO:0000287; F:magnesium ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0008152; P:metabolic process; IEA:InterPro.
+DR   InterPro; IPR017849; Alkaline_Pase-like_a/b/a.
+DR   InterPro; IPR001952; Alkaline_phosphatase.
+DR   InterPro; IPR018299; Alkaline_phosphatase_AS.
+DR   Gene3D; G3DSA:3.40.720.10; Alk_phosphtse; 1.
+DR   Pfam; PF00245; Alk_phosphatase; 1.
+DR   PRINTS; PR00113; ALKPHPHTASE.
+DR   SMART; SM00098; alkPPc; 1.
+DR   PROSITE; PS00123; ALKALINE_PHOSPHATASE; 1.
+PE   1: Evidence at protein level;
+KW   3D-structure; Cell membrane; Complete proteome;
+KW   Direct protein sequencing; Disulfide bond; Glycoprotein; GPI-anchor;
+KW   Hydrolase; Lipoprotein; Magnesium; Membrane; Metal-binding;
+KW   Phosphoprotein; Polymorphism; Signal; Transmembrane; Zinc.
+FT   SIGNAL        1     22
+FT   CHAIN        23    506       Alkaline phosphatase, placental type.
+FT                                /FTId=PRO_0000024031.
+FT   PROPEP      507    535       Removed in mature form.
+FT                                /FTId=PRO_0000024032.
+FT   TRANSMEM    513    529
+FT   ACT_SITE    114    114       Phosphoserine intermediate.
+FT   METAL        64     64       Magnesium (Potential).
+FT   METAL        64     64       Zinc 2 (Potential).
+FT   METAL       333    333       Magnesium (Potential).
+FT   METAL       338    338       Zinc 1 (Potential).
+FT   METAL       342    342       Zinc 1 (Potential).
+FT   METAL       379    379       Zinc 2 (Potential).
+FT   METAL       380    380       Zinc 2 (Potential).
+FT   METAL       454    454       Zinc 1 (Potential).
+FT   MOD_RES     114    114       Phosphoserine.
+FT   LIPID       506    506       GPI-anchor amidated aspartate.
+FT   CARBOHYD    144    144       N-linked (GlcNAc...) (Potential).
+FT   CARBOHYD    271    271       N-linked (GlcNAc...) (Potential).
+FT   DISULFID    143    205
+FT   DISULFID    489    496
+FT   VARIANT      25     25       P -> L (in dbSNP:rs1130335).
+FT                                /FTId=VAR_017419.
+FT   VARIANT      89     89       I -> L (in dbSNP:rs13026692).
+FT                                /FTId=VAR_050520.
+FT   VARIANT     231    231       R -> P (in dbSNP:rs1048988).
+FT                                /FTId=VAR_050521.
+FT   VARIANT     263    263       R -> H (in dbSNP:rs2853378).
+FT                                /FTId=VAR_050522.
+FT   VARIANT     451    451       E -> G (in dbSNP:rs1048994).
+FT                                /FTId=VAR_050523.
+FT   CONFLICT     66     66       M -> V (in Ref. 3; AAA51709).
+FT   CONFLICT    261    262       AK -> GE (in Ref. 6; AAA51706).
+FT   CONFLICT    277    277       Q -> R (in Ref. 3; AAA51709).
+FT   CONFLICT    285    285       T -> A (in Ref. 3; AAA51709).
+FT   CONFLICT    324    324       N -> H (in Ref. 6; AAA51706).
+FT   CONFLICT    389    389       Y -> C (in Ref. 3; AAA51709).
+FT   CONFLICT    394    394       S -> G (in Ref. 3; AAA51709).
+FT   CONFLICT    396    397       IF -> FI (in Ref. 6; AAA51706).
+FT   CONFLICT    401    401       P -> A (in Ref. 6; AAA51706).
+FT   CONFLICT    436    436       S -> T (in Ref. 8).
+FT   HELIX        26     29
+FT   HELIX        31     47
+FT   STRAND       56     63
+FT   HELIX        68     81
+FT   HELIX        92     95
+FT   STRAND       97    103
+FT   STRAND      107    111
+FT   HELIX       114    123
+FT   STRAND      132    134
+FT   HELIX       143    145
+FT   HELIX       154    160
+FT   STRAND      164    172
+FT   HELIX       176    179
+FT   TURN        180    182
+FT   HELIX       193    195
+FT   HELIX       198    202
+FT   HELIX       208    214
+FT   STRAND      219    224
+FT   HELIX       227    229
+FT   HELIX       243    245
+FT   STRAND      249    251
+FT   HELIX       255    261
+FT   STRAND      266    269
+FT   HELIX       272    280
+FT   STRAND      286    290
+FT   STRAND      292    295
+FT   HELIX       299    301
+FT   TURN        304    306
+FT   HELIX       310    321
+FT   STRAND      328    334
+FT   HELIX       337    342
+FT   HELIX       346    366
+FT   TURN        369    371
+FT   STRAND      372    379
+FT   STRAND      381    386
+FT   STRAND      411    418
+FT   HELIX       433    436
+FT   STRAND      445    447
+FT   STRAND      459    465
+FT   HELIX       468    470
+FT   STRAND      473    476
+FT   HELIX       479    487
+SQ   SEQUENCE   535 AA;  57954 MW;  13C136679A70C76B CRC64;
+     MLGPCMLLLL LLLGLRLQLS LGIIPVEEEN PDFWNREAAE ALGAAKKLQP AQTAAKNLII
+     FLGDGMGVST VTAARILKGQ KKDKLGPEIP LAMDRFPYVA LSKTYNVDKH VPDSGATATA
+     YLCGVKGNFQ TIGLSAAARF NQCNTTRGNE VISVMNRAKK AGKSVGVVTT TRVQHASPAG
+     TYAHTVNRNW YSDADVPASA RQEGCQDIAT QLISNMDIDV ILGGGRKYMF RMGTPDPEYP
+     DDYSQGGTRL DGKNLVQEWL AKRQGARYVW NRTELMQASL DPSVTHLMGL FEPGDMKYEI
+     HRDSTLDPSL MEMTEAALRL LSRNPRGFFL FVEGGRIDHG HHESRAYRAL TETIMFDDAI
+     ERAGQLTSEE DTLSLVTADH SHVFSFGGYP LRGSSIFGLA PGKARDRKAY TVLLYGNGPG
+     YVLKDGARPD VTESESGSPE YRQQSAVPLD EETHAGEDVA VFARGPQAHL VHGVQEQTFI
+     AHVMAFAACL EPYTACDLAP PAGTTDAAHP GRSVVPALLP LLAGTLLLLE TATAP
+//
+ID   PPBI_HUMAN              Reviewed;         528 AA.
+AC   P09923; Q53S80; Q9UBV5; Q9UCL2;
+DT   01-JUL-1989, integrated into UniProtKB/Swiss-Prot.
+DT   01-APR-1990, sequence version 2.
+DT   28-JUL-2009, entry version 102.
+DE   RecName: Full=Intestinal alkaline phosphatase;
+DE            Short=IAP;
+DE            EC=3.1.3.1;
+DE   Flags: Precursor;
+GN   Name=ALPI;
+OS   Homo sapiens (Human).
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+OC   Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+OC   Catarrhini; Hominidae; Homo.
+OX   NCBI_TaxID=9606;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [MRNA], AND PARTIAL PROTEIN SEQUENCE.
+RX   MEDLINE=87118235; PubMed=3468508; DOI=10.1073/pnas.84.3.695;
+RA   Berger J., Garattini E., Hua J.-C., Udenfriend S.;
+RT   "Cloning and sequencing of human intestinal alkaline phosphatase
+RT   cDNA.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 84:695-698(1987).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE [MRNA].
+RX   MEDLINE=87147248; PubMed=3469665; DOI=10.1073/pnas.84.5.1234;
+RA   Henthorn P.S., Raducha M., Edwards Y.H., Weiss M.J., Slaughter C.,
+RA   Lafferty M.A., Harris H.;
+RT   "Nucleotide and amino acid sequences of human intestinal alkaline
+RT   phosphatase: close homology to placental alkaline phosphatase.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 84:1234-1238(1987).
+RN   [3]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA].
+RX   MEDLINE=88298885; PubMed=2841341;
+RA   Henthorn P.S., Raducha M., Kadesch T., Weiss M.J., Harris H.;
+RT   "Sequence and characterization of the human intestinal alkaline
+RT   phosphatase gene.";
+RL   J. Biol. Chem. 263:12011-12019(1988).
+RN   [4]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RX   PubMed=15815621; DOI=10.1038/nature03466;
+RA   Hillier L.W., Graves T.A., Fulton R.S., Fulton L.A., Pepin K.H.,
+RA   Minx P., Wagner-McPherson C., Layman D., Wylie K., Sekhon M.,
+RA   Becker M.C., Fewell G.A., Delehaunty K.D., Miner T.L., Nash W.E.,
+RA   Kremitzki C., Oddy L., Du H., Sun H., Bradshaw-Cordum H., Ali J.,
+RA   Carter J., Cordes M., Harris A., Isak A., van Brunt A., Nguyen C.,
+RA   Du F., Courtney L., Kalicki J., Ozersky P., Abbott S., Armstrong J.,
+RA   Belter E.A., Caruso L., Cedroni M., Cotton M., Davidson T., Desai A.,
+RA   Elliott G., Erb T., Fronick C., Gaige T., Haakenson W., Haglund K.,
+RA   Holmes A., Harkins R., Kim K., Kruchowski S.S., Strong C.M.,
+RA   Grewal N., Goyea E., Hou S., Levy A., Martinka S., Mead K.,
+RA   McLellan M.D., Meyer R., Randall-Maher J., Tomlinson C.,
+RA   Dauphin-Kohlberg S., Kozlowicz-Reilly A., Shah N.,
+RA   Swearengen-Shahid S., Snider J., Strong J.T., Thompson J., Yoakum M.,
+RA   Leonard S., Pearman C., Trani L., Radionenko M., Waligorski J.E.,
+RA   Wang C., Rock S.M., Tin-Wollam A.-M., Maupin R., Latreille P.,
+RA   Wendl M.C., Yang S.-P., Pohl C., Wallis J.W., Spieth J., Bieri T.A.,
+RA   Berkowicz N., Nelson J.O., Osborne J., Ding L., Meyer R., Sabo A.,
+RA   Shotland Y., Sinha P., Wohldmann P.E., Cook L.L., Hickenbotham M.T.,
+RA   Eldred J., Williams D., Jones T.A., She X., Ciccarelli F.D.,
+RA   Izaurralde E., Taylor J., Schmutz J., Myers R.M., Cox D.R., Huang X.,
+RA   McPherson J.D., Mardis E.R., Clifton S.W., Warren W.C.,
+RA   Chinwalla A.T., Eddy S.R., Marra M.A., Ovcharenko I., Furey T.S.,
+RA   Miller W., Eichler E.E., Bork P., Suyama M., Torrents D.,
+RA   Waterston R.H., Wilson R.K.;
+RT   "Generation and annotation of the DNA sequences of human chromosomes 2
+RT   and 4.";
+RL   Nature 434:724-731(2005).
+RN   [5]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA].
+RX   PubMed=15489334; DOI=10.1101/gr.2596504;
+RG   The MGC Project Team;
+RT   "The status, quality, and expansion of the NIH full-length cDNA
+RT   project: the Mammalian Gene Collection (MGC).";
+RL   Genome Res. 14:2121-2127(2004).
+RN   [6]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA] OF 1-100.
+RX   MEDLINE=88096602; PubMed=3697102; DOI=10.1093/nar/15.24.10599;
+RA   Millan J.L.;
+RT   "Promoter structure of the human intestinal alkaline phosphatase
+RT   gene.";
+RL   Nucleic Acids Res. 15:10599-10599(1987).
+RN   [7]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA] OF 1-73.
+RX   MEDLINE=88167830; PubMed=3443302; DOI=10.1016/0378-1119(87)90235-6;
+RA   Knoll B.J., Rothblum K.N., Longley M.;
+RT   "Two gene duplication events in the evolution of the human heat-stable
+RT   alkaline phosphatases.";
+RL   Gene 60:267-276(1987).
+RN   [8]
+RP   PROTEIN SEQUENCE OF 20-58.
+RX   MEDLINE=86205956; PubMed=3458202; DOI=10.1073/pnas.83.8.2368;
+RA   Hua J.-C., Berger J., Pan Y.C.E., Hulmes J.D., Udenfriend S.;
+RT   "Partial sequencing of human adult, human fetal, and bovine intestinal
+RT   alkaline phosphatases: comparison with the human placental and liver
+RT   isozymes.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 83:2368-2372(1986).
+RN   [9]
+RP   PROTEIN SEQUENCE OF 20-49.
+RX   PubMed=1458595;
+RA   Nishihara Y., Hayashi Y., Adachi T., Koyama I., Stigbrand T.,
+RA   Hirano K.;
+RT   "Chemical nature of intestinal-type alkaline phosphatase in human
+RT   kidney.";
+RL   Clin. Chem. 38:2539-2542(1992).
+RN   [10]
+RP   PHOSPHORYLATION [LARGE SCALE ANALYSIS] AT SER-111, AND MASS
+RP   SPECTROMETRY.
+RC   TISSUE=Epithelium;
+RX   PubMed=15302935; DOI=10.1073/pnas.0404720101;
+RA   Beausoleil S.A., Jedrychowski M., Schwartz D., Elias J.E., Villen J.,
+RA   Li J., Cohn M.A., Cantley L.C., Gygi S.P.;
+RT   "Large-scale characterization of HeLa cell nuclear phosphoproteins.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 101:12130-12135(2004).
+CC   -!- CATALYTIC ACTIVITY: A phosphate monoester + H(2)O = an alcohol +
+CC       phosphate.
+CC   -!- COFACTOR: Binds 1 magnesium ion (By similarity).
+CC   -!- COFACTOR: Binds 2 zinc ions (By similarity).
+CC   -!- SUBUNIT: Homodimer.
+CC   -!- INTERACTION:
+CC       Q14240:EIF4A2; NbExp=1; IntAct=EBI-1052631, EBI-73473;
+CC   -!- SUBCELLULAR LOCATION: Cell membrane; Lipid-anchor, GPI-anchor.
+CC   -!- MISCELLANEOUS: In most mammals there are four different isozymes:
+CC       placental, placental-like, intestinal and tissue non-specific
+CC       (liver/bone/kidney).
+CC   -!- SIMILARITY: Belongs to the alkaline phosphatase family.
+CC   -!- WEB RESOURCE: Name=Wikipedia; Note=Alkaline phosphatase entry;
+CC       URL="http://en.wikipedia.org/wiki/Alkaline_phosphatase";
+CC   -----------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see http://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution-NoDerivs License
+CC   -----------------------------------------------------------------------
+DR   EMBL; M15694; AAA51703.1; -; mRNA.
+DR   EMBL; M31008; AAA51704.1; -; mRNA.
+DR   EMBL; J03930; AAA98617.1; -; Genomic_DNA.
+DR   EMBL; AC068134; AAY24089.1; -; Genomic_DNA.
+DR   EMBL; BC132678; AAI32679.1; -; mRNA.
+DR   EMBL; Y00512; CAA68564.1; -; Genomic_DNA.
+DR   EMBL; M19161; AAA51705.1; -; Genomic_DNA.
+DR   IPI; IPI00298622; -.
+DR   PIR; A31073; PAHUI.
+DR   RefSeq; NP_001622.2; -.
+DR   UniGene; Hs.284255; -.
+DR   UniGene; Hs.37009; -.
+DR   HSSP; P05187; 1EW2.
+DR   SMR; P09923; 20-498.
+DR   IntAct; P09923; 1.
+DR   GlycoSuiteDB; P09923; -.
+DR   PhosphoSite; P09923; -.
+DR   PRIDE; P09923; -.
+DR   Ensembl; ENST00000295463; ENSP00000295463; ENSG00000163295; Homo sapiens.
+DR   GeneID; 248; -.
+DR   KEGG; hsa:248; -.
+DR   NMPDR; fig|9606.3.peg.19514; -.
+DR   UCSC; uc002vst.2; human.
+DR   GeneCards; GC02P233029; -.
+DR   HGNC; HGNC:437; ALPI.
+DR   MIM; 171740; gene.
+DR   PharmGKB; PA24728; -.
+DR   HOGENOM; P09923; -.
+DR   HOVERGEN; P09923; -.
+DR   OMA; P09923; KAYTSIL.
+DR   BRENDA; 3.1.3.1; 247.
+DR   NextBio; 993; -.
+DR   ArrayExpress; P09923; -.
+DR   Bgee; P09923; -.
+DR   CleanEx; HS_ALPI; -.
+DR   GermOnline; ENSG00000163295; Homo sapiens.
+DR   GO; GO:0031225; C:anchored to membrane; IEA:UniProtKB-KW.
+DR   GO; GO:0016021; C:integral to membrane; IEA:UniProtKB-KW.
+DR   GO; GO:0005886; C:plasma membrane; IEA:UniProtKB-SubCell.
+DR   GO; GO:0004035; F:alkaline phosphatase activity; NAS:UniProtKB.
+DR   GO; GO:0000287; F:magnesium ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0005515; F:protein binding; IPI:IntAct.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0016310; P:phosphorylation; NAS:UniProtKB.
+DR   InterPro; IPR017849; Alkaline_Pase-like_a/b/a.
+DR   InterPro; IPR001952; Alkaline_phosphatase.
+DR   InterPro; IPR018299; Alkaline_phosphatase_AS.
+DR   Gene3D; G3DSA:3.40.720.10; Alk_phosphtse; 1.
+DR   Pfam; PF00245; Alk_phosphatase; 1.
+DR   PRINTS; PR00113; ALKPHPHTASE.
+DR   SMART; SM00098; alkPPc; 1.
+DR   PROSITE; PS00123; ALKALINE_PHOSPHATASE; 1.
+PE   1: Evidence at protein level;
+KW   Cell membrane; Complete proteome; Direct protein sequencing;
+KW   Disulfide bond; Glycoprotein; GPI-anchor; Hydrolase; Lipoprotein;
+KW   Magnesium; Membrane; Metal-binding; Phosphoprotein; Polymorphism;
+KW   Signal; Transmembrane; Zinc.
+FT   SIGNAL        1     19
+FT   CHAIN        20    503       Intestinal alkaline phosphatase.
+FT                                /FTId=PRO_0000024037.
+FT   PROPEP      504    528       Removed in mature form (By similarity).
+FT                                /FTId=PRO_0000024038.
+FT   ACT_SITE    111    111       Phosphoserine intermediate.
+FT   METAL        61     61       Magnesium (Potential).
+FT   METAL        61     61       Zinc 2 (Potential).
+FT   METAL       330    330       Magnesium (Potential).
+FT   METAL       335    335       Zinc 1 (Potential).
+FT   METAL       339    339       Zinc 1 (Potential).
+FT   METAL       376    376       Zinc 2 (Potential).
+FT   METAL       377    377       Zinc 2 (Potential).
+FT   METAL       451    451       Zinc 1 (Potential).
+FT   MOD_RES     111    111       Phosphoserine.
+FT   LIPID       503    503       GPI-anchor amidated aspartate (By
+FT                                similarity).
+FT   CARBOHYD    141    141       N-linked (GlcNAc...) (Potential).
+FT   CARBOHYD    268    268       N-linked (GlcNAc...) (Potential).
+FT   CARBOHYD    429    429       N-linked (GlcNAc...) (Potential).
+FT   DISULFID    140    202       By similarity.
+FT   DISULFID    486    493       By similarity.
+FT   VARIANT     144    144       R -> H (in dbSNP:rs7559279).
+FT                                /FTId=VAR_050524.
+FT   VARIANT     298    298       H -> L (in dbSNP:rs1047223).
+FT                                /FTId=VAR_011816.
+FT   CONFLICT    347    347       L -> V (in Ref. 2; AAA51703).
+FT   CONFLICT    410    410       I -> T (in Ref. 1; AAA51704).
+FT   CONFLICT    497    497       P -> L (in Ref. 2; AAA51703).
+SQ   SEQUENCE   528 AA;  56812 MW;  465306BEDF9F0B79 CRC64;
+     MQGPWVLLLL GLRLQLSLGV IPAEEENPAF WNRQAAEALD AAKKLQPIQK VAKNLILFLG
+     DGLGVPTVTA TRILKGQKNG KLGPETPLAM DRFPYLALSK TYNVDRQVPD SAATATAYLC
+     GVKANFQTIG LSAAARFNQC NTTRGNEVIS VMNRAKQAGK SVGVVTTTRV QHASPAGTYA
+     HTVNRNWYSD ADMPASARQE GCQDIATQLI SNMDIDVILG GGRKYMFPMG TPDPEYPADA
+     SQNGIRLDGK NLVQEWLAKH QGAWYVWNRT ELMQASLDQS VTHLMGLFEP GDTKYEIHRD
+     PTLDPSLMEM TEAALRLLSR NPRGFYLFVE GGRIDHGHHE GVAYQALTEA VMFDDAIERA
+     GQLTSEEDTL TLVTADHSHV FSFGGYTLRG SSIFGLAPSK AQDSKAYTSI LYGNGPGYVF
+     NSGVRPDVNE SESGSPDYQQ QAAVPLSSET HGGEDVAVFA RGPQAHLVHG VQEQSFVAHV
+     MAFAACLEPY TACDLAPPAC TTDAAHPVAA SLPLLAGTLL LLGASAAP
+//
+ID   PPBN_HUMAN              Reviewed;         532 AA.
+AC   P10696; Q16727; Q53S81; Q96CM1;
+DT   01-APR-1990, integrated into UniProtKB/Swiss-Prot.
+DT   06-MAR-2007, sequence version 4.
+DT   28-JUL-2009, entry version 107.
+DE   RecName: Full=Alkaline phosphatase, placental-like;
+DE            EC=3.1.3.1;
+DE   AltName: Full=Alkaline phosphatase Nagao isozyme;
+DE   AltName: Full=Germ cell alkaline phosphatase;
+DE            Short=GCAP;
+DE   AltName: Full=PLAP-like;
+DE   AltName: Full=ALP-1;
+DE   Flags: Precursor;
+GN   Name=ALPPL2; Synonyms=ALPPL;
+OS   Homo sapiens (Human).
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+OC   Mammalia; Eutheria; Euarchontoglires; Primates; Haplorrhini;
+OC   Catarrhini; Hominidae; Homo.
+OX   NCBI_TaxID=9606;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA].
+RX   MEDLINE=88203632; PubMed=2834730; DOI=10.1073/pnas.85.9.3024;
+RA   Millan J.L., Manes T.;
+RT   "Seminoma-derived Nagao isozyme is encoded by a germ-cell alkaline
+RT   phosphatase gene.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 85:3024-3028(1988).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE [MRNA].
+RC   TISSUE=Choriocarcinoma;
+RX   MEDLINE=89308696; PubMed=2745460;
+RA   Watanabe S., Watanabe T., Li W.L., Soong B.-W., Chou J.Y.;
+RT   "Expression of the germ cell alkaline phosphatase gene in human
+RT   choriocarcinoma cells.";
+RL   J. Biol. Chem. 264:12611-12619(1989).
+RN   [3]
+RP   NUCLEOTIDE SEQUENCE [MRNA], AND VARIANTS MET-273 AND ARG-316.
+RC   TISSUE=Colon;
+RX   MEDLINE=90124311; PubMed=2297757;
+RA   Gum J.R. Jr., Hicks J.W., Sack T.L., Kim Y.S.;
+RT   "Molecular cloning of complementary DNAs encoding alkaline phosphatase
+RT   in human colon cancer cells.";
+RL   Cancer Res. 50:1085-1091(1990).
+RN   [4]
+RP   NUCLEOTIDE SEQUENCE [MRNA], AND VARIANT ARG-316.
+RX   MEDLINE=90283879; PubMed=2162249;
+RA   Lowe M.E., Strauss A.W.;
+RT   "Expression of a Nagao-type, phosphatidylinositol-glycan anchored
+RT   alkaline phosphatase in human choriocarcinomas.";
+RL   Cancer Res. 50:3956-3962(1990).
+RN   [5]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RX   PubMed=15815621; DOI=10.1038/nature03466;
+RA   Hillier L.W., Graves T.A., Fulton R.S., Fulton L.A., Pepin K.H.,
+RA   Minx P., Wagner-McPherson C., Layman D., Wylie K., Sekhon M.,
+RA   Becker M.C., Fewell G.A., Delehaunty K.D., Miner T.L., Nash W.E.,
+RA   Kremitzki C., Oddy L., Du H., Sun H., Bradshaw-Cordum H., Ali J.,
+RA   Carter J., Cordes M., Harris A., Isak A., van Brunt A., Nguyen C.,
+RA   Du F., Courtney L., Kalicki J., Ozersky P., Abbott S., Armstrong J.,
+RA   Belter E.A., Caruso L., Cedroni M., Cotton M., Davidson T., Desai A.,
+RA   Elliott G., Erb T., Fronick C., Gaige T., Haakenson W., Haglund K.,
+RA   Holmes A., Harkins R., Kim K., Kruchowski S.S., Strong C.M.,
+RA   Grewal N., Goyea E., Hou S., Levy A., Martinka S., Mead K.,
+RA   McLellan M.D., Meyer R., Randall-Maher J., Tomlinson C.,
+RA   Dauphin-Kohlberg S., Kozlowicz-Reilly A., Shah N.,
+RA   Swearengen-Shahid S., Snider J., Strong J.T., Thompson J., Yoakum M.,
+RA   Leonard S., Pearman C., Trani L., Radionenko M., Waligorski J.E.,
+RA   Wang C., Rock S.M., Tin-Wollam A.-M., Maupin R., Latreille P.,
+RA   Wendl M.C., Yang S.-P., Pohl C., Wallis J.W., Spieth J., Bieri T.A.,
+RA   Berkowicz N., Nelson J.O., Osborne J., Ding L., Meyer R., Sabo A.,
+RA   Shotland Y., Sinha P., Wohldmann P.E., Cook L.L., Hickenbotham M.T.,
+RA   Eldred J., Williams D., Jones T.A., She X., Ciccarelli F.D.,
+RA   Izaurralde E., Taylor J., Schmutz J., Myers R.M., Cox D.R., Huang X.,
+RA   McPherson J.D., Mardis E.R., Clifton S.W., Warren W.C.,
+RA   Chinwalla A.T., Eddy S.R., Marra M.A., Ovcharenko I., Furey T.S.,
+RA   Miller W., Eichler E.E., Bork P., Suyama M., Torrents D.,
+RA   Waterston R.H., Wilson R.K.;
+RT   "Generation and annotation of the DNA sequences of human chromosomes 2
+RT   and 4.";
+RL   Nature 434:724-731(2005).
+RN   [6]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA], AND VARIANTS MET-273 AND
+RP   ARG-316.
+RC   TISSUE=Placenta;
+RX   PubMed=15489334; DOI=10.1101/gr.2596504;
+RG   The MGC Project Team;
+RT   "The status, quality, and expansion of the NIH full-length cDNA
+RT   project: the Mammalian Gene Collection (MGC).";
+RL   Genome Res. 14:2121-2127(2004).
+RN   [7]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA] OF 1-73.
+RX   MEDLINE=88167830; PubMed=3443302; DOI=10.1016/0378-1119(87)90235-6;
+RA   Knoll B.J., Rothblum K.N., Longley M.;
+RT   "Two gene duplication events in the evolution of the human heat-stable
+RT   alkaline phosphatases.";
+RL   Gene 60:267-276(1987).
+RN   [8]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA] OF 1-157.
+RX   MEDLINE=88262578; PubMed=3387245; DOI=10.1093/nar/16.12.5694;
+RA   Shen L.P., Liu H., Kan Y.W., Kam W.;
+RT   "5' nucleotide sequence of a putative human placental alkaline
+RT   phosphatase-like gene.";
+RL   Nucleic Acids Res. 16:5694-5694(1988).
+CC   -!- CATALYTIC ACTIVITY: A phosphate monoester + H(2)O = an alcohol +
+CC       phosphate.
+CC   -!- COFACTOR: Binds 1 magnesium ion (By similarity).
+CC   -!- COFACTOR: Binds 2 zinc ions (By similarity).
+CC   -!- SUBUNIT: Homodimer.
+CC   -!- SUBCELLULAR LOCATION: Cell membrane; Lipid-anchor, GPI-anchor.
+CC   -!- TISSUE SPECIFICITY: Trace amounts in the testis and thymus, and in
+CC       elevated amounts in germ cell tumors.
+CC   -!- MISCELLANEOUS: In most mammals there are four different isozymes:
+CC       placental, placental-like, intestinal and tissue non-specific
+CC       (liver/bone/kidney).
+CC   -!- SIMILARITY: Belongs to the alkaline phosphatase family.
+CC   -!- SEQUENCE CAUTION:
+CC       Sequence=CAA30232.1; Type=Erroneous gene model prediction;
+CC   -----------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see http://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution-NoDerivs License
+CC   -----------------------------------------------------------------------
+DR   EMBL; J03252; AAA98616.1; -; Genomic_DNA.
+DR   EMBL; J04948; AAA51700.1; -; mRNA.
+DR   EMBL; X53279; CAA37374.1; -; mRNA.
+DR   EMBL; X55958; CAA39425.1; -; mRNA.
+DR   EMBL; AC068134; AAY24088.1; -; Genomic_DNA.
+DR   EMBL; BC014139; AAH14139.1; -; mRNA.
+DR   EMBL; M19160; AAA51707.1; -; Genomic_DNA.
+DR   EMBL; X07247; CAA30232.1; ALT_SEQ; Genomic_DNA.
+DR   IPI; IPI00290380; -.
+DR   PIR; S12076; S12076.
+DR   RefSeq; NP_112603.2; -.
+DR   UniGene; Hs.333509; -.
+DR   HSSP; P05187; 1EW2.
+DR   SMR; P10696; 20-497.
+DR   Siena-2DPAGE; P10696; -.
+DR   PRIDE; P10696; -.
+DR   Ensembl; ENST00000295453; ENSP00000295453; ENSG00000163286; Homo sapiens.
+DR   GeneID; 251; -.
+DR   KEGG; hsa:251; -.
+DR   NMPDR; fig|9606.3.peg.19513; -.
+DR   UCSC; uc002vss.2; human.
+DR   GeneCards; GC02P232979; -.
+DR   HGNC; HGNC:441; ALPPL2.
+DR   MIM; 171810; gene.
+DR   PharmGKB; PA24731; -.
+DR   HOGENOM; P10696; -.
+DR   HOVERGEN; P10696; -.
+DR   OMA; P10696; VKQSTIA.
+DR   BRENDA; 3.1.3.1; 247.
+DR   DrugBank; DB01143; Amifostine.
+DR   DrugBank; DB00848; Levamisole.
+DR   NextBio; 1005; -.
+DR   ArrayExpress; P10696; -.
+DR   Bgee; P10696; -.
+DR   CleanEx; HS_ALPPL2; -.
+DR   GermOnline; ENSG00000163286; Homo sapiens.
+DR   GO; GO:0031225; C:anchored to membrane; IEA:UniProtKB-KW.
+DR   GO; GO:0005886; C:plasma membrane; IEA:UniProtKB-SubCell.
+DR   GO; GO:0004035; F:alkaline phosphatase activity; NAS:UniProtKB.
+DR   GO; GO:0000287; F:magnesium ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0016310; P:phosphorylation; NAS:UniProtKB.
+DR   InterPro; IPR017849; Alkaline_Pase-like_a/b/a.
+DR   InterPro; IPR001952; Alkaline_phosphatase.
+DR   InterPro; IPR018299; Alkaline_phosphatase_AS.
+DR   Gene3D; G3DSA:3.40.720.10; Alk_phosphtse; 1.
+DR   Pfam; PF00245; Alk_phosphatase; 1.
+DR   PRINTS; PR00113; ALKPHPHTASE.
+DR   SMART; SM00098; alkPPc; 1.
+DR   PROSITE; PS00123; ALKALINE_PHOSPHATASE; 1.
+PE   1: Evidence at protein level;
+KW   Cell membrane; Complete proteome; Disulfide bond; Glycoprotein;
+KW   GPI-anchor; Hydrolase; Lipoprotein; Magnesium; Membrane;
+KW   Metal-binding; Phosphoprotein; Polymorphism; Signal; Zinc.
+FT   SIGNAL        1     19       Potential.
+FT   CHAIN        20    503       Alkaline phosphatase, placental-like.
+FT                                /FTId=PRO_0000024033.
+FT   PROPEP      504    532       Removed in mature form (By similarity).
+FT                                /FTId=PRO_0000024034.
+FT   ACT_SITE    111    111       Phosphoserine intermediate.
+FT   METAL        61     61       Magnesium (Potential).
+FT   METAL        61     61       Zinc 2 (Potential).
+FT   METAL       330    330       Magnesium (Potential).
+FT   METAL       335    335       Zinc 1 (Potential).
+FT   METAL       339    339       Zinc 1 (Potential).
+FT   METAL       376    376       Zinc 2 (Potential).
+FT   METAL       377    377       Zinc 2 (Potential).
+FT   METAL       451    451       Zinc 1 (Potential).
+FT   LIPID       503    503       GPI-anchor amidated aspartate (By
+FT                                similarity).
+FT   CARBOHYD    141    141       N-linked (GlcNAc...) (Potential).
+FT   CARBOHYD    268    268       N-linked (GlcNAc...) (Potential).
+FT   DISULFID    140    202       By similarity.
+FT   DISULFID    486    493       By similarity.
+FT   VARIANT      34     34       Q -> E (in dbSNP:rs1048983).
+FT                                /FTId=VAR_027552.
+FT   VARIANT     273    273       L -> M (in dbSNP:rs17416141).
+FT                                /FTId=VAR_027553.
+FT   VARIANT     316    316       L -> R (in dbSNP:rs1048992).
+FT                                /FTId=VAR_027554.
+FT   VARIANT     527    527       G -> E (in dbSNP:rs1048999).
+FT                                /FTId=VAR_027555.
+FT   CONFLICT     57     57       I -> M (in Ref. 1; AAA98616).
+FT   CONFLICT    152    152       M -> V (in Ref. 1; AAA98616 and 4;
+FT                                CAA39425).
+FT   CONFLICT    178    178       A -> T (in Ref. 1; AAA98616, 2; AAA51700
+FT                                and 4; CAA39425).
+FT   CONFLICT    260    260       H -> R (in Ref. 6; AAH14139).
+FT   CONFLICT    380    380       V -> L (in Ref. 2; AAA51700).
+FT   CONFLICT    498    498       R -> P (in Ref. 1; AAA98616 and 4;
+FT                                CAA39425).
+FT   CONFLICT    498    498       R -> S (in Ref. 3; CAA37374).
+FT   CONFLICT    531    531       A -> T (in Ref. 3; CAA37374).
+SQ   SEQUENCE   532 AA;  57377 MW;  25EB56C901B61505 CRC64;
+     MQGPWVLLLL GLRLQLSLGI IPVEEENPDF WNRQAAEALG AAKKLQPAQT AAKNLIIFLG
+     DGMGVSTVTA ARILKGQKKD KLGPETFLAM DRFPYVALSK TYSVDKHVPD SGATATAYLC
+     GVKGNFQTIG LSAAARFNQC NTTRGNEVIS VMNRAKKAGK SVGVVTTTRV QHASPAGAYA
+     HTVNRNWYSD ADVPASARQE GCQDIATQLI SNMDIDVILG GGRKYMFPMG TPDPEYPDDY
+     SQGGTRLDGK NLVQEWLAKH QGARYVWNRT ELLQASLDPS VTHLMGLFEP GDMKYEIHRD
+     STLDPSLMEM TEAALLLLSR NPRGFFLFVE GGRIDHGHHE SRAYRALTET IMFDDAIERA
+     GQLTSEEDTL SLVTADHSHV FSFGGYPLRG SSIFGLAPGK ARDRKAYTVL LYGNGPGYVL
+     KDGARPDVTE SESGSPEYRQ QSAVPLDGET HAGEDVAVFA RGPQAHLVHG VQEQTFIAHV
+     MAFAACLEPY TACDLAPRAG TTDAAHPGPS VVPALLPLLA GTLLLLGTAT AP
+//
+ID   PPB4_BACSU              Reviewed;         461 AA.
+AC   P19406;
+DT   01-NOV-1990, integrated into UniProtKB/Swiss-Prot.
+DT   16-JUN-2009, sequence version 4.
+DT   07-JUL-2009, entry version 83.
+DE   RecName: Full=Alkaline phosphatase 4;
+DE            EC=3.1.3.1;
+DE   AltName: Full=Alkaline phosphatase IV;
+DE            Short=APase IV;
+DE   Flags: Precursor;
+GN   Name=phoA; Synonyms=phoAIV; OrderedLocusNames=BSU09410;
+OS   Bacillus subtilis.
+OC   Bacteria; Firmicutes; Bacillales; Bacillaceae; Bacillus.
+OX   NCBI_TaxID=1423;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA].
+RC   STRAIN=168 / JH642;
+RX   MEDLINE=94156839; PubMed=8113174;
+RA   Hulett F.M., Lee J., Shi L., Sun G., Chesnut R., Sharkova E.,
+RA   Duggan M.F., Kapp N.;
+RT   "Sequential action of two-component genetic switches regulates the PHO
+RT   regulon in Bacillus subtilis.";
+RL   J. Bacteriol. 176:1348-1358(1994).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA].
+RC   STRAIN=168;
+RX   MEDLINE=98240224; PubMed=9579061;
+RA   Noback M.A., Holsappel S., Kiewiet R., Terpstra P., Wambutt R.,
+RA   Wedler H., Venema G., Bron S.;
+RT   "The 172 kb prkA-addAB region from 83 degrees to 97 degrees of the
+RT   Bacillus subtilis chromosome contains several dysfunctional genes, the
+RT   glyB marker, many genes encoding transporter proteins, and the
+RT   ubiquitous hit gene.";
+RL   Microbiology 144:859-875(1998).
+RN   [3]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=168;
+RX   MEDLINE=98044033; PubMed=9384377; DOI=10.1038/36786;
+RA   Kunst F., Ogasawara N., Moszer I., Albertini A.M., Alloni G.,
+RA   Azevedo V., Bertero M.G., Bessieres P., Bolotin A., Borchert S.,
+RA   Borriss R., Boursier L., Brans A., Braun M., Brignell S.C., Bron S.,
+RA   Brouillet S., Bruschi C.V., Caldwell B., Capuano V., Carter N.M.,
+RA   Choi S.-K., Codani J.-J., Connerton I.F., Cummings N.J., Daniel R.A.,
+RA   Denizot F., Devine K.M., Duesterhoeft A., Ehrlich S.D., Emmerson P.T.,
+RA   Entian K.-D., Errington J., Fabret C., Ferrari E., Foulger D.,
+RA   Fritz C., Fujita M., Fujita Y., Fuma S., Galizzi A., Galleron N.,
+RA   Ghim S.-Y., Glaser P., Goffeau A., Golightly E.J., Grandi G.,
+RA   Guiseppi G., Guy B.J., Haga K., Haiech J., Harwood C.R., Henaut A.,
+RA   Hilbert H., Holsappel S., Hosono S., Hullo M.-F., Itaya M.,
+RA   Jones L.-M., Joris B., Karamata D., Kasahara Y., Klaerr-Blanchard M.,
+RA   Klein C., Kobayashi Y., Koetter P., Koningstein G., Krogh S.,
+RA   Kumano M., Kurita K., Lapidus A., Lardinois S., Lauber J.,
+RA   Lazarevic V., Lee S.-M., Levine A., Liu H., Masuda S., Mauel C.,
+RA   Medigue C., Medina N., Mellado R.P., Mizuno M., Moestl D., Nakai S.,
+RA   Noback M., Noone D., O'Reilly M., Ogawa K., Ogiwara A., Oudega B.,
+RA   Park S.-H., Parro V., Pohl T.M., Portetelle D., Porwollik S.,
+RA   Prescott A.M., Presecan E., Pujic P., Purnelle B., Rapoport G.,
+RA   Rey M., Reynolds S., Rieger M., Rivolta C., Rocha E., Roche B.,
+RA   Rose M., Sadaie Y., Sato T., Scanlan E., Schleich S., Schroeter R.,
+RA   Scoffone F., Sekiguchi J., Sekowska A., Seror S.J., Serror P.,
+RA   Shin B.-S., Soldo B., Sorokin A., Tacconi E., Takagi T., Takahashi H.,
+RA   Takemaru K., Takeuchi M., Tamakoshi A., Tanaka T., Terpstra P.,
+RA   Tognoni A., Tosato V., Uchiyama S., Vandenbol M., Vannier F.,
+RA   Vassarotti A., Viari A., Wambutt R., Wedler E., Wedler H.,
+RA   Weitzenegger T., Winters P., Wipat A., Yamamoto H., Yamane K.,
+RA   Yasumoto K., Yata K., Yoshida K., Yoshikawa H.-F., Zumstein E.,
+RA   Yoshikawa H., Danchin A.;
+RT   "The complete genome sequence of the Gram-positive bacterium Bacillus
+RT   subtilis.";
+RL   Nature 390:249-256(1997).
+RN   [4]
+RP   SEQUENCE REVISION TO 208.
+RX   PubMed=19383706; DOI=10.1099/mic.0.027839-0;
+RA   Barbe V., Cruveiller S., Kunst F., Lenoble P., Meurice G.,
+RA   Sekowska A., Vallenet D., Wang T., Moszer I., Medigue C., Danchin A.;
+RT   "From a consortium sequence to a unified sequence: the Bacillus
+RT   subtilis 168 reference genome a decade later.";
+RL   Microbiology 155:1758-1775(2009).
+RN   [5]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA] OF 39-461.
+RC   STRAIN=168 / JH642;
+RX   MEDLINE=91093215; PubMed=1898729;
+RA   Hulett F.M., Kim M.E., Bookstein C., Kapp N.V., Edwards C.W.,
+RA   Wyckoff H.W.;
+RT   "Bacillus subtilis alkaline phosphatases III and IV. Cloning,
+RT   sequencing, and comparisons of deduced amino acid sequence with
+RT   Escherichia coli alkaline phosphatase three-dimensional structure.";
+RL   J. Biol. Chem. 266:1077-1084(1991).
+RN   [6]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA] OF 39-142.
+RC   STRAIN=168 / JH642;
+RX   MEDLINE=91092508; PubMed=2125017; DOI=10.1016/0378-1119(90)90346-S;
+RA   Kapp N.V., Edwards C.W., Chesnut R.S., Hulett F.M.;
+RT   "The Bacillus subtilis phoAIV gene: effects of in vitro inactivation
+RT   on total alkaline phosphatase production.";
+RL   Gene 96:95-100(1990).
+RN   [7]
+RP   PROTEIN SEQUENCE OF 42-63.
+RX   MEDLINE=90130309; PubMed=2105301;
+RA   Hulett F.M., Bookstein C., Jensen K.;
+RT   "Evidence for two structural genes for alkaline phosphatase in
+RT   Bacillus subtilis.";
+RL   J. Bacteriol. 172:735-740(1990).
+RN   [8]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA] OF 433-461.
+RC   STRAIN=168 / Marburg;
+RX   MEDLINE=94193548; PubMed=8144469;
+RA   Beall B.W., Moran C.P. Jr.;
+RT   "Cloning and characterization of spoVR, a gene from Bacillus subtilis
+RT   involved in spore cortex formation.";
+RL   J. Bacteriol. 176:2003-2012(1994).
+CC   -!- CATALYTIC ACTIVITY: A phosphate monoester + H(2)O = an alcohol +
+CC       phosphate.
+CC   -!- COFACTOR: Binds 1 magnesium ion.
+CC   -!- COFACTOR: Binds 2 zinc ions.
+CC   -!- SUBUNIT: Monomer.
+CC   -!- SIMILARITY: Belongs to the alkaline phosphatase family.
+CC   -----------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see http://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution-NoDerivs License
+CC   -----------------------------------------------------------------------
+DR   EMBL; U02550; AAA18323.1; -; Unassigned_DNA.
+DR   EMBL; Y14082; CAA74486.1; -; Genomic_DNA.
+DR   EMBL; AL009126; CAB12780.2; -; Genomic_DNA.
+DR   EMBL; L26337; AAA22812.1; -; Genomic_DNA.
+DR   PIR; B69676; B69676.
+DR   RefSeq; NP_388822.1; -.
+DR   HSSP; P00634; 1AJA.
+DR   GeneID; 936265; -.
+DR   GenomeReviews; AL009126_GR; BSU09410.
+DR   KEGG; bsu:BSU09410; -.
+DR   NMPDR; fig|224308.1.peg.941; -.
+DR   SubtiList; BG10183; phoA.
+DR   HOGENOM; P19406; -.
+DR   OMA; P19406; YTIARGY.
+DR   BioCyc; BSUB224308:BSU0941-MON; -.
+DR   BRENDA; 3.1.3.1; 150.
+DR   GO; GO:0004035; F:alkaline phosphatase activity; IEA:EC.
+DR   GO; GO:0000287; F:magnesium ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0008152; P:metabolic process; IEA:InterPro.
+DR   InterPro; IPR017849; Alkaline_Pase-like_a/b/a.
+DR   InterPro; IPR001952; Alkaline_phosphatase.
+DR   InterPro; IPR018299; Alkaline_phosphatase_AS.
+DR   Gene3D; G3DSA:3.40.720.10; Alk_phosphtse; 1.
+DR   Pfam; PF00245; Alk_phosphatase; 1.
+DR   PRINTS; PR00113; ALKPHPHTASE.
+DR   SMART; SM00098; alkPPc; 1.
+DR   PROSITE; PS00123; ALKALINE_PHOSPHATASE; 1.
+PE   1: Evidence at protein level;
+KW   Complete proteome; Direct protein sequencing; Hydrolase; Magnesium;
+KW   Metal-binding; Phosphoprotein; Signal; Zinc.
+FT   SIGNAL        1     41
+FT   CHAIN        42    461       Alkaline phosphatase 4.
+FT                                /FTId=PRO_0000024011.
+FT   ACT_SITE    108    108       Phosphoserine intermediate (By
+FT                                similarity).
+FT   METAL        58     58       Magnesium (By similarity).
+FT   METAL        58     58       Zinc 2 (By similarity).
+FT   METAL       161    161       Magnesium (By similarity).
+FT   METAL       282    282       Magnesium (By similarity).
+FT   METAL       287    287       Zinc 1 (By similarity).
+FT   METAL       291    291       Zinc 1 (By similarity).
+FT   METAL       329    329       Zinc 2 (By similarity).
+FT   METAL       330    330       Zinc 2 (By similarity).
+FT   METAL       423    423       Zinc 1 (By similarity).
+FT   CONFLICT     50     50       R -> K (in Ref. 7; AA sequence).
+FT   CONFLICT    208    208       D -> N (in Ref. 1; AAA18323, 2; CAA74486
+FT                                and 5).
+SQ   SEQUENCE   461 AA;  50274 MW;  A2AD9309026889FE CRC64;
+     MKKMSLFQNM KSKLLPIAAV SVLTAGIFAG AELQQTEKAS AKKQDKAEIR NVIVMIGDGM
+     GTPYIRAYRS MKNNGDTPNN PKLTEFDRNL TGMMMTHPDD PDYNITDSAA AGTALATGVK
+     TYNNAIGVDK NGKKVKSVLE EAKQQGKSTG LVATSEINHA TPAAYGAHNE SRKNMDQIAN
+     SYMDDKIKGK HKIDVLLGGG KSYFNRKDRN LTKEFKQAGY SYVTTKQALK KNKDQQVLGL
+     FADGGLAKAL DRDSKTPSLK DMTVSAIDRL NQNKKGFFLM VEGSQIDWAA HDNDTVGAMS
+     EVKDFEQAYK AAIEFAKKDK HTLVIATADH TTGGFTIGAN GEKNWHAEPI LSAKKTPEFM
+     AKKISEGKPV KDVLARYANL KVTSEEIKSV EAAAQADKSK GASKAIIKIF NTRSNSGWTS
+     TDHTGEEVPV YAYGPGKEKF RGLINNTDQA NIIFKILKTG K
+//
+ID   PPB3_BACSU              Reviewed;         462 AA.
+AC   P19405; O05498;
+DT   01-NOV-1990, integrated into UniProtKB/Swiss-Prot.
+DT   07-JUL-2009, sequence version 4.
+DT   07-JUL-2009, entry version 80.
+DE   RecName: Full=Alkaline phosphatase 3;
+DE            EC=3.1.3.1;
+DE   AltName: Full=Alkaline phosphatase III;
+DE            Short=APase III;
+DE   Flags: Precursor;
+GN   Name=phoB; Synonyms=phoAIII; OrderedLocusNames=BSU05740;
+OS   Bacillus subtilis.
+OC   Bacteria; Firmicutes; Bacillales; Bacillaceae; Bacillus.
+OX   NCBI_TaxID=1423;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA].
+RC   STRAIN=168;
+RX   MEDLINE=91093215; PubMed=1898729;
+RA   Hulett F.M., Kim M.E., Bookstein C., Kapp N.V., Edwards C.W.,
+RA   Wyckoff H.W.;
+RT   "Bacillus subtilis alkaline phosphatases III and IV. Cloning,
+RT   sequencing, and comparisons of deduced amino acid sequence with
+RT   Escherichia coli alkaline phosphatase three-dimensional structure.";
+RL   J. Biol. Chem. 266:1077-1084(1991).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA].
+RC   STRAIN=168 / JH642;
+RX   MEDLINE=97346038; PubMed=9202461;
+RA   Sadaie Y., Yata K., Fujita M., Sagai H., Itaya M., Kasahara Y.,
+RA   Ogasawara N.;
+RT   "Nucleotide sequence and analysis of the phoB-rrnE-groESL region of
+RT   the Bacillus subtilis chromosome.";
+RL   Microbiology 143:1861-1866(1997).
+RN   [3]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=168;
+RX   MEDLINE=98044033; PubMed=9384377; DOI=10.1038/36786;
+RA   Kunst F., Ogasawara N., Moszer I., Albertini A.M., Alloni G.,
+RA   Azevedo V., Bertero M.G., Bessieres P., Bolotin A., Borchert S.,
+RA   Borriss R., Boursier L., Brans A., Braun M., Brignell S.C., Bron S.,
+RA   Brouillet S., Bruschi C.V., Caldwell B., Capuano V., Carter N.M.,
+RA   Choi S.-K., Codani J.-J., Connerton I.F., Cummings N.J., Daniel R.A.,
+RA   Denizot F., Devine K.M., Duesterhoeft A., Ehrlich S.D., Emmerson P.T.,
+RA   Entian K.-D., Errington J., Fabret C., Ferrari E., Foulger D.,
+RA   Fritz C., Fujita M., Fujita Y., Fuma S., Galizzi A., Galleron N.,
+RA   Ghim S.-Y., Glaser P., Goffeau A., Golightly E.J., Grandi G.,
+RA   Guiseppi G., Guy B.J., Haga K., Haiech J., Harwood C.R., Henaut A.,
+RA   Hilbert H., Holsappel S., Hosono S., Hullo M.-F., Itaya M.,
+RA   Jones L.-M., Joris B., Karamata D., Kasahara Y., Klaerr-Blanchard M.,
+RA   Klein C., Kobayashi Y., Koetter P., Koningstein G., Krogh S.,
+RA   Kumano M., Kurita K., Lapidus A., Lardinois S., Lauber J.,
+RA   Lazarevic V., Lee S.-M., Levine A., Liu H., Masuda S., Mauel C.,
+RA   Medigue C., Medina N., Mellado R.P., Mizuno M., Moestl D., Nakai S.,
+RA   Noback M., Noone D., O'Reilly M., Ogawa K., Ogiwara A., Oudega B.,
+RA   Park S.-H., Parro V., Pohl T.M., Portetelle D., Porwollik S.,
+RA   Prescott A.M., Presecan E., Pujic P., Purnelle B., Rapoport G.,
+RA   Rey M., Reynolds S., Rieger M., Rivolta C., Rocha E., Roche B.,
+RA   Rose M., Sadaie Y., Sato T., Scanlan E., Schleich S., Schroeter R.,
+RA   Scoffone F., Sekiguchi J., Sekowska A., Seror S.J., Serror P.,
+RA   Shin B.-S., Soldo B., Sorokin A., Tacconi E., Takagi T., Takahashi H.,
+RA   Takemaru K., Takeuchi M., Tamakoshi A., Tanaka T., Terpstra P.,
+RA   Tognoni A., Tosato V., Uchiyama S., Vandenbol M., Vannier F.,
+RA   Vassarotti A., Viari A., Wambutt R., Wedler E., Wedler H.,
+RA   Weitzenegger T., Winters P., Wipat A., Yamamoto H., Yamane K.,
+RA   Yasumoto K., Yata K., Yoshida K., Yoshikawa H.-F., Zumstein E.,
+RA   Yoshikawa H., Danchin A.;
+RT   "The complete genome sequence of the Gram-positive bacterium Bacillus
+RT   subtilis.";
+RL   Nature 390:249-256(1997).
+RN   [4]
+RP   SEQUENCE REVISION TO 334.
+RX   PubMed=19383706; DOI=10.1099/mic.0.027839-0;
+RA   Barbe V., Cruveiller S., Kunst F., Lenoble P., Meurice G.,
+RA   Sekowska A., Vallenet D., Wang T., Moszer I., Medigue C., Danchin A.;
+RT   "From a consortium sequence to a unified sequence: the Bacillus
+RT   subtilis 168 reference genome a decade later.";
+RL   Microbiology 155:1758-1775(2009).
+RN   [5]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA] OF 1-80.
+RC   STRAIN=168;
+RX   MEDLINE=90299794; PubMed=2113910;
+RA   Bookstein C., Edwards C.W., Kapp N.V., Hulett F.M.;
+RT   "The Bacillus subtilis 168 alkaline phosphatase III gene: impact of a
+RT   phoAIII mutation on total alkaline phosphatase synthesis.";
+RL   J. Bacteriol. 172:3730-3737(1990).
+RN   [6]
+RP   PROTEIN SEQUENCE OF 33-62.
+RX   MEDLINE=90130309; PubMed=2105301;
+RA   Hulett F.M., Bookstein C., Jensen K.;
+RT   "Evidence for two structural genes for alkaline phosphatase in
+RT   Bacillus subtilis.";
+RL   J. Bacteriol. 172:735-740(1990).
+CC   -!- CATALYTIC ACTIVITY: A phosphate monoester + H(2)O = an alcohol +
+CC       phosphate.
+CC   -!- COFACTOR: Binds 1 magnesium ion.
+CC   -!- COFACTOR: Binds 2 zinc ions.
+CC   -!- SUBUNIT: Monomer.
+CC   -!- SIMILARITY: Belongs to the alkaline phosphatase family.
+CC   -----------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see http://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution-NoDerivs License
+CC   -----------------------------------------------------------------------
+DR   EMBL; D88802; BAA19698.1; -; Genomic_DNA.
+DR   EMBL; AL009126; CAB12393.2; -; Genomic_DNA.
+DR   EMBL; M33634; AAA22658.1; -; Genomic_DNA.
+DR   PIR; C69676; C69676.
+DR   RefSeq; NP_388455.1; -.
+DR   HSSP; P00634; 1AJA.
+DR   GeneID; 938004; -.
+DR   GenomeReviews; AL009126_GR; BSU05740.
+DR   KEGG; bsu:BSU05740; -.
+DR   NMPDR; fig|224308.1.peg.574; -.
+DR   SubtiList; BG10697; phoB.
+DR   HOGENOM; P19405; -.
+DR   OMA; P19405; SEITHAT.
+DR   BioCyc; BSUB224308:BSU0574-MON; -.
+DR   BRENDA; 3.1.3.1; 150.
+DR   GO; GO:0004035; F:alkaline phosphatase activity; IEA:EC.
+DR   GO; GO:0000287; F:magnesium ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0008152; P:metabolic process; IEA:InterPro.
+DR   InterPro; IPR017849; Alkaline_Pase-like_a/b/a.
+DR   InterPro; IPR001952; Alkaline_phosphatase.
+DR   InterPro; IPR018299; Alkaline_phosphatase_AS.
+DR   Gene3D; G3DSA:3.40.720.10; Alk_phosphtse; 1.
+DR   Pfam; PF00245; Alk_phosphatase; 1.
+DR   PRINTS; PR00113; ALKPHPHTASE.
+DR   SMART; SM00098; alkPPc; 1.
+DR   PROSITE; PS00123; ALKALINE_PHOSPHATASE; 1.
+PE   1: Evidence at protein level;
+KW   Complete proteome; Direct protein sequencing; Hydrolase; Magnesium;
+KW   Metal-binding; Phosphoprotein; Signal; Zinc.
+FT   SIGNAL        1     32
+FT   CHAIN        33    462       Alkaline phosphatase 3.
+FT                                /FTId=PRO_0000024010.
+FT   ACT_SITE    101    101       Phosphoserine intermediate (By
+FT                                similarity).
+FT   METAL        52     52       Magnesium (By similarity).
+FT   METAL        52     52       Zinc 2 (By similarity).
+FT   METAL       154    154       Magnesium (By similarity).
+FT   METAL       275    275       Magnesium (By similarity).
+FT   METAL       280    280       Zinc 1 (By similarity).
+FT   METAL       284    284       Zinc 1 (By similarity).
+FT   METAL       322    322       Zinc 2 (By similarity).
+FT   METAL       323    323       Zinc 2 (By similarity).
+FT   METAL       419    419       Zinc 1 (By similarity).
+FT   CONFLICT    215    215       Y -> S (in Ref. 1).
+FT   CONFLICT    234    235       FA -> LP (in Ref. 1).
+FT   CONFLICT    334    334       G -> S (in Ref. 2; BAA19698).
+SQ   SEQUENCE   462 AA;  50494 MW;  CB0F8FB855D17231 CRC64;
+     MKKFPKKLLP IAVLSSIAFS SLASGSVPEA SAQEKKKGNQ DEIKNVIVLI GDGMGVSYTS
+     AYRYLKDNKK TKVVEPTAFD QYLVGQQTTY PDDPEQNVTD SAAAATAMSA GIKTYNNAIA
+     VDNDGSEAKT VLEAAKEKGK ATGLVATSEI THATPASFGS HDHSRKNMNS IADDYFDEMV
+     NGKHKIDVLL GGGKSNFDRK DRNLIKEFKK AGYSYVDDRK DMLKNKDSQV LGLFADGGLP
+     KKIDRTKDIP SLKDMTNTAI KKLNKDKDGF FLMVEGSQID WAGHDNDIVG AMSEMEDFEQ
+     AYKAAIDFAK KDKHTLVVAT ADHSTGGYSI GADGIYNWFS EPIKAAKRTP DFMAEKIADG
+     ADVEKTLKTY IDQKKLALTK AEIQSVEEAA KSKEVLDIDN AIENIFNKRS HTGWTTGGHT
+     GEDVPVYAYG PSSETFAGQI DNTEIAKNVF KALQYNIKIN DK
+//
+ID   PPBT_RAT                Reviewed;         524 AA.
+AC   P08289; P14055; P70707;
+DT   01-AUG-1988, integrated into UniProtKB/Swiss-Prot.
+DT   01-MAY-1992, sequence version 2.
+DT   28-JUL-2009, entry version 88.
+DE   RecName: Full=Alkaline phosphatase, tissue-nonspecific isozyme;
+DE            EC=3.1.3.1;
+DE   AltName: Full=AP-TNAP;
+DE   AltName: Full=TNSALP;
+DE   AltName: Full=Alkaline phosphatase liver/bone/kidney isozyme;
+DE   Flags: Precursor;
+GN   Name=Alpl;
+OS   Rattus norvegicus (Rat).
+OC   Eukaryota; Metazoa; Chordata; Craniata; Vertebrata; Euteleostomi;
+OC   Mammalia; Eutheria; Euarchontoglires; Glires; Rodentia; Sciurognathi;
+OC   Muroidea; Muridae; Murinae; Rattus.
+OX   NCBI_TaxID=10116;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [MRNA].
+RC   TISSUE=Placenta;
+RX   MEDLINE=88124833; PubMed=3422431; DOI=10.1073/pnas.85.2.319;
+RA   Thiede M.A., Yoon K., Golub E.E., Noda M., Rodan G.A.;
+RT   "Structure and expression of rat osteosarcoma (ROS 17/2.8) alkaline
+RT   phosphatase: product of a single copy gene.";
+RL   Proc. Natl. Acad. Sci. U.S.A. 85:319-323(1988).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE [MRNA].
+RC   STRAIN=Wistar; TISSUE=Liver;
+RX   MEDLINE=88183256; PubMed=2895632;
+RA   Misumi Y., Tashiro K., Hattori M., Sakaki Y., Ikehara Y.;
+RT   "Primary structure of rat liver alkaline phosphatase deduced from its
+RT   cDNA.";
+RL   Biochem. J. 249:661-668(1988).
+RN   [3]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA].
+RC   STRAIN=Sprague-Dawley; TISSUE=Liver;
+RX   MEDLINE=89289705; PubMed=2544423;
+RX   DOI=10.1111/j.1432-1033.1989.tb14822.x;
+RA   Toh Y., Yamamoto M., Endo H., Misumi Y., Ikehara Y.;
+RT   "Isolation and characterization of a rat liver alkaline phosphatase
+RT   gene. A single gene with two promoters.";
+RL   Eur. J. Biochem. 182:231-237(1989).
+RN   [4]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA].
+RC   TISSUE=Kidney;
+RX   PubMed=15489334; DOI=10.1101/gr.2596504;
+RG   The MGC Project Team;
+RT   "The status, quality, and expansion of the NIH full-length cDNA
+RT   project: the Mammalian Gene Collection (MGC).";
+RL   Genome Res. 14:2121-2127(2004).
+RN   [5]
+RP   PROTEIN SEQUENCE OF 18-47, AND GPI-ANCHOR.
+RC   TISSUE=Liver;
+RX   MEDLINE=88198083; PubMed=2834351;
+RA   Ogata S., Hayashi Y., Yasutake K., Ikehara Y.;
+RT   "Chemical identification of lipid components in the membranous form of
+RT   rat liver alkaline phosphatase.";
+RL   J. Biochem. 102:1609-1615(1987).
+CC   -!- CATALYTIC ACTIVITY: A phosphate monoester + H(2)O = an alcohol +
+CC       phosphate.
+CC   -!- COFACTOR: Binds 1 magnesium ion (By similarity).
+CC   -!- COFACTOR: Binds 2 zinc ions (By similarity).
+CC   -!- SUBUNIT: Homodimer.
+CC   -!- SUBCELLULAR LOCATION: Cell membrane; Lipid-anchor, GPI-anchor.
+CC   -!- MISCELLANEOUS: In most mammals there are four different isozymes:
+CC       placental, placental-like, intestinal and tissue non-specific
+CC       (liver/bone/kidney).
+CC   -!- SIMILARITY: Belongs to the alkaline phosphatase family.
+CC   -----------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see http://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution-NoDerivs License
+CC   -----------------------------------------------------------------------
+DR   EMBL; Y00714; CAA68703.1; -; mRNA.
+DR   EMBL; J03572; AAA41845.1; -; mRNA.
+DR   EMBL; X16028; CAA34160.1; -; Genomic_DNA.
+DR   EMBL; X16029; CAA34160.1; JOINED; Genomic_DNA.
+DR   EMBL; X16030; CAA34160.1; JOINED; Genomic_DNA.
+DR   EMBL; X16031; CAA34160.1; JOINED; Genomic_DNA.
+DR   EMBL; X16032; CAA34160.1; JOINED; Genomic_DNA.
+DR   EMBL; X16033; CAA34160.1; JOINED; Genomic_DNA.
+DR   EMBL; X16034; CAA34160.1; JOINED; Genomic_DNA.
+DR   EMBL; X16035; CAA34160.1; JOINED; Genomic_DNA.
+DR   EMBL; X16036; CAA34160.1; JOINED; Genomic_DNA.
+DR   EMBL; X16037; CAA34160.1; JOINED; Genomic_DNA.
+DR   EMBL; X16038; CAA34160.1; JOINED; Genomic_DNA.
+DR   EMBL; BC088399; AAH88399.1; -; mRNA.
+DR   IPI; IPI00327143; -.
+DR   PIR; A28114; A28114.
+DR   PIR; S00289; S00289.
+DR   RefSeq; NP_037191.1; -.
+DR   UniGene; Rn.82764; -.
+DR   HSSP; P05187; 1EW2.
+DR   GlycoSuiteDB; P08289; -.
+DR   PhosphoSite; P08289; -.
+DR   Ensembl; ENSRNOT00000019004; ENSRNOP00000019004; ENSRNOG00000013954; Rattus norvegicus.
+DR   GeneID; 25586; -.
+DR   KEGG; rno:25586; -.
+DR   NMPDR; fig|10116.3.peg.24200; -.
+DR   UCSC; NM_013059; rat.
+DR   RGD; 2100; Alpl.
+DR   HOVERGEN; P08289; -.
+DR   OMA; P08289; MISPFLV.
+DR   BRENDA; 3.1.3.1; 248.
+DR   NextBio; 607251; -.
+DR   ArrayExpress; P08289; -.
+DR   GermOnline; ENSRNOG00000013954; Rattus norvegicus.
+DR   GO; GO:0031225; C:anchored to membrane; IEA:UniProtKB-KW.
+DR   GO; GO:0005886; C:plasma membrane; IEA:UniProtKB-SubCell.
+DR   GO; GO:0004035; F:alkaline phosphatase activity; IDA:RGD.
+DR   GO; GO:0000287; F:magnesium ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0008152; P:metabolic process; IEA:InterPro.
+DR   GO; GO:0051384; P:response to glucocorticoid stimulus; IDA:RGD.
+DR   InterPro; IPR017849; Alkaline_Pase-like_a/b/a.
+DR   InterPro; IPR001952; Alkaline_phosphatase.
+DR   InterPro; IPR018299; Alkaline_phosphatase_AS.
+DR   Gene3D; G3DSA:3.40.720.10; Alk_phosphtse; 1.
+DR   Pfam; PF00245; Alk_phosphatase; 1.
+DR   PRINTS; PR00113; ALKPHPHTASE.
+DR   SMART; SM00098; alkPPc; 1.
+DR   PROSITE; PS00123; ALKALINE_PHOSPHATASE; 1.
+PE   1: Evidence at protein level;
+KW   Cell membrane; Direct protein sequencing; Glycoprotein; GPI-anchor;
+KW   Hydrolase; Lipoprotein; Magnesium; Membrane; Metal-binding;
+KW   Phosphoprotein; Signal; Zinc.
+FT   SIGNAL        1     17
+FT   CHAIN        18    501       Alkaline phosphatase, tissue-nonspecific
+FT                                isozyme.
+FT                                /FTId=PRO_0000024027.
+FT   PROPEP      502    524       Removed in mature form (Potential).
+FT                                /FTId=PRO_0000024028.
+FT   ACT_SITE    110    110       Phosphoserine intermediate.
+FT   METAL        60     60       Magnesium (Potential).
+FT   METAL        60     60       Zinc 2 (Potential).
+FT   METAL       173    173       Magnesium (Potential).
+FT   METAL       332    332       Magnesium (Potential).
+FT   METAL       337    337       Zinc 1 (Potential).
+FT   METAL       341    341       Zinc 1 (Potential).
+FT   METAL       378    378       Zinc 2 (Potential).
+FT   METAL       379    379       Zinc 2 (Potential).
+FT   METAL       454    454       Zinc 1 (Potential).
+FT   LIPID       501    501       GPI-anchor amidated serine (Potential).
+FT   CARBOHYD    140    140       N-linked (GlcNAc...) (Potential).
+FT   CARBOHYD    230    230       N-linked (GlcNAc...) (Potential).
+FT   CARBOHYD    271    271       N-linked (GlcNAc...) (Potential).
+FT   CARBOHYD    303    303       N-linked (GlcNAc...) (Potential).
+FT   CARBOHYD    430    430       N-linked (GlcNAc...) (Potential).
+FT   CONFLICT     12     12       T -> P (in Ref. 1; AAA41845).
+FT   CONFLICT    116    116       A -> Y (in Ref. 2).
+FT   CONFLICT    193    193       P -> R (in Ref. 1; AAA41845).
+FT   CONFLICT    234    234       V -> E (in Ref. 2; CAA68703).
+FT   CONFLICT    254    254       S -> T (in Ref. 2; CAA68703).
+FT   CONFLICT    331    331       V -> E (in Ref. 2; CAA68703).
+FT   CONFLICT    374    374       V -> L (in Ref. 2; CAA68703).
+FT   CONFLICT    380    388       SHVFTFGGY -> HPTFSRLVA (in Ref. 2).
+FT   CONFLICT    391    391       R -> Q (in Ref. 2).
+FT   CONFLICT    463    463       A -> C (in Ref. 2; CAA68703).
+FT   CONFLICT    474    474       V -> I (in Ref. 2; CAA68703).
+SQ   SEQUENCE   524 AA;  57659 MW;  BD75A4B87117DF03 CRC64;
+     MILPFLVLAI GTCLTNSFVP EKEKDPSYWR QQAQETLKNA LKLQKLNTNV AKNIIMFLGD
+     GMGVSTVTAA RILKGQLHHN TGEETRLEMD KFPFVALSKT YNTNAQVPDS AGTATAYLCG
+     VKANEGTVGV SAATERTRCN TTQGNEVTSI LRWAKDAGKS VGIVTTTRVN HATPSAAYAH
+     SADRDWYSDN EMPPEALSQG CKDIAYQLMH NIKDIDVIMG GGRKYMYPKN RTDVEYELDE
+     KARGTRLDGL DLISIWKSFK PRHKHSHYVW NRTELLALDP SRVDYLLGLF EPGDMQYELN
+     RNNLTDPSLS EMVEVALRIL TKNPKGFFLL VEGGRIDHGH HEGKAKQALH EAVEMDEAIG
+     KAGTMTSQKD TLTVVTADHS HVFTFGGYTP RGNSIFGLAP MVSDTDKKPF TAILYGNGPG
+     YKVVDGEREN VSMVDYAHNN YQAQSAVPLR HETHGGEDVA VFAKGPMAHL LHGVHEQNYI
+     PHVMAYASCI GANLDHCAWA SSASSPSPGA LLLPLALFPL RTLF
+//
+ID   PPB_YEAST               Reviewed;         566 AA.
+AC   P11491; Q03374;
+DT   01-OCT-1989, integrated into UniProtKB/Swiss-Prot.
+DT   15-JUL-1998, sequence version 2.
+DT   28-JUL-2009, entry version 96.
+DE   RecName: Full=Repressible alkaline phosphatase;
+DE            EC=3.1.3.1;
+DE   Flags: Precursor;
+GN   Name=PHO8; OrderedLocusNames=YDR481C; ORFNames=D8035.24;
+OS   Saccharomyces cerevisiae (Baker's yeast).
+OC   Eukaryota; Fungi; Dikarya; Ascomycota; Saccharomycotina;
+OC   Saccharomycetes; Saccharomycetales; Saccharomycetaceae; Saccharomyces.
+OX   NCBI_TaxID=4932;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [GENOMIC DNA].
+RC   STRAIN=P-28-24C;
+RX   MEDLINE=88084440; PubMed=3319783; DOI=10.1016/0378-1119(87)90036-9;
+RA   Kaneko Y., Hayashi N., Toh-e A., Banno I., Oshima Y.;
+RT   "Structural characteristics of the PHO8 gene encoding repressible
+RT   alkaline phosphatase in Saccharomyces cerevisiae.";
+RL   Gene 58:137-148(1987).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=ATCC 204508 / S288c;
+RX   MEDLINE=97313263; PubMed=9169867;
+RA   Jacq C., Alt-Moerbe J., Andre B., Arnold W., Bahr A., Ballesta J.P.G.,
+RA   Bargues M., Baron L., Becker A., Biteau N., Bloecker H., Blugeon C.,
+RA   Boskovic J., Brandt P., Brueckner M., Buitrago M.J., Coster F.,
+RA   Delaveau T., del Rey F., Dujon B., Eide L.G., Garcia-Cantalejo J.M.,
+RA   Goffeau A., Gomez-Peris A., Granotier C., Hanemann V., Hankeln T.,
+RA   Hoheisel J.D., Jaeger W., Jimenez A., Jonniaux J.-L., Kraemer C.,
+RA   Kuester H., Laamanen P., Legros Y., Louis E.J., Moeller-Rieker S.,
+RA   Monnet A., Moro M., Mueller-Auer S., Nussbaumer B., Paricio N.,
+RA   Paulin L., Perea J., Perez-Alonso M., Perez-Ortin J.E., Pohl T.M.,
+RA   Prydz H., Purnelle B., Rasmussen S.W., Remacha M.A., Revuelta J.L.,
+RA   Rieger M., Salom D., Saluz H.P., Saiz J.E., Saren A.-M., Schaefer M.,
+RA   Scharfe M., Schmidt E.R., Schneider C., Scholler P., Schwarz S.,
+RA   Soler-Mira A., Urrestarazu L.A., Verhasselt P., Vissers S., Voet M.,
+RA   Volckaert G., Wagner G., Wambutt R., Wedler E., Wedler H., Woelfl S.,
+RA   Harris D.E., Bowman S., Brown D., Churcher C.M., Connor R., Dedman K.,
+RA   Gentles S., Hamlin N., Hunt S., Jones L., McDonald S., Murphy L.D.,
+RA   Niblett D., Odell C., Oliver K., Rajandream M.A., Richards C.,
+RA   Shore L., Walsh S.V., Barrell B.G., Dietrich F.S., Mulligan J.T.,
+RA   Allen E., Araujo R., Aviles E., Berno A., Carpenter J., Chen E.,
+RA   Cherry J.M., Chung E., Duncan M., Hunicke-Smith S., Hyman R.W.,
+RA   Komp C., Lashkari D., Lew H., Lin D., Mosedale D., Nakahara K.,
+RA   Namath A., Oefner P., Oh C., Petel F.X., Roberts D., Schramm S.,
+RA   Schroeder M., Shogren T., Shroff N., Winant A., Yelton M.A.,
+RA   Botstein D., Davis R.W., Johnston M., Andrews S., Brinkman R.,
+RA   Cooper J., Ding H., Du Z., Favello A., Fulton L., Gattung S.,
+RA   Greco T., Hallsworth K., Hawkins J., Hillier L.W., Jier M.,
+RA   Johnson D., Johnston L., Kirsten J., Kucaba T., Langston Y.,
+RA   Latreille P., Le T., Mardis E., Menezes S., Miller N., Nhan M.,
+RA   Pauley A., Peluso D., Rifkin L., Riles L., Taich A., Trevaskis E.,
+RA   Vignati D., Wilcox L., Wohldman P., Vaudin M., Wilson R.,
+RA   Waterston R., Albermann K., Hani J., Heumann K., Kleine K.,
+RA   Mewes H.-W., Zollner A., Zaccaria P.;
+RT   "The nucleotide sequence of Saccharomyces cerevisiae chromosome IV.";
+RL   Nature 387:75-78(1997).
+RN   [3]
+RP   PROTEIN SEQUENCE OF 1-10, TOPOLOGY, AND SUBCELLULAR LOCATION.
+RX   MEDLINE=90005428; PubMed=2676517;
+RA   Klionsky D.J., Emr S.D.;
+RT   "Membrane protein sorting: biosynthesis, transport and processing of
+RT   yeast vacuolar alkaline phosphatase.";
+RL   EMBO J. 8:2241-2250(1989).
+RN   [4]
+RP   LEVEL OF PROTEIN EXPRESSION [LARGE SCALE ANALYSIS].
+RX   MEDLINE=22923965; PubMed=14562106; DOI=10.1038/nature02046;
+RA   Ghaemmaghami S., Huh W.-K., Bower K., Howson R.W., Belle A.,
+RA   Dephoure N., O'Shea E.K., Weissman J.S.;
+RT   "Global analysis of protein expression in yeast.";
+RL   Nature 425:737-741(2003).
+RN   [5]
+RP   PHOSPHORYLATION [LARGE SCALE ANALYSIS] AT SER-123, AND MASS
+RP   SPECTROMETRY.
+RX   PubMed=17330950; DOI=10.1021/pr060559j;
+RA   Li X., Gerber S.A., Rudner A.D., Beausoleil S.A., Haas W., Villen J.,
+RA   Elias J.E., Gygi S.P.;
+RT   "Large-scale phosphorylation analysis of alpha-factor-arrested
+RT   Saccharomyces cerevisiae.";
+RL   J. Proteome Res. 6:1190-1197(2007).
+RN   [6]
+RP   PHOSPHORYLATION [LARGE SCALE ANALYSIS] AT THR-121; SER-123 AND
+RP   THR-128, AND MASS SPECTROMETRY.
+RX   PubMed=18407956; DOI=10.1074/mcp.M700468-MCP200;
+RA   Albuquerque C.P., Smolka M.B., Payne S.H., Bafna V., Eng J., Zhou H.;
+RT   "A multidimensional chromatography technology for in-depth
+RT   phosphoproteome analysis.";
+RL   Mol. Cell. Proteomics 7:1389-1396(2008).
+CC   -!- CATALYTIC ACTIVITY: A phosphate monoester + H(2)O = an alcohol +
+CC       phosphate.
+CC   -!- COFACTOR: Binds 1 magnesium ion (By similarity).
+CC   -!- COFACTOR: Binds 2 zinc ions (By similarity).
+CC   -!- INTERACTION:
+CC       P40016:RPN3; NbExp=1; IntAct=EBI-13762, EBI-15927;
+CC       P10591:SSA1; NbExp=1; IntAct=EBI-13762, EBI-8591;
+CC   -!- SUBCELLULAR LOCATION: Vacuole membrane; Single-pass membrane
+CC       protein (Potential). Note=Lysosome-like vacuoles.
+CC   -!- MISCELLANEOUS: Present with 3060 molecules/cell in log phase SD
+CC       medium.
+CC   -!- SIMILARITY: Belongs to the alkaline phosphatase family.
+CC   -----------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see http://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution-NoDerivs License
+CC   -----------------------------------------------------------------------
+DR   EMBL; M21134; AAA34871.1; -; Genomic_DNA.
+DR   EMBL; U33050; AAB64930.1; -; Genomic_DNA.
+DR   PIR; S69648; S69648.
+DR   RefSeq; NP_010769.1; -.
+DR   HSSP; P00634; 1KH5.
+DR   IntAct; P11491; 4.
+DR   PeptideAtlas; P11491; -.
+DR   Ensembl; YDR481C; YDR481C; YDR481C; Saccharomyces cerevisiae.
+DR   GeneID; 852092; -.
+DR   GenomeReviews; Z71256_GR; YDR481C.
+DR   KEGG; sce:YDR481C; -.
+DR   NMPDR; fig|4932.3.peg.1542; -.
+DR   CYGD; YDR481c; -.
+DR   SGD; S000002889; PHO8.
+DR   HOGENOM; P11491; -.
+DR   OMA; P11491; SEITHAT.
+DR   BRENDA; 3.1.3.1; 250.
+DR   NextBio; 970421; -.
+DR   ArrayExpress; P11491; -.
+DR   GermOnline; YDR481C; Saccharomyces cerevisiae.
+DR   GO; GO:0000329; C:fungal-type vacuole membrane; IDA:SGD.
+DR   GO; GO:0016021; C:integral to membrane; IEA:UniProtKB-KW.
+DR   GO; GO:0004035; F:alkaline phosphatase activity; IDA:SGD.
+DR   GO; GO:0000287; F:magnesium ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0005515; F:protein binding; IPI:IntAct.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0006470; P:protein amino acid dephosphorylation; IDA:SGD.
+DR   InterPro; IPR017849; Alkaline_Pase-like_a/b/a.
+DR   InterPro; IPR001952; Alkaline_phosphatase.
+DR   InterPro; IPR018299; Alkaline_phosphatase_AS.
+DR   Gene3D; G3DSA:3.40.720.10; Alk_phosphtse; 1.
+DR   Pfam; PF00245; Alk_phosphatase; 1.
+DR   PRINTS; PR00113; ALKPHPHTASE.
+DR   SMART; SM00098; alkPPc; 1.
+DR   PROSITE; PS00123; ALKALINE_PHOSPHATASE; 1.
+PE   1: Evidence at protein level;
+KW   Complete proteome; Direct protein sequencing; Glycoprotein; Hydrolase;
+KW   Magnesium; Membrane; Metal-binding; Phosphoprotein; Transmembrane;
+KW   Vacuole; Zinc.
+FT   CHAIN         1      ?       Repressible alkaline phosphatase.
+FT                                /FTId=PRO_0000024017.
+FT   PROPEP        ?    566       Removed in mature form.
+FT                                /FTId=PRO_0000024018.
+FT   TOPO_DOM      1     33       Cytoplasmic.
+FT   TRANSMEM     34     59       Potential.
+FT   TOPO_DOM     60      ?       Vacuolar.
+FT   ACT_SITE    123    123       Phosphoserine intermediate (By
+FT                                similarity).
+FT   METAL        75     75       Magnesium (By similarity).
+FT   METAL        75     75       Zinc 2 (By similarity).
+FT   METAL       174    174       Magnesium (By similarity).
+FT   METAL       176    176       Magnesium (By similarity).
+FT   METAL       325    325       Magnesium (By similarity).
+FT   METAL       330    330       Zinc 1 (By similarity).
+FT   METAL       334    334       Zinc 1 (By similarity).
+FT   METAL       373    373       Zinc 2 (By similarity).
+FT   METAL       374    374       Zinc 2 (By similarity).
+FT   METAL       484    484       Zinc 1 (By similarity).
+FT   MOD_RES     121    121       Phosphothreonine.
+FT   MOD_RES     123    123       Phosphoserine.
+FT   MOD_RES     128    128       Phosphothreonine.
+FT   CARBOHYD    268    268       N-linked (GlcNAc...).
+FT   CARBOHYD    401    401       N-linked (GlcNAc...).
+FT   CONFLICT      5      5       T -> R (in Ref. 1; AAA34871).
+FT   CONFLICT     55     55       S -> T (in Ref. 1; AAA34871).
+FT   CONFLICT     59     59       L -> I (in Ref. 1; AAA34871).
+FT   CONFLICT    132    132       C -> S (in Ref. 1; AAA34871).
+FT   CONFLICT    271    271       L -> F (in Ref. 1; AAA34871).
+FT   CONFLICT    447    447       D -> E (in Ref. 1; AAA34871).
+SQ   SEQUENCE   566 AA;  63004 MW;  9FA2E87B068FF0DB CRC64;
+     MMTHTLPSEQ TRLVPGSDSS SRPKKRRISK RSKIIVSTVV CIGLLLVLVQ LAFPSSFALR
+     SASHKKKNVI FFVTDGMGPA SLSMARSFNQ HVNDLPIDDI LTLDEHFIGS SRTRSSDSLV
+     TDSAAGATAF ACALKSYNGA IGVDPHHRPC GTVLEAAKLA GYLTGLVVTT RITDATPASF
+     SSHVDYRWQE DLIATHQLGE YPLGRVVDLL MGGGRSHFYP QGEKASPYGH HGARKDGRDL
+     IDEAQSNGWQ YVGDRKNFDS LLKSHGENVT LPFLGLFADN DIPFEIDRDE KEYPSLKEQV
+     KVALGALEKA SNEDKDSNGF FLMVEGSRID HAGHQNDPAS QVREVLAFDE AFQYVLEFAE
+     NSDTETVLVS TSDHETGGLV TSRQVTASYP QYVWYPQVLA NATHSGEFLK RKLVDFVHEH
+     KGASSKIENF IKHEILEKDL GIYDYTDSDL ETLIHLDDNA NAIQDKLNDM VSFRAQIGWT
+     THGHSAVDVN IYAYANKKAT WSYVLNNLQG NHENTEVGQF LENFLELNLN EVTDLIRDTK
+     HTSDFDATEI ASEVQHYDEY YHELTN
+//
+ID   APH4_DROME              Reviewed;         596 AA.
+AC   Q24238; B9EQR2; Q3KN28; Q8IMH0; Q8SXW6; Q9VA19;
+DT   28-MAR-2003, integrated into UniProtKB/Swiss-Prot.
+DT   28-MAR-2003, sequence version 3.
+DT   28-JUL-2009, entry version 73.
+DE   RecName: Full=Alkaline phosphatase 4;
+DE            EC=3.1.3.1;
+DE   Flags: Precursor;
+GN   Name=Aph-4; ORFNames=CG1462;
+OS   Drosophila melanogaster (Fruit fly).
+OC   Eukaryota; Metazoa; Arthropoda; Hexapoda; Insecta; Pterygota;
+OC   Neoptera; Endopterygota; Diptera; Brachycera; Muscomorpha;
+OC   Ephydroidea; Drosophilidae; Drosophila; Sophophora.
+OX   NCBI_TaxID=7227;
+RN   [1]
+RP   NUCLEOTIDE SEQUENCE [MRNA] (ISOFORM A), FUNCTION, TISSUE SPECIFICITY,
+RP   AND DEVELOPMENTAL STAGE.
+RC   TISSUE=Head;
+RX   MEDLINE=20094770; PubMed=10628988;
+RA   Yang M.Y., Wang Z., MacPherson M., Dow J.A.T., Kaiser K.;
+RT   "A novel Drosophila alkaline phosphatase specific to the ellipsoid
+RT   body of the adult brain and the lower Malpighian (renal) tubule.";
+RL   Genetics 154:285-297(2000).
+RN   [2]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE GENOMIC DNA].
+RC   STRAIN=Berkeley;
+RX   MEDLINE=20196006; PubMed=10731132; DOI=10.1126/science.287.5461.2185;
+RA   Adams M.D., Celniker S.E., Holt R.A., Evans C.A., Gocayne J.D.,
+RA   Amanatides P.G., Scherer S.E., Li P.W., Hoskins R.A., Galle R.F.,
+RA   George R.A., Lewis S.E., Richards S., Ashburner M., Henderson S.N.,
+RA   Sutton G.G., Wortman J.R., Yandell M.D., Zhang Q., Chen L.X.,
+RA   Brandon R.C., Rogers Y.-H.C., Blazej R.G., Champe M., Pfeiffer B.D.,
+RA   Wan K.H., Doyle C., Baxter E.G., Helt G., Nelson C.R., Miklos G.L.G.,
+RA   Abril J.F., Agbayani A., An H.-J., Andrews-Pfannkoch C., Baldwin D.,
+RA   Ballew R.M., Basu A., Baxendale J., Bayraktaroglu L., Beasley E.M.,
+RA   Beeson K.Y., Benos P.V., Berman B.P., Bhandari D., Bolshakov S.,
+RA   Borkova D., Botchan M.R., Bouck J., Brokstein P., Brottier P.,
+RA   Burtis K.C., Busam D.A., Butler H., Cadieu E., Center A., Chandra I.,
+RA   Cherry J.M., Cawley S., Dahlke C., Davenport L.B., Davies P.,
+RA   de Pablos B., Delcher A., Deng Z., Mays A.D., Dew I., Dietz S.M.,
+RA   Dodson K., Doup L.E., Downes M., Dugan-Rocha S., Dunkov B.C., Dunn P.,
+RA   Durbin K.J., Evangelista C.C., Ferraz C., Ferriera S., Fleischmann W.,
+RA   Fosler C., Gabrielian A.E., Garg N.S., Gelbart W.M., Glasser K.,
+RA   Glodek A., Gong F., Gorrell J.H., Gu Z., Guan P., Harris M.,
+RA   Harris N.L., Harvey D.A., Heiman T.J., Hernandez J.R., Houck J.,
+RA   Hostin D., Houston K.A., Howland T.J., Wei M.-H., Ibegwam C.,
+RA   Jalali M., Kalush F., Karpen G.H., Ke Z., Kennison J.A., Ketchum K.A.,
+RA   Kimmel B.E., Kodira C.D., Kraft C.L., Kravitz S., Kulp D., Lai Z.,
+RA   Lasko P., Lei Y., Levitsky A.A., Li J.H., Li Z., Liang Y., Lin X.,
+RA   Liu X., Mattei B., McIntosh T.C., McLeod M.P., McPherson D.,
+RA   Merkulov G., Milshina N.V., Mobarry C., Morris J., Moshrefi A.,
+RA   Mount S.M., Moy M., Murphy B., Murphy L., Muzny D.M., Nelson D.L.,
+RA   Nelson D.R., Nelson K.A., Nixon K., Nusskern D.R., Pacleb J.M.,
+RA   Palazzolo M., Pittman G.S., Pan S., Pollard J., Puri V., Reese M.G.,
+RA   Reinert K., Remington K., Saunders R.D.C., Scheeler F., Shen H.,
+RA   Shue B.C., Siden-Kiamos I., Simpson M., Skupski M.P., Smith T.J.,
+RA   Spier E., Spradling A.C., Stapleton M., Strong R., Sun E.,
+RA   Svirskas R., Tector C., Turner R., Venter E., Wang A.H., Wang X.,
+RA   Wang Z.-Y., Wassarman D.A., Weinstock G.M., Weissenbach J.,
+RA   Williams S.M., Woodage T., Worley K.C., Wu D., Yang S., Yao Q.A.,
+RA   Ye J., Yeh R.-F., Zaveri J.S., Zhan M., Zhang G., Zhao Q., Zheng L.,
+RA   Zheng X.H., Zhong F.N., Zhong W., Zhou X., Zhu S.C., Zhu X.,
+RA   Smith H.O., Gibbs R.A., Myers E.W., Rubin G.M., Venter J.C.;
+RT   "The genome sequence of Drosophila melanogaster.";
+RL   Science 287:2185-2195(2000).
+RN   [3]
+RP   GENOME REANNOTATION, AND ALTERNATIVE SPLICING.
+RX   MEDLINE=22426069; PubMed=12537572;
+RA   Misra S., Crosby M.A., Mungall C.J., Matthews B.B., Campbell K.S.,
+RA   Hradecky P., Huang Y., Kaminker J.S., Millburn G.H., Prochnik S.E.,
+RA   Smith C.D., Tupy J.L., Whitfield E.J., Bayraktaroglu L., Berman B.P.,
+RA   Bettencourt B.R., Celniker S.E., de Grey A.D.N.J., Drysdale R.A.,
+RA   Harris N.L., Richter J., Russo S., Schroeder A.J., Shu S.Q.,
+RA   Stapleton M., Yamada C., Ashburner M., Gelbart W.M., Rubin G.M.,
+RA   Lewis S.E.;
+RT   "Annotation of the Drosophila melanogaster euchromatic genome: a
+RT   systematic review.";
+RL   Genome Biol. 3:RESEARCH0083.1-RESEARCH0083.22(2002).
+RN   [4]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA] (ISOFORM A).
+RC   STRAIN=Berkeley; TISSUE=Head;
+RX   MEDLINE=22426066; PubMed=12537569;
+RA   Stapleton M., Carlson J.W., Brokstein P., Yu C., Champe M.,
+RA   George R.A., Guarin H., Kronmiller B., Pacleb J.M., Park S., Wan K.H.,
+RA   Rubin G.M., Celniker S.E.;
+RT   "A Drosophila full-length cDNA resource.";
+RL   Genome Biol. 3:RESEARCH0080.1-RESEARCH0080.8(2002).
+RN   [5]
+RP   NUCLEOTIDE SEQUENCE [LARGE SCALE MRNA] (ISOFORMS A AND B).
+RC   STRAIN=Berkeley; TISSUE=Testis;
+RA   Stapleton M., Carlson J.W., Booth B., Chavez C., Frise E.,
+RA   George R.A., Pacleb J.M., Park S., Wan K.H., Yu C., Celniker S.E.;
+RL   Submitted (JAN-2009) to the EMBL/GenBank/DDBJ databases.
+CC   -!- FUNCTION: Important role in neural and renal epithelial function.
+CC   -!- CATALYTIC ACTIVITY: A phosphate monoester + H(2)O = an alcohol +
+CC       phosphate.
+CC   -!- COFACTOR: Binds 1 magnesium ion (By similarity).
+CC   -!- COFACTOR: Binds 2 zinc ions (By similarity).
+CC   -!- SUBUNIT: Homodimer (By similarity).
+CC   -!- SUBCELLULAR LOCATION: Cell membrane; Lipid-anchor, GPI-anchor (By
+CC       similarity).
+CC   -!- ALTERNATIVE PRODUCTS:
+CC       Event=Alternative splicing; Named isoforms=2;
+CC       Name=A;
+CC         IsoId=Q24238-1; Sequence=Displayed;
+CC       Name=B;
+CC         IsoId=Q24238-2; Sequence=VSP_007002;
+CC         Note=No experimental confirmation available;
+CC   -!- TISSUE SPECIFICITY: Ellipsoid body ring neurons in the adult brain
+CC       and in the lower Malpighian tubule and ureter.
+CC   -!- DEVELOPMENTAL STAGE: Highest abundance during larval stage (prior
+CC       to the secretion of pupal cuticle) and adult stage.
+CC   -!- SIMILARITY: Belongs to the alkaline phosphatase family.
+CC   -!- SEQUENCE CAUTION:
+CC       Sequence=CAA67052.1; Type=Frameshift; Positions=538;
+CC   -----------------------------------------------------------------------
+CC   Copyrighted by the UniProt Consortium, see http://www.uniprot.org/terms
+CC   Distributed under the Creative Commons Attribution-NoDerivs License
+CC   -----------------------------------------------------------------------
+DR   EMBL; X98402; CAA67052.1; ALT_FRAME; mRNA.
+DR   EMBL; AE014297; AAF57106.1; -; Genomic_DNA.
+DR   EMBL; AE014297; AAN14265.1; -; Genomic_DNA.
+DR   EMBL; AY075544; AAL68351.1; -; mRNA.
+DR   EMBL; BT023911; ABA81845.1; -; mRNA.
+DR   EMBL; BT057987; ACM16697.1; -; mRNA.
+DR   RefSeq; NP_524601.2; -.
+DR   RefSeq; NP_733413.1; -.
+DR   UniGene; Dm.5439; -.
+DR   HSSP; P05187; 1EW2.
+DR   Ensembl; FBtr0085733; FBpp0085095; FBgn0016123; Drosophila melanogaster.
+DR   GeneID; 43671; -.
+DR   KEGG; dme:Dmel_CG1462; -.
+DR   FlyBase; FBgn0016123; Aph-4.
+DR   HOGENOM; Q24238; -.
+DR   OMA; Q24238; KVARYVW.
+DR   BioCyc; DMEL-XXX-02:DMEL-XXX-02-014263-MON; -.
+DR   BRENDA; 3.1.3.1; 48.
+DR   NextBio; 835185; -.
+DR   GermOnline; CG1462; Drosophila melanogaster.
+DR   GO; GO:0031225; C:anchored to membrane; IEA:UniProtKB-KW.
+DR   GO; GO:0016021; C:integral to membrane; IEA:UniProtKB-KW.
+DR   GO; GO:0005886; C:plasma membrane; IEA:UniProtKB-SubCell.
+DR   GO; GO:0004035; F:alkaline phosphatase activity; NAS:UniProtKB.
+DR   GO; GO:0000287; F:magnesium ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0008270; F:zinc ion binding; IEA:UniProtKB-KW.
+DR   GO; GO:0042045; P:epithelial fluid transport; IMP:UniProtKB.
+DR   GO; GO:0008152; P:metabolic process; IEA:InterPro.
+DR   GO; GO:0007399; P:nervous system development; IEP:UniProtKB.
+DR   InterPro; IPR017849; Alkaline_Pase-like_a/b/a.
+DR   InterPro; IPR001952; Alkaline_phosphatase.
+DR   InterPro; IPR018299; Alkaline_phosphatase_AS.
+DR   Gene3D; G3DSA:3.40.720.10; Alk_phosphtse; 1.
+DR   Pfam; PF00245; Alk_phosphatase; 1.
+DR   PRINTS; PR00113; ALKPHPHTASE.
+DR   SMART; SM00098; alkPPc; 1.
+DR   PROSITE; PS00123; ALKALINE_PHOSPHATASE; 1.
+PE   2: Evidence at transcript level;
+KW   Alternative splicing; Cell membrane; Complete proteome;
+KW   Disulfide bond; Glycoprotein; GPI-anchor; Hydrolase; Lipoprotein;
+KW   Magnesium; Membrane; Metal-binding; Phosphoprotein; Signal;
+KW   Transmembrane; Zinc.
+FT   SIGNAL        1     20       Potential.
+FT   CHAIN        21    570       Alkaline phosphatase 4.
+FT                                /FTId=PRO_0000024049.
+FT   PROPEP      571    596       Removed in mature form.
+FT                                /FTId=PRO_0000024050.
+FT   TRANSMEM    571    591       Potential.
+FT   ACT_SITE    144    144       Phosphoserine intermediate (By
+FT                                similarity).
+FT   METAL        93     93       Magnesium (By similarity).
+FT   METAL        93     93       Zinc 2 (By similarity).
+FT   METAL       202    202       Magnesium (By similarity).
+FT   METAL       204    204       Magnesium (By similarity).
+FT   METAL       369    369       Magnesium (By similarity).
+FT   METAL       374    374       Zinc 1 (By similarity).
+FT   METAL       378    378       Zinc 1 (By similarity).
+FT   METAL       415    415       Zinc 2 (By similarity).
+FT   METAL       416    416       Zinc 2 (By similarity).
+FT   METAL       504    504       Zinc 1 (By similarity).
+FT   LIPID       570    570       GPI-anchor amidated asparagine
+FT                                (Potential).
+FT   CARBOHYD    262    262       N-linked (GlcNAc...) (Potential).
+FT   CARBOHYD    297    297       N-linked (GlcNAc...) (Potential).
+FT   CARBOHYD    401    401       N-linked (GlcNAc...) (Potential).
+FT   CARBOHYD    464    464       N-linked (GlcNAc...) (Potential).
+FT   CARBOHYD    470    470       N-linked (GlcNAc...) (Potential).
+FT   DISULFID    539    550       By similarity.
+FT   VAR_SEQ       1     94       Missing (in isoform B).
+FT                                /FTId=VSP_007002.
+FT   CONFLICT    200    200       I -> N (in Ref. 4; AAL68351).
+FT   CONFLICT    280    280       T -> S (in Ref. 5; ABA81845).
+FT   CONFLICT    358    358       G -> D (in Ref. 1; CAA67052).
+FT   CONFLICT    375    375       Q -> H (in Ref. 1; CAA67052).
+FT   CONFLICT    495    496       AT -> EP (in Ref. 1; CAA67052).
+FT   CONFLICT    570    570       N -> S (in Ref. 1; CAA67052).
+FT   CONFLICT    573    573       T -> S (in Ref. 1; CAA67052).
+FT   CONFLICT    593    594       GR -> CH (in Ref. 1; CAA67052 and 5;
+FT                                ABA81845).
+SQ   SEQUENCE   596 AA;  65262 MW;  333F3345BEFBAEFB CRC64;
+     MHCLVILGFL LGSLVAFSWA GVTTQPPPLI RTLSAGGDIG PQFDVGKTKE PEDAEFWHNV
+     GLRQLEKTIK QAQRVKEDSY QKKARNIIIF IGDGMGISTI SAGRIYKGQY LKHGYGEEET
+     LVFDDFPNTG MAKTYNVDKQ VPDSAGTATA IFSGSKTHYG AIGMDATRSK KNGQQGRVQS
+     VMEWAQKEGK RTGVVTTTRI THATPAATYA HIYDRDWECD TEVPAESVGF HVDIARQLVE
+     NAPGNRFNVI LGGGMSPMGI LNASEVKTTI FEGPTETICT RGDNRNLPAE WLAHHANDTV
+     PPALVHNRKD LLNVNVKKVD HLMGLFRNNH ITYSIAREAG EPSLQEMTET ALGILERGDE
+     SNGFVLLVEG GRIDQGHHMN YARAALHELY EFDLAIQAAV NNTDPDETLI LVTADHSHAV
+     TFNGYALRGA DILGTANSHE KNDPMFYETI SYANGPGYWD HLANDSRPQN SSNMWMPLKH
+     FTAEERAAPT YRHLATVPRK DETHGGEDVA VFAYGPGSSL IRGVFEQNYL AYVMSYAGCL
+     GPAKDFDDSC EDHKDGQKDR PLDKPNPKRN GATVVGASLI PILTAATAAI LRGRGL
+//
