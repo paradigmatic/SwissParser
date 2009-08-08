@@ -37,7 +37,7 @@ uniprot_parser = Swiss::Parser.define do
     protein.taxonomy += ary
   end
  
-  with_text_after("SQ") do |content,protein,last_key|
+  with_text_after("SQ") do |content,protein|
     seq = content.strip.gsub(" ","")
     protein.sequence += seq
   end
