@@ -8,6 +8,7 @@ module Swiss
 
     def initialize
       @actions = {}
+      @actions[:text] = {}
       @separator = DEFAULT_SEPARATOR
     end
 
@@ -19,8 +20,8 @@ module Swiss
       @actions[key] = proc
     end
 
-    def with_text( &proc )
-      @actions[:text] = proc
+    def with_text_after( key, &proc )
+      @actions[:text][key] = proc
     end
 
     def parse_file( filename )
@@ -52,8 +53,8 @@ module Swiss
         end
         :parsing
       else
-        if @actions[:text]
-          @actions[:text].call( line, holder, key )
+        if @actions[:text][@last_key]
+          @actions[:text][@last_key].call( line, holder )
         end
         :parsing
       end

@@ -52,19 +52,18 @@ def enzyme_parser()
     end
   end
 
-  parser.with_text do |content,entry,last_key|
-    if last_key = "GENES"
-      if content =~ /([A-Z]+): (.*)/
-        org,genes = $1,$2
-        entry[:last_organism] = org
-        if org == human
-           parse_gene_ids( genes, entry[:enzyme] )
+  parser.with_text_after("GENES") do |content,entry|
+    if content =~ /([A-Z]+): (.*)/
+      org,genes = $1,$2
+      entry[:last_organism] = org
+      if org == human
+        parse_gene_ids( genes, entry[:enzyme] )
         end
-      elsif entry[:last_organism] == human
-        parse_gene_ids( content, entry[:enzyme] )
-      end      
-    end
+    elsif entry[:last_organism] == human
+      parse_gene_ids( content, entry[:enzyme] )
+    end      
   end
+  
   parser
   
 end
