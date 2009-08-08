@@ -1,5 +1,27 @@
 module Swiss
 
+  class ParsingRules
+    
+    attr_reader :separator, :actions
+    
+    def initialize
+      @actions = { :text => {} }
+    end
+    
+    def set_separator(string)
+      @separator = string
+    end
+
+    def with( key, &proc )
+      @actions[key] = proc
+    end
+
+    def with_text_after( key, &proc )
+      @actions[:text][key] = proc
+    end
+    
+  end
+
   class Parser
 
     DEFAULT_SEPARATOR = "//"
@@ -28,10 +50,7 @@ module Swiss
       end
     end
 
-    def set_separator(string)
-      @separator = string
-    end
-
+    
     def new_entry(&proc)
        @begin = proc
     end
@@ -47,12 +66,23 @@ module Swiss
       @after = proc
     end
 
-    def with( key, &proc )
-      @actions[key] = proc
-    end
-
-    def with_text_after( key, &proc )
-      @actions[:text][key] = proc
+    def rules(&proc)
+      r = ParsingRules.new
+      r.instance_eval(&proc)
+      p r.actions
+      r.actions.each do |k,v|
+        if k == :text
+          next
+        end
+        @actions[k] = v
+      end
+      r.actions[:text].each do |k,v|
+        @actions[:text][k] = v
+      end
+      p @actions
+      if r.separator
+        @separator = r.separator
+      end
     end
 
     def parse_file( filename )

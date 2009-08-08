@@ -21,25 +21,29 @@ uniprot_parser = Swiss::Parser.define do
     Protein.new
   end
 
-  with("ID") do |content,protein|
-    content =~ /([A-Z]\w+)\D+(\d+)/
-    protein.id = $1
-    protein.size = $2.to_i
-  end
+  rules do 
 
-  with("OS") do |content,protein|
-    content =~ /(\w+ \w+)/
-    protein.species = $1
-  end
+    with("ID") do |content,protein|
+      content =~ /([A-Z]\w+)\D+(\d+)/
+      protein.id = $1
+      protein.size = $2.to_i
+    end
+    
+    with("OS") do |content,protein|
+      content =~ /(\w+ \w+)/
+      protein.species = $1
+    end
+    
+    with("OC") do |content,protein|
+      ary = content.gsub(".","").split("; ")
+      protein.taxonomy += ary
+    end
+    
+    with_text_after("SQ") do |content,protein|
+      seq = content.strip.gsub(" ","")
+      protein.sequence += seq
+    end
 
-  with("OC") do |content,protein|
-    ary = content.gsub(".","").split("; ")
-    protein.taxonomy += ary
-  end
- 
-  with_text_after("SQ") do |content,protein|
-    seq = content.strip.gsub(" ","")
-    protein.sequence += seq
   end
 
 end
