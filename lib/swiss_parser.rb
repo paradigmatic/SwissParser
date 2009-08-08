@@ -10,10 +10,33 @@ module Swiss
       @actions = {}
       @actions[:text] = {}
       @separator = DEFAULT_SEPARATOR
+      @before = Proc.new do
+        []
+      end
+      @begin = Proc.new do 
+        {}
+      end
+      @end = Proc.new do |entry,context|
+        context << entry
+      end
+      @after = Proc.new do |context|
+        context
+      end
     end
 
     def new_entry(&proc)
        @begin = proc
+    end
+
+    def finish_entry(&proc)
+      @end = proc
+    end
+
+    def before (&proc)
+      @before = proc
+    end
+    def after(&proc)
+      @after = proc
     end
 
     def with( key, &proc )
@@ -25,18 +48,18 @@ module Swiss
     end
 
     def parse_file( filename )
-      entries = []
+      context = @before.call
       File.open( filename, 'r' ) do |file|
         entry = @begin.call
         file.each_line do |line|
           state = parse_line( line, entry )
           if state == :end
-            entries << entry
+            @end.call( entry, context )
             entry = @begin.call
           end
         end
       end
-      entries
+      @after.call( context )
     end
 
     private
