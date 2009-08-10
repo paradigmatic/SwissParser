@@ -31,6 +31,7 @@ parser = Swiss::Parser.define do
     
 end
 
+
 stat_parser = parser.extend do
 
   before do 
