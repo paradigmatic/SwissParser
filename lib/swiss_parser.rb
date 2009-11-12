@@ -80,10 +80,10 @@ module Swiss
 
     PROTOTYPE = Parser.new
     PROTOTYPE.instance_eval do
-      before { [] }
-      new_entry { {} }
-      finish_entry {|e,c| c << e }
-      after {|c| c }
+      before { |p| [] }
+      new_entry { |p| {} }
+      finish_entry {|e,c,p| c << e }
+      after {|c,p| c }
     end
 
     def extend(&proc)
@@ -96,19 +96,19 @@ module Swiss
       PROTOTYPE.extend( &proc )
     end
 
-    def parse_file( filename )
-      context = @before.call
+    def parse_file( filename, params={} )
+      context = @before.call( params )
       File.open( filename, 'r' ) do |file|
-        entry = @begin.call
+        entry = @begin.call( params )
         file.each_line do |line|
           state = parse_line( line, entry )
           if state == :end
-            @end.call( entry, context )
-            entry = @begin.call
+            @end.call( entry, context, params )
+            entry = @begin.call( params )
           end
         end
       end
-      @after.call( context )
+      @after.call( context, params )
     end
 
     private

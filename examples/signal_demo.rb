@@ -34,11 +34,11 @@ end
 
 stat_parser = parser.extend do
 
-  before do 
+  before do |params|
     { :min => 1_000, :max => 0, :sum => 0, :n => 0 }
   end 
 
-  finish_entry do |entry,h|
+  finish_entry do |entry,h,params|
     if entry.size < h[:min]
       h[:min] = entry.size
     end
@@ -49,7 +49,7 @@ stat_parser = parser.extend do
     h[:n] += 1
   end
 
-  after do |h|
+  after do |h,params|
     h[:average] = h[:sum].to_f / h[:n]
     h
   end
