@@ -1,5 +1,7 @@
 module Swiss
 
+  VERSION = "0.5.0"
+
   class ParsingRules
     
     attr_reader :separator, :actions

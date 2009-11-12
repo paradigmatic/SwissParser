@@ -11,7 +11,7 @@ require 'swiss_parser'
 #task 'gem:release' => 'test:run'
 
 Bones {
-  name  'machin'
+  name  'swissparser'
   authors  'paradigmatic'
   email  'paradigmatic@streum.org'
   url  'http://github.com/paradigmatic/SwissParser'
