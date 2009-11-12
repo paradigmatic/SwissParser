@@ -62,7 +62,7 @@ enzyme_parser = Swiss::Parser.define do
       e = Enzyme.new
       e.id = entry[:id]
       e.genes = entry[:genes]
-      container << entry
+      container << e
     end
   end
   
