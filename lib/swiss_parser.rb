@@ -17,8 +17,6 @@ You should have received a copy of the GNU General Public License
 along with SwissParser.  If not, see <http://www.gnu.org/licenses/>.
 =end
 
-
-
 module Swiss
 
   VERSION = "0.5.1"
@@ -59,6 +57,40 @@ module Swiss
     
   end
 
+  #:nodoc:
+  class ParsingContext
+
+    def initialize(parameters)
+      @params = parameters
+    end   
+
+    def param( key ) 
+      @params[key]
+    end
+
+    module InstanceExecHelper; end
+    
+    include InstanceExecHelper
+    #Stolen from http://eigenclass.org/hiki/bounded+space+instance_exec
+    def instance_exec(*args, &block)
+      begin
+        old_critical, Thread.critical = Thread.critical, true
+        n = 0
+        n += 1 while respond_to?(mname="__instance_exec#{n}")
+        InstanceExecHelper.module_eval{ define_method(mname, &block) }
+      ensure
+        Thread.critical = old_critical
+      end
+      begin
+        ret = send(mname, *args)
+      ensure
+        InstanceExecHelper.module_eval{ remove_method(mname) } rescue nil
+      end
+      ret
+    end 
+    
+  end
+
 
   # Parser for a typical bioinformatic flat file.
   class Parser
@@ -85,6 +117,7 @@ module Swiss
       else
         raise "Wrong arg number, either 0 or 6."
       end
+      @ctx = nil
     end
 
     # Defines how to create the _entry_ _object_. The +proc+
@@ -162,18 +195,19 @@ module Swiss
     # It returns the value specified in the +after+ block. By default, 
     # it returns an array containing _entry_ objects.
     def parse_file( filename, params={} )
-      context = @before.call()
+      @ctx = ParsingContext.new( params )
+      container = @ctx.instance_exec( &@before )
       File.open( filename, 'r' ) do |file|
-        entry = @begin.call( )
+        entry = @ctx.instance_exec( &@begin )
         file.each_line do |line|
           state = parse_line( line, entry )
           if state == :end
-            @end.call( entry, context )
-            entry = @begin.call()
+            @ctx.instance_exec( entry, container, &@end )
+            entry = @ctx.instance_exec( &@begin )
           end
         end
       end
-      @after.call( context )
+      @ctx.instance_exec( container, &@after )
     end
 
     private
@@ -195,12 +229,12 @@ module Swiss
         key,value = $1,$2
         @last_key = key
         if @actions[key]
-          @actions[key].call( value, holder )
+          @ctx.instance_exec( value, holder, &@actions[key] )
         end
         :parsing
       else
         if @actions[:text][@last_key]
-          @actions[:text][@last_key].call( line, holder )
+          @ctx.instance_exec( line, holder, &@actions[:text][@last_key] )
         end
         :parsing
       end
