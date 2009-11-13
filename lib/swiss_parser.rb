@@ -19,7 +19,7 @@ along with SwissParser.  If not, see <http://www.gnu.org/licenses/>.
 
 module Swiss
 
-  VERSION = "0.5.1"
+  VERSION = "0.6.0"
 
   # This class defines parsing rules. Its methods
   # are accessible within the +rules+ section of
@@ -57,20 +57,27 @@ module Swiss
     
   end
 
-  #:nodoc:
+  # Methods of this class are accessible to rules and actions.
+  # Methods defined in +helpers+ block are added to this class.
   class ParsingContext
 
     def initialize(parameters)
       @params = parameters
     end   
 
+    # Retrieves a parsing parameter by key. Returns nil if 
+    # there is no parameter with the provided key.
     def param( key ) 
       @params[key]
     end
 
-    module InstanceExecHelper; end
+
+    module InstanceExecHelper     #:nodoc:
+    end 
     
     include InstanceExecHelper
+
+    #Used to execute rules and action using the ParsingContext as context
     #Stolen from http://eigenclass.org/hiki/bounded+space+instance_exec
     def instance_exec(*args, &block)
       begin
