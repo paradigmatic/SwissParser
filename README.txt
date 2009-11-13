@@ -1,14 +1,16 @@
-SwissParser
-    by Paradigmatic
-    http://github.com/paradigmatic/SwissParser
+= SwissParser =
+   by Paradigmatic
+   http://github.com/paradigmatic/SwissParser
 
 == DESCRIPTION:
 
-Bioinformatics parsers made easy.
+Simple DSL to define parser for flat files formats common in biofinformatics.
 
-== FEATURES/PROBLEMS:
+== FEATURES:
 
-* Eay to use
+* Defines parsers with a declarative syntax.
+* The whole parsing workflow is configurable.
+* The user can create new parsers by extending existing parsers.
 
 == SYNOPSIS:
 
@@ -16,13 +18,15 @@ Bioinformatics parsers made easy.
 
 == REQUIREMENTS:
 
-* Bones
+Only prue standard ruby. Tested with version 1.8.7 only but should work with JRuby and others.
+
+If you want to participate in SwissParser developpement, you will need the gem *bones*.
 
 == INSTALL:
 
-* FIXME (installation procedure)
+Soon available as a gem...
 
 == LICENSE:
 
-(GPLv3)
+Distributed under GPLv3. See included LICENSE file.
 

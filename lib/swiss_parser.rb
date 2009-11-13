@@ -30,7 +30,7 @@ module Swiss
     
     attr_reader :separator, :actions
     
-    # Do not create directly this class but access it
+    # *Do* *not* create directly this class but access it
     # through a +rules+ section in a parser definition.
     def initialize
       @actions = { :text => {} }
