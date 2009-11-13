@@ -105,8 +105,9 @@ module Swiss
         @separator = DEFAULT_SEPARATOR
         @actions = {}
         @actions[:text] = {}
-      elsif args.size == 6
-        actions,separator,before,the_begin,the_end,after = *args
+        @helpers = lambda {}
+      elsif args.size == 7
+        actions,separator,before,the_begin,the_end,after,helpers = *args
         @actions = actions.clone
         @actions[:text] = actions[:text].clone
         @separator = separator
@@ -114,8 +115,9 @@ module Swiss
         @end = the_end
         @begin = the_begin
         @after = after
+        @helpers = helpers
       else
-        raise "Wrong arg number, either 0 or 6."
+        raise "Wrong arg number, either 0 or 7."
       end
       @ctx = nil
     end
@@ -153,6 +155,12 @@ module Swiss
       @after = proc
     end
 
+    # Helpers methods accessible to rules and actions can be
+    # defined using this method.
+    def helpers(&proc)
+      @helpers = proc
+    end
+
     # Defines parsing rules inside a parser definition. The ParsingRules
     # methods can then be called inside the proc.
     def rules(&proc)
@@ -179,7 +187,7 @@ module Swiss
     # After extension, the new parser is independent of the original one,
     # i.e. a change to the original parser will not affect the derived one.
     def extend(&proc)
-      clone = Parser.new( @actions, @separator, @before, @begin, @end, @after )
+      clone = Parser.new( @actions, @separator, @before, @begin, @end, @after, @helpers )
       clone.instance_eval( &proc )
       clone
     end
@@ -196,6 +204,7 @@ module Swiss
     # it returns an array containing _entry_ objects.
     def parse_file( filename, params={} )
       @ctx = ParsingContext.new( params )
+      @ctx.instance_exec( &@helpers )
       container = @ctx.instance_exec( &@before )
       File.open( filename, 'r' ) do |file|
         entry = @ctx.instance_exec( &@begin )

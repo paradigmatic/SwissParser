@@ -33,9 +33,10 @@ enzyme_parser = Swiss::Parser.define do
   new_entry do
     { :genes => [] }
   end
-  
-  rules do
 
+
+  helpers do
+    
     def parse_gene_ids( string, entry )
       string.split(" ").each do |item|
         if item =~ /(\d+)\(\w+\)/
@@ -43,7 +44,11 @@ enzyme_parser = Swiss::Parser.define do
         end
       end
     end
+  end
     
+  
+  rules do
+
     human = "HSA"
   
     set_separator( "///" )
