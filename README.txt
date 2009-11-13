@@ -1,4 +1,4 @@
-= SwissParser =
+= SwissParser
    by Paradigmatic
    http://github.com/paradigmatic/SwissParser
 
