@@ -17,7 +17,7 @@ Bones {
   url  'http://github.com/paradigmatic/SwissParser'
   version  Swiss::VERSION
   ignore_file  '.gitignore'
-  rdoc.exclude ["samples/"]
+  rdoc.exclude ["examples/data"]
 }
 
 # EOF
