@@ -88,35 +88,32 @@ module Swiss
     end
 
     # Defines how to create the _entry_ _object_. The +proc+
-    # takes a single argument which is a hash containing
-    # parsing options. It must return a new _entry_ _object_.
+    # does not take arguments, but it must return a new 
+    # _entry_ _object_.
     # Default:: creates an empty hash.
     def new_entry(&proc)
        @begin = proc
     end
 
     # Defines how to finalize an _entry_ _object_. The +proc+
-    # takes three arguments:
+    # takes two arguments:
     # * The entry object ready to be finalized
     # * The context object
-    # * An hash containing parsing options. 
     # Default:: Adds the entry object to the context object using +<<+ method.
     def finish_entry(&proc)
       @end = proc
     end
     
     # Defines how to set the context before using the parser.
-    # The +proc+ takes a single argument which is a hash containing
-    # parsing options. It must return a _context_ object.
+    # The +proc+ does not take arguments. It must return a _context_ object.
     # Default:: creates an empty array
     def before (&proc)
       @before = proc
     end
 
     # Defines how to finalize the whole parsing.
-    # The +proc+ takes two arguments:
+    # The +proc+ takes a single argument:
     # * The context object
-    # * An hash containing parsing options. 
     # The value returned by the +proc+ is then returned by the parsing method.
     # Default:: just returns the context object.
     def after(&proc)
@@ -165,28 +162,28 @@ module Swiss
     # It returns the value specified in the +after+ block. By default, 
     # it returns an array containing _entry_ objects.
     def parse_file( filename, params={} )
-      context = @before.call( params )
+      context = @before.call()
       File.open( filename, 'r' ) do |file|
-        entry = @begin.call( params )
+        entry = @begin.call( )
         file.each_line do |line|
           state = parse_line( line, entry )
           if state == :end
-            @end.call( entry, context, params )
-            entry = @begin.call( params )
+            @end.call( entry, context )
+            entry = @begin.call()
           end
         end
       end
-      @after.call( context, params )
+      @after.call( context )
     end
 
     private
 
     PROTOTYPE = Parser.new
     PROTOTYPE.instance_eval do
-      before { |p| [] }
-      new_entry { |p| {} }
-      finish_entry {|e,c,p| c << e }
-      after {|c,p| c }
+      before { || [] }
+      new_entry { || {} }
+      finish_entry {|e,c| c << e }
+      after {|c| c }
     end
 
     

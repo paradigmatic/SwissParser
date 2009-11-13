@@ -30,7 +30,7 @@ end
 enzyme_parser = Swiss::Parser.define do
   
   
-  new_entry do |params|
+  new_entry do
     { :genes => [] }
   end
   
@@ -76,7 +76,7 @@ enzyme_parser = Swiss::Parser.define do
 
   end
   
-  finish_entry do |entry,container,params|
+  finish_entry do |entry,container|
     if entry[:genes].size > 0
       e = Enzyme.new
       e.id = entry[:id]
