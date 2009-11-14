@@ -12,21 +12,41 @@ Simple DSL to define parser for flat files formats common in biofinformatics.
 * The whole parsing workflow is configurable.
 * The user can create new parsers by extending existing parsers.
 
-== SYNOPSIS:
+== USAGE:
 
-  See examples
+  See tutorials: http://wiki.github.com/paradigmatic/SwissParser 
 
 == REQUIREMENTS:
 
-Only prue standard ruby. Tested with version 1.8.7 only but should work with JRuby and others.
+Only pure standard ruby. Tested with version 1.8.7 only but should work with JRuby and others.
 
 If you want to participate in SwissParser developpement, you will need the gem *bones*.
 
 == INSTALL:
 
-Soon available as a gem...
+SwissParser is available as a gem through gemcutter. If you still use
+rubyforge, you will need to change the sources as explained here:
+http://gemcutter.org/pages/gem_docs
 
+Then you can simply install SwissParser with:
+
+  gem install swissparser
+
+and start defining parsers by requiring it:
+
+  require 'swissparser'
+
+Alternatively, you can download the whole source tree or just the
+swissparser.rb file using the github site:
+
+http://github.com/paradigmatic/SwissParser
+
+Finally, if you want to participate in the development or use the edge
+version you can clone the project with git:
+
+  $ git clone git://github.com/paradigmatic/SwissParser
+ 
 == LICENSE:
 
-Distributed under GPLv3. See included LICENSE file.
+Distributed under GPLv3. See the included LICENSE file for details.
 

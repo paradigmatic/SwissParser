@@ -2,6 +2,7 @@
 *#
 
 *.gemspec
+announcement.txt
 
 doc/
 pkg/
