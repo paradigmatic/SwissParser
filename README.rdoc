@@ -8,13 +8,18 @@ Simple DSL to define parser for flat files formats common in biofinformatics.
 
 == FEATURES:
 
-* Defines parsers with a declarative syntax.
+SwissParser is currently under fast development. However, the code base should
+be assumbe
+
+* Defines parsers with a clear and compact declarative syntax.
 * The whole parsing workflow is configurable.
 * The user can create new parsers by extending existing parsers.
+* Parser have access to global parameters and user defined helper methods.
 
 == USAGE:
 
-  See tutorials: http://wiki.github.com/paradigmatic/SwissParser 
+See tutorials: http://wiki.github.com/paradigmatic/SwissParser 
+
 
 == REQUIREMENTS:
 

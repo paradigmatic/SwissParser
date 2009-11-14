@@ -1,3 +1,9 @@
+== 0.8.0 / 2009-11-14
+
+* 1 new feature:
+  - helper methods are now defined with the helper method. When the
+  parser is extended they can be overriden in a one per one basis.
+
 == 0.7.0 / 2009-11-14
 
 * *Important* *change*: SwissParser is now required with:

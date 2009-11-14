@@ -17,6 +17,7 @@ Bones {
   url  'http://github.com/paradigmatic/SwissParser'
   version  Swiss::VERSION
   readme_file 'README.rdoc'
+  history_file 'CHANGELOG.rdoc'
   ignore_file  '.gitignore'
   rdoc.exclude ["examples/data"]
 }
