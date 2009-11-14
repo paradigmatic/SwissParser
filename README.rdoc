@@ -13,8 +13,9 @@ be stable enough to be used for bioinformatics research.
 
 * Defines parsers with a clear and compact declarative syntax.
 * The whole parsing workflow is configurable.
-* The user can create new parsers by extending existing parsers.
-* Parser have access to global parameters and user defined helper methods.
+* Able to parse remote files accessible from a web or an FTP server.
+* Users can create new parsers by extending existing parsers.
+* A parser have access to global parameters and user defined helper methods.
 
 == USAGE:
 

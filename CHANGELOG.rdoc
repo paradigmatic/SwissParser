@@ -1,3 +1,9 @@
+== 0.9.0 / 2009-11-14
+
+* 1 new feature:
+  - SwissParser can now directly parse remote files using HTTP
+  or FTP.
+
 == 0.8.1 / 2009-11-14
 
 * 1 bugfix:
@@ -18,7 +24,7 @@
 
 == 0.6.0 / 2009-11-13
 
-* 2 new features
+* 2 new features:
   - Parsing parameters are now accessed thru the +params+ method
     and are accessible to parsing rules too.
   - Helpers methods are now defined in an helper block and are
