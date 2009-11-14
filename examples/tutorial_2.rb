@@ -19,8 +19,8 @@ along with SwissParser.  If not, see <http://www.gnu.org/licenses/>.
 
 #!/usr/bin/ruby -w
 
-require 'yaml'
 require 'swissparser'
+require 'examples/tutorial_1'
 
 class Protein
 
@@ -35,42 +35,19 @@ end
 
 module Uniprot
 
-  Parser = Swiss::Parser.define do
+  SpeciesParser = Uniprot::Parser.extend do
 
-    # Each entry must be stored in a Protein instance
-    new_entry do
-      Protein.new
+    before do 
+      {}
     end
-    
-    rules do 
-      
-      # Parse the uniprot id
-      with("ID") do |content,protein|
-        content =~ /([A-Z]\w+)\D+(\d+)/
-        protein.id = $1
-        protein.size = $2.to_i
+
+    finish_entry do |protein, container|
+      if container[protein.species].nil?
+        container[protein.species] = []
       end
-      
-      # Parse the organism
-      with("OS") do |content,protein|
-        content =~ /(\w+ \w+)/
-        protein.species = $1
-      end
-      
-      # Parse the complete taxonomy
-      with("OC") do |content,protein|
-        ary = content.gsub(".","").split("; ")
-        protein.taxonomy += ary
-      end
-      
-      # Parse the Sequence
-      with_text_after("SQ") do |content,protein|
-        seq = content.strip.gsub(" ","")
-        protein.sequence += seq
-      end
-      
+      container[protein.species] << protein
     end
-    
+
   end
   
 end
@@ -79,10 +56,10 @@ if $0 == __FILE__
     
   filename = ARGV.shift
 
-  entries = Uniprot::Parser.parse_file( filename )
+  result = Uniprot::SpeciesParser.parse_file( filename )
 
-  entries.each do |e|
-    puts e.to_yaml
+  result.each do |species, ary|
+    puts "#{species} => #{ary.map{ |p| p.id }.join(', ')}"
   end
 
 end
