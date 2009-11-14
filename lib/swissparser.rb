@@ -163,6 +163,10 @@ module Swiss
     end
 
     # Define an helper method accessible to rules and actions.
+    # This method tales two argument:
+    # * A symbol which will be the method name
+    # * A block which is the method implementation. The block can take parameters.
+    # The helper method can then be called as a regular method.
     def helper(name, &proc)
       @helpers[name] = proc
     end
