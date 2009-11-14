@@ -16,6 +16,7 @@ Bones {
   email  'paradigmatic@streum.org'
   url  'http://github.com/paradigmatic/SwissParser'
   version  Swiss::VERSION
+  readme_file 'README.rdoc'
   ignore_file  '.gitignore'
   rdoc.exclude ["examples/data"]
 }
