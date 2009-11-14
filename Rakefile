@@ -5,7 +5,7 @@ rescue LoadError
 end
 
 ensure_in_path 'lib'
-require 'swiss_parser'
+require 'swissparser'
 
 #task :default => 'test:run'
 #task 'gem:release' => 'test:run'
