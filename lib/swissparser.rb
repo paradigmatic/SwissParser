@@ -17,6 +17,8 @@ You should have received a copy of the GNU General Public License
 along with SwissParser.  If not, see <http://www.gnu.org/licenses/>.
 =end
 
+require 'open-uri'
+
 module Swiss
 
   VERSION = "0.8.1"
@@ -216,6 +218,26 @@ module Swiss
     # It returns the value specified in the +after+ block. By default, 
     # it returns an array containing _entry_ objects.
     def parse_file( filename, params={} )
+      File.open( filename, 'r' ) do |file|
+        parse( file, params )
+      end
+    end
+
+    # Parses a file specified by an +URI+. Both http and ftp are
+    # supported. An optional hash of arbitrary arguments (+params+)
+    # can be specified. It is passed to the workflow methods blocks
+    # (+before+, +new_entry+, ...)  It returns the value specified in
+    # the +after+ block. By default, it returns an array containing
+    # _entry_ objects.
+    def parse_URI( uri, params={} )
+      open( uri ) do |file|
+        parse( file, params )
+      end
+    end
+
+    private
+    
+    def parse( file, params )
       @ctx = ParsingContext.new( params )
       helperModule = Module.new
       @helpers.each do |name, proc|
@@ -223,20 +245,16 @@ module Swiss
       end
       @ctx.extend( helperModule )
       container = @ctx.instance_exec( &@before )
-      File.open( filename, 'r' ) do |file|
-        entry = @ctx.instance_exec( &@begin )
-        file.each_line do |line|
-          state = parse_line( line, entry )
-          if state == :end
-            @ctx.instance_exec( entry, container, &@end )
-            entry = @ctx.instance_exec( &@begin )
-          end
+      entry = @ctx.instance_exec( &@begin )
+      file.each_line do |line|
+        state = parse_line( line, entry )
+        if state == :end
+          @ctx.instance_exec( entry, container, &@end )
+          entry = @ctx.instance_exec( &@begin )
         end
       end
       @ctx.instance_exec( container, &@after )
     end
-
-    private
 
     PROTOTYPE = Parser.new
     PROTOTYPE.instance_eval do
