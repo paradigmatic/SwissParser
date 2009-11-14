@@ -9,7 +9,7 @@ Simple DSL to define parser for flat files formats common in biofinformatics.
 == FEATURES:
 
 SwissParser is currently under fast development. However, the code base should
-be assumbe
+be stable enough to be used for bioinformatics research.
 
 * Defines parsers with a clear and compact declarative syntax.
 * The whole parsing workflow is configurable.
