@@ -19,7 +19,7 @@ along with SwissParser.  If not, see <http://www.gnu.org/licenses/>.
 
 module Swiss
 
-  VERSION = "0.6.0"
+  VERSION = "0.7.0"
 
   # This class defines parsing rules. Its methods
   # are accessible within the +rules+ section of

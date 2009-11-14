@@ -20,7 +20,7 @@ along with SwissParser.  If not, see <http://www.gnu.org/licenses/>.
 #!/usr/bin/ruby -w
 
 require 'yaml'
-require 'swiss_parser.rb'
+require 'swissparser.rb'
 
 class Protein
 

@@ -20,7 +20,7 @@ along with SwissParser.  If not, see <http://www.gnu.org/licenses/>.
 #!/usr/bin/ruby -w
 
 require 'yaml'
-require 'swiss_parser.rb'
+require 'swissparser.rb'
 
 class Protein
 
@@ -33,48 +33,53 @@ class Protein
 
 end
 
+module Uniprot
 
-uniprot_parser = Swiss::Parser.define do
+  Parser = Swiss::Parser.define do
 
-  new_entry do
-    Protein.new
+    # Each entry must be stored in a Protein instance
+    new_entry do
+      Protein.new
+    end
+    
+    rules do 
+      
+      # Parse the uniprot id
+      with("ID") do |content,protein|
+        content =~ /([A-Z]\w+)\D+(\d+)/
+        protein.id = $1
+        protein.size = $2.to_i
+      end
+      
+      # Parse the organism
+      with("OS") do |content,protein|
+        content =~ /(\w+ \w+)/
+        protein.species = $1
+      end
+      
+      # Parse the complete taxonomy
+      with("OC") do |content,protein|
+        ary = content.gsub(".","").split("; ")
+        protein.taxonomy += ary
+      end
+      
+      # Parse the Sequence
+      with_text_after("SQ") do |content,protein|
+        seq = content.strip.gsub(" ","")
+        protein.sequence += seq
+      end
+      
+    end
+    
   end
-
-  rules do 
-
-    with("ID") do |content,protein|
-      content =~ /([A-Z]\w+)\D+(\d+)/
-      protein.id = $1
-      protein.size = $2.to_i
-    end
-    
-    with("OS") do |content,protein|
-      content =~ /(\w+ \w+)/
-      protein.species = $1
-    end
-    
-    with("OC") do |content,protein|
-      ary = content.gsub(".","").split("; ")
-      protein.taxonomy += ary
-    end
-    
-    with_text_after("SQ") do |content,protein|
-      seq = content.strip.gsub(" ","")
-      protein.sequence += seq
-    end
-
-  end
-
+  
 end
-
-
+  
 if $0 == __FILE__
-
+    
   filename = ARGV.shift
 
-  entries = uniprot_parser.parse_file( filename )
-
-  puts entries.size
+  entries = Uniprot::Parser.parse_file( filename )
 
   entries.each do |e|
     puts e.to_yaml

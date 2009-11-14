@@ -17,7 +17,7 @@ You should have received a copy of the GNU General Public License
 along with SwissParser.  If not, see <http://www.gnu.org/licenses/>.
 =end
 
-require 'swiss_parser.rb'
+require 'swissparser.rb'
 require 'yaml'
 
 class Enzyme

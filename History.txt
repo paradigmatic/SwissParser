@@ -1,3 +1,10 @@
+== 0.7.0 / 2009-11-14
+
+* *Important* *change*: SwissParser is now required with:
+  require 'swissparser' 
+
+* Examples: added the example for tutorial 1.
+
 == 0.6.0 / 2009-11-13
 
 * 2 new features
