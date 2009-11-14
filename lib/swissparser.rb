@@ -112,7 +112,7 @@ module Swiss
         @separator = DEFAULT_SEPARATOR
         @actions = {}
         @actions[:text] = {}
-        @helpers = lambda {}
+        @helpers = {}
       elsif args.size == 7
         actions,separator,before,the_begin,the_end,after,helpers = *args
         @actions = actions.clone
@@ -162,10 +162,9 @@ module Swiss
       @after = proc
     end
 
-    # Helpers methods accessible to rules and actions can be
-    # defined using this method.
-    def helpers(&proc)
-      @helpers = proc
+    # Define an helper method accessible to rules and actions.
+    def helper(name, &proc)
+      @helpers[name] = proc
     end
 
     # Defines parsing rules inside a parser definition. The ParsingRules
@@ -211,7 +210,11 @@ module Swiss
     # it returns an array containing _entry_ objects.
     def parse_file( filename, params={} )
       @ctx = ParsingContext.new( params )
-      @ctx.instance_exec( &@helpers )
+      helperModule = Module.new
+      @helpers.each do |name, proc|
+        helperModule.send( :define_method, name, proc )
+      end
+      @ctx.extend( helperModule )
       container = @ctx.instance_exec( &@before )
       File.open( filename, 'r' ) do |file|
         entry = @ctx.instance_exec( &@begin )

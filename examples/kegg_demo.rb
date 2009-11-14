@@ -35,17 +35,13 @@ enzyme_parser = Swiss::Parser.define do
   end
 
 
-  helpers do
-    
-    def parse_gene_ids( string, entry )
-      string.split(" ").each do |item|
-        if item =~ /(\d+)\(\w+\)/
-          entry[:genes] << $1
-        end
+  helper :parse_gene_ids do |string, entry|
+    string.split(" ").each do |item|
+      if item =~ /(\d+)\(\w+\)/
+        entry[:genes] << $1
       end
     end
   end
-    
   
   rules do
 
