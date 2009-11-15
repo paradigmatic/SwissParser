@@ -186,14 +186,15 @@ module Swiss
           next
         end
         @actions[k] = v
-        r.actions[:text].each do |k,v|
-          @actions[:text][k] = v
-        end
-        if r.separator
-          @separator = r.separator
-        end
+      end
+      r.actions[:text].each do |k,v|
+        @actions[:text][k] = v
+      end
+      if r.separator
+        @separator = r.separator
       end
     end
+    
 
 
 
