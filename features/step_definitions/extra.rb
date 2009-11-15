@@ -23,3 +23,16 @@ When /^I return param "([^\"]*)" in after action$/ do |name|
   end
 
 end
+
+When /^the before action sets @foo="([^\"]*)"$/ do |val|
+   @ext_parser = @ext_parser.extend do 
+    before { @foo=val; [] }
+  end 
+end
+
+When /^the after action returns @foo$/ do
+  @ext_parser = @ext_parser.extend do 
+    after { @foo }
+  end 
+end
+

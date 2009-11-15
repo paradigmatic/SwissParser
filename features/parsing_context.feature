@@ -1,5 +1,5 @@
-Feature: User Friendly
-  SwissParser is nice to use.
+Feature: Sharing context
+  During parsing, rules share a context object.
 
   Background:
    Given input data 
@@ -28,3 +28,13 @@ Feature: User Friendly
       And I return param "foo" in after action
       And I run the extended parser on data with param "foo" = "bar"
     Then the result should be "'bar'"
+
+  Scenario: Instance variables
+    Given a simple parser
+    When I extend it
+      And the before action sets @foo="bar"
+      And the after action returns @foo
+      And I run the extended parser on data with param "foo" = "bar"
+    Then the result should be "'bar'"
+
+

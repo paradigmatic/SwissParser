@@ -33,3 +33,36 @@ When /^I set the separator to '([^\']*)'$/ do |sep|
     end
   end
 end
+
+When /^I return "([^\"]*)" in new entry$/ do |value|
+  @ext_parser = @ext_parser.extend do
+    new_entry { value }
+  end
+end
+
+When /^I replace the container with a counter$/ do
+  class Counter
+    def initialize
+      @n = 0
+    end
+    def <<(i)
+      @n += 1
+    end
+    def count
+      @n
+    end
+  end
+  @ext_parser = @ext_parser.extend do
+    before { Counter.new }
+    after {|c| c.count }
+  end 
+end
+
+When /^entry finalize always returns "([^\"]*)"$/ do |val|
+   @ext_parser = @ext_parser.extend do
+    finish_entry {|e,c| c << val }
+  end 
+end
+
+
+
