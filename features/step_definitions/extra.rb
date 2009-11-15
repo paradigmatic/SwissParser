@@ -36,3 +36,12 @@ When /^the after action returns @foo$/ do
   end 
 end
 
+When /^set with\("([^\"]*)"\) to skip the entry$/ do |key|
+  @ext_parser = @ext_parser.extend do 
+    rules do
+      with(key) { skip_entry! }
+    end
+  end 
+end
+
+

@@ -165,20 +165,22 @@ module Swiss
     # value specified in the +after+ block. By default, it returns an
     # array containing _entry_ objects.
     def parse( data, params={} )
-      @ctx = ParsingContext.new( params )
-      helperModule = Module.new
-      @helpers.each do |name, proc|
-        helperModule.send( :define_method, name, proc )
-      end
-      @ctx.extend( helperModule )
+      @ctx = init_context( params )
       state = :begin
       container = @ctx.instance_exec( &@before )
       entry = @ctx.instance_exec( &@begin )
       data.each_line do |line|
-        state = parse_line( line, entry )
-        if state == :end
-          @ctx.instance_exec( entry, container, &@end )
-          entry = @ctx.instance_exec( &@begin )
+        if @ctx.should_skip?
+          if line == @separator
+            state = :end
+            entry = init_entry
+          end
+        else
+          state = parse_line( line, entry )
+          if state == :end
+            @ctx.instance_exec( entry, container, &@end )
+            entry = init_entry
+          end
         end
       end
       if state == :parsing 
@@ -187,14 +189,30 @@ module Swiss
       @ctx.instance_exec( container, &@after )
     end
 
-    private
-
     PROTOTYPE = Parser.new
     PROTOTYPE.instance_eval do
       before { || [] }
       new_entry { || {} }
       finish_entry {|e,c| c << e }
       after {|c| c }
+    end
+    PROTOTYPE.freeze
+
+    private
+
+    def init_entry()
+      @ctx.reset_skip
+      @ctx.instance_exec( &@begin )
+    end
+    
+    def init_context(params)
+      ctx = ParsingContext.new( params )
+      helperModule = Module.new
+      @helpers.each do |name, proc|
+        helperModule.send( :define_method, name, proc )
+      end
+      ctx.extend( helperModule )
+      ctx
     end
 
     

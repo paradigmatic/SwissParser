@@ -6,12 +6,25 @@ module Swiss
 
     def initialize(parameters)
       @params = parameters
+      @skip = false
     end   
 
     # Retrieves a parsing parameter by key. Returns nil if 
     # there is no parameter with the provided key.
     def param( key ) 
       @params[key]
+    end
+
+    def skip_entry!()
+      @skip = true
+    end
+
+    def should_skip?()
+      @skip
+    end
+
+    def reset_skip()
+      @skip = false
     end
 
 

@@ -34,7 +34,15 @@ Feature: Sharing context
     When I extend it
       And the before action sets @foo="bar"
       And the after action returns @foo
-      And I run the extended parser on data with param "foo" = "bar"
+      And I run the extended parser on data
     Then the result should be "'bar'"
+
+  Scenario: Skipping entries
+    Given a simple parser
+    When I extend it
+      And set with("XX") to skip the entry
+      And I run the extended parser on data
+    Then the result should contain '0' entries
+
 
 
