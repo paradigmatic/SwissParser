@@ -1,4 +1,9 @@
-== 0.10.0 / 2009-11-14
+== Next release
+
+* 1 improvement:
+  - parsers raise an error when the last separator is missing
+
+== 0.10.0 / 2009-11-15
 
 * 1 new feature:
   - SwissParser can now parse an input string or whatever input responding to the +each_line+ method
