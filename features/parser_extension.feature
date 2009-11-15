@@ -25,7 +25,8 @@ Feature: Parser Extension
     When I extend it
       And I replace with("XX") to return always 'foo'
       And I replace with("YY") to do nothing
-    Then the parser should return "[{ 'XX' => 'foo'}, { 'XX' => 'foo'}]"   
+      And I run the extended parser on data
+    Then the result should be "[{ 'XX' => 'foo'}, { 'XX' => 'foo'}]"   
  
   Scenario: Text after replacing
     Given a simple parser
@@ -33,7 +34,8 @@ Feature: Parser Extension
       And I replace with("XX") to do nothing
       And I replace with("YY") to return always 'bar'
       And I replace with_text_after("YY") to return always 'foo'
-    Then the parser should return "[{ 'YY' => 'bar', 'txt-YY' => 'foo'}, { 'YY' => 'bar', 'txt-YY' => 'foo'}]" 
+      And I run the extended parser on data
+    Then the result should be "[{ 'YY' => 'bar', 'txt-YY' => 'foo'}, { 'YY' => 'bar', 'txt-YY' => 'foo'}]" 
 
   Scenario: 
     Given a simple parser
@@ -50,4 +52,5 @@ Feature: Parser Extension
         """
      When I extend it
        And I set the separator to '%'
-     Then the parser should return '2' entries
+       And I run the extended parser on data
+     Then the result should contain '2' entries

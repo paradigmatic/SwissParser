@@ -19,11 +19,12 @@ Feature: User Friendly
     When I extend it
       And I define 'foo' helper
       And I call 'foo' helper in after action
-    Then the parser should return 'foo'
+      And I run the extended parser on data
+    Then the result should be "'foo'"
 
-  Scenario: Helper Method
+  Scenario: Parsing Parameters
     Given a simple parser
     When I extend it
       And I return param "foo" in after action
-      And I call parse with param "foo" equal to "bar"
-    Then the result should be "bar"
+      And I run the extended parser on data with param "foo" = "bar"
+    Then the result should be "'bar'"
