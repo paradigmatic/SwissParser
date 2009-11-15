@@ -249,6 +249,7 @@ module Swiss
         helperModule.send( :define_method, name, proc )
       end
       @ctx.extend( helperModule )
+      state = :begin
       container = @ctx.instance_exec( &@before )
       entry = @ctx.instance_exec( &@begin )
       data.each_line do |line|
@@ -257,6 +258,9 @@ module Swiss
           @ctx.instance_exec( entry, container, &@end )
           entry = @ctx.instance_exec( &@begin )
         end
+      end
+      if state == :parsing 
+        raise("No separator at end of file")
       end
       @ctx.instance_exec( container, &@after )
     end

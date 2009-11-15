@@ -65,3 +65,7 @@ end
 Then /^OpenUri\.open should be called with "([^\"]*)"$/ do |filename|
   OpenURI.should_receive(:open).with(filename)  
 end
+
+Then /^the simple parser should raise an error when parsing data$/ do
+  lambda{@simple_parser.parse(@data)}.should raise_error
+end
