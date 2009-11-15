@@ -234,10 +234,14 @@ module Swiss
         parse( file, params )
       end
     end
-
-    private
     
-    def parse( file, params )
+    # Parses any input that accepts the +each_line+ method.  Works for
+    # string, open files, etc. An optional hash of arbitrary arguments
+    # (+params+) can be specified. It is passed to the workflow
+    # methods blocks (+before+, +new_entry+, ...)  It returns the
+    # value specified in the +after+ block. By default, it returns an
+    # array containing _entry_ objects.
+    def parse( data, params={} )
       @ctx = ParsingContext.new( params )
       helperModule = Module.new
       @helpers.each do |name, proc|
@@ -246,7 +250,7 @@ module Swiss
       @ctx.extend( helperModule )
       container = @ctx.instance_exec( &@before )
       entry = @ctx.instance_exec( &@begin )
-      file.each_line do |line|
+      data.each_line do |line|
         state = parse_line( line, entry )
         if state == :end
           @ctx.instance_exec( entry, container, &@end )
@@ -255,6 +259,8 @@ module Swiss
       end
       @ctx.instance_exec( container, &@after )
     end
+
+    private
 
     PROTOTYPE = Parser.new
     PROTOTYPE.instance_eval do

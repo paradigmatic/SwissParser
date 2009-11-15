@@ -7,8 +7,13 @@ end
 ensure_in_path 'lib'
 require 'swissparser'
 
-#task :default => 'test:run'
-#task 'gem:release' => 'test:run'
+require 'cucumber/rake/task'
+
+Cucumber::Rake::Task.new(:features) do |t|
+  t.cucumber_opts = "--format pretty"
+  t.rcov = true
+end
+
 
 Bones {
   name  'swissparser'
