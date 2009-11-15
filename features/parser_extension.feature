@@ -34,3 +34,20 @@ Feature: Parser Extension
       And I replace with("YY") to return always 'bar'
       And I replace with_text_after("YY") to return always 'foo'
     Then the parser should return "[{ 'YY' => 'bar', 'txt-YY' => 'foo'}, { 'YY' => 'bar', 'txt-YY' => 'foo'}]" 
+
+  Scenario: 
+    Given a simple parser
+      And input data 
+        """
+        XX a1
+        YY b1
+        c1
+        %
+        XX a1
+        YY b2
+        c2
+        %
+        """
+     When I extend it
+       And I set the separator to '%'
+     Then the parser should return '2' entries
