@@ -104,20 +104,13 @@ module Swiss
       r = ParsingRules.new
       r.instance_eval(&proc)
       r.actions.each do |k,v|
-        if k == :text
-          next
-        end
         @actions[k] = v
-      end
-      r.actions[:text].each do |k,v|
-        @actions[:text][k] = v
       end
       if r.separator
         @separator = r.separator
       end
     end
     
-
 
 
     # Extends an existing parser by allowing to redefine rules. The
