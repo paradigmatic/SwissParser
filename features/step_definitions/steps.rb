@@ -28,12 +28,22 @@ When /^I replace with\("([^\"]*)"\) to return always '([^\']*)'$/ do |key,out|
 end
 
 When /^I replace with\("([^\"]*)"\) to do nothing$/ do |key|
-    @ext_parser = @ext_parser.extend do 
+  @ext_parser = @ext_parser.extend do 
     rules do
       with( key ) {|c,e| }
     end
   end
 end
+
+When /^I replace with_text_after\("([^\"]*)"\) to return always '([^\']*)'$/ do |key,out|
+    text_key = "txt-#{key}"
+  @ext_parser = @ext_parser.extend do 
+    rules do
+      with_text_after( key ) {|c,e| e[text_key] = out }
+    end
+  end
+end
+
 
 Then /^the extended parser should parse it as the original one$/ do
   @simple_parser.parse( @data ).should == @ext_parser.parse( @data )
