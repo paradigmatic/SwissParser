@@ -1,3 +1,14 @@
+== 0.10.0 / 2009-11-14
+
+* 1 new feature:
+  - SwissParser can now parse an input string or whatever input responding to the +each_line+ method
+
+* 1 bug fix:
+  - +with_text_after+ and +set_separator+ can now be properly replaced when extended.
+
+* Misc:
+  - First release with tests using cucumber 
+
 == 0.9.0 / 2009-11-14
 
 * 1 new feature:

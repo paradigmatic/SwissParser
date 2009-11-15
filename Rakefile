@@ -24,6 +24,7 @@ Bones {
   email  'paradigmatic@streum.org'
   url  'http://github.com/paradigmatic/SwissParser'
   version  Swiss::VERSION
+  gem.development_dependencies = [["cucumber", ">= 0.4"]]
   readme_file 'README.rdoc'
   history_file 'CHANGELOG.rdoc'
   ignore_file  '.gitignore'
