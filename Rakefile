@@ -16,6 +16,7 @@ Cucumber::Rake::Task.new(:features) do |t|
   t.rcov = true
 end
 
+CLOBBER << "coverage/"
 
 Bones {
   name  'swissparser'

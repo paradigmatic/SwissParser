@@ -67,6 +67,23 @@ When /^I call '([^\']*)' helper in after action$/ do |name|
   end
 end
 
+When /^I return param "([^\"]*)" in after action$/ do |name|
+  l = eval("lambda { |x| param(#{name}) }")
+  @ext_parser = @ext_parser.extend do 
+    after(&l)
+  end
+
+end
+
+When /^I call parse with param "([^\"]*)" equal to "([^\"]*)"$/ do |key, val|
+  @result = @ext_parser.parse(@data, key => val)
+end
+
+Then /^the result should be "([^\"]*)"$/ do |val|
+  @result.should == val
+end
+
+
 Then /^the parser should return '([^\']*)'$/ do |val|
   @ext_parser.parse( @data ).should == val
 end
