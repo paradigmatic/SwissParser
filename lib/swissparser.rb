@@ -21,7 +21,7 @@ require 'open-uri'
 
 module Swiss
 
-  VERSION = "0.9.0"
+  VERSION = "0.10.0"
 
   # This class defines parsing rules. Its methods
   # are accessible within the +rules+ section of
