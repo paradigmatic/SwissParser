@@ -1,7 +1,15 @@
 == Next release
 
+* 1 new feature:
+  - parsing rules can call +skip_entry!+ to skip the current entry, shortcutting other rules evaluation and entry finalizing.
+
 * 1 improvement:
   - parsers raise an error when the last separator is missing
+
+* Code quality:
+  - Split swissparser file in several files
+  - Simplified parse method by extracting code
+  
 
 == 0.10.0 / 2009-11-15
 

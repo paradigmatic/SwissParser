@@ -28,7 +28,7 @@ Bones {
   readme_file 'README.rdoc'
   history_file 'CHANGELOG.rdoc'
   ignore_file  '.gitignore'
-  rdoc.exclude ["examples/data"]
+  rdoc.exclude ["examples/","features/"]
 }
 
 # EOF
