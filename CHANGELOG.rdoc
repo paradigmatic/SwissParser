@@ -1,4 +1,4 @@
-== Next release
+== 0.11.0 / 2009-11-16
 
 * 1 new feature:
   - parsing rules can call +skip_entry!+ to skip the current entry, shortcutting other rules evaluation and entry finalizing.
