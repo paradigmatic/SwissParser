@@ -23,7 +23,7 @@ require 'swissparser/parsing_rules'
 
 module Swiss
 
-  VERSION = "0.11.0"
+  VERSION = "0.11.1"
 
 
   # Parser for a typical bioinformatic flat file.

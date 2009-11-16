@@ -1,3 +1,8 @@
+== 0.11.1 / 2009-11-17
+
+* 1 bug fix:
+  - Corrected skip_entry! issue.
+
 == 0.11.0 / 2009-11-16
 
 * 1 new feature:
