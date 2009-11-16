@@ -14,7 +14,7 @@ Feature: Basic Parsing
      //
      """
  
-  Scenario: Extension without redefinition
+  Scenario: Parsing from string
     Given a simple parser
     When I run the simple parser on data
     Then the result should be "[{'XX'=>'a1','YY'=>'b1'},{'XX'=>'a2','YY'=>'b2'}]"

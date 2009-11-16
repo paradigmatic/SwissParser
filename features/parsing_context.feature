@@ -22,6 +22,15 @@ Feature: Sharing context
       And I run the extended parser on data
     Then the result should be "'foo'"
 
+  Scenario: Chaining Helper Methods
+    Given a simple parser
+    When I extend it
+      And I define 'foo' helper
+      And I define "bar" helper which calls the "foo" helper
+      And I call 'bar' helper in after action
+      And I run the extended parser on data
+    Then the result should be "'foo'"
+
   Scenario: Parsing Parameters
     Given a simple parser
     When I extend it

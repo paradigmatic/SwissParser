@@ -9,6 +9,15 @@ When /^I define '([^\']*)' helper$/ do |name|
   end
 end
 
+When /^I define "([^\"]*)" helper which calls the "([^\"]*)" helper$/ do |name,to_call|
+  @ext_parser = @ext_parser.extend do 
+    helper(name.to_sym) do
+      self.send to_call
+    end
+  end
+end
+
+
 When /^I call '([^\']*)' helper in after action$/ do |name|
   l = eval("lambda { |x| #{name} }")
   @ext_parser = @ext_parser.extend do 
