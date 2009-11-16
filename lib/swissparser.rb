@@ -164,7 +164,7 @@ module Swiss
       entry = @ctx.instance_exec( &@begin )
       data.each_line do |line|
         if @ctx.should_skip?
-          if line == @separator
+          if line.include? @separator
             state = :end
             entry = init_entry
           end
@@ -211,7 +211,7 @@ module Swiss
     
     def parse_line( line, holder )
       line.chomp!
-      if line == @separator
+      if line.include? @separator
         :end
       elsif line =~ /^(\S+)\s+(.*)$/
         key,value = $1,$2

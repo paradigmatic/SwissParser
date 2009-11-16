@@ -8,7 +8,7 @@ Feature: Sharing context
      YY b1
      c1
      //
-     XX a1
+     XX a2
      YY b2
      c2
      //
@@ -40,9 +40,9 @@ Feature: Sharing context
   Scenario: Skipping entries
     Given a simple parser
     When I extend it
-      And set with("XX") to skip the entry
+      And I set it to skip entries with("XX") containing "a1"
       And I run the extended parser on data
-    Then the result should contain '0' entries
+    Then the result should contain '1' entries
 
 
 

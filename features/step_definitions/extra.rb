@@ -37,11 +37,20 @@ When /^the after action returns @foo$/ do
 end
 
 When /^set with\("([^\"]*)"\) to skip the entry$/ do |key|
-  @ext_parser = @ext_parser.extend do 
-    rules do
-      with(key) { skip_entry! }
-    end
-  end 
+  
 end
 
 
+
+
+When /^I set it to skip entries with\("([^\"]*)"\) containing "([^\"]*)"$/ do |key, val|
+ @ext_parser = @ext_parser.extend do 
+    rules do
+      with(key) do |c,e|
+        if c.include?(val)
+          skip_entry!
+        end
+      end
+    end
+  end
+end

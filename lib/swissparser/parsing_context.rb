@@ -5,26 +5,26 @@ module Swiss
   class ParsingContext
 
     def initialize(parameters)
-      @params = parameters
-      @skip = false
+      @params__ = parameters
+      @skip__ = false
     end   
 
     # Retrieves a parsing parameter by key. Returns nil if 
     # there is no parameter with the provided key.
     def param( key ) 
-      @params[key]
+      @params__[key]
     end
 
     def skip_entry!()
-      @skip = true
+      @skip__ = true
     end
 
     def should_skip?()
-      @skip
+      @skip__
     end
 
     def reset_skip()
-      @skip = false
+      @skip__ = false
     end
 
 
@@ -35,7 +35,7 @@ module Swiss
 
     #Method instance_exec exists since version 1.9
     if RUBY_VERSION < "1.9"
-      #Used to execute rules and action using the ParsingContext as context
+      #Used to execuxte rules and action using the ParsingContext as context
       #Stolen from http://eigenclass.org/hiki/bounded+space+instance_exec
       def instance_exec(*args, &block)
         begin
