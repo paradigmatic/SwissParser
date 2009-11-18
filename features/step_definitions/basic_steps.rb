@@ -32,6 +32,25 @@ Given /^I define a simple rule to extract text after "([^\"]*)"$/ do |key|
   end
 end
 
+Given /^I define a simple rule to add "([^\"]*)" to an array$/ do |key|
+  @rules = @rules.refine do
+    with( key ) do |content| 
+      @text = [] if @text.nil?
+      @text << content
+    end
+  end
+end
+
+Given /^I define a simple rule to return "([^\"]*)" with "([^\"]*)"$/ do |val, key|
+   @rules = @rules.refine do
+    with( key ) do |content| 
+      @text = val
+    end
+  end
+end
+
+
+
 Given /^I define a parser which counts entry$/ do
   @parser = @rules.define_parser do |entries|
     entries.size 

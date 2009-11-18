@@ -60,4 +60,20 @@ Scenario: I can define a simple 'with_text_after' rule
   Then the result evals to "%w{ abcd efgh ijkl }"
 
 
+Scenario: I can define several rules
+  Given the default rules
+    And I define a simple rule to add "BB" to an array
+    And I define a simple rule to add "CC" to an array
+    And I define a simple parser which returns an array
+    And I run the parser on sample data
+  Then the result evals to "[ %w{y1 z1}, %w{y2 z2}, %w{y3 z3}]"
+
+Scenario: I can redefine rules
+  Given the default rules
+    And I define a simple rule to extract "CC"
+    And I define a simple rule to return "foo" with "CC"
+    And I define a simple parser which returns an array
+    And I run the parser on sample data
+  Then the result evals to "%w{foo foo foo}"
+
 

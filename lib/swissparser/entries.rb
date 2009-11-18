@@ -26,21 +26,21 @@ module Swiss
       last_key = nil
       @input.each_line do |line|
         line.chomp!
-       if separator?( line )
-         yield entry
-         last_key = nil
-         entry = Entry.new
-       elsif line =~ /^(\S+)\s+(.*)$/
-         key,content = $1,$2
-         last_key = key
+        if separator?( line )
+          yield entry
+          last_key = nil
+          entry = Entry.new
+        elsif line =~ /^(\S+)\s+(.*)$/
+          key,content = $1,$2
+          last_key = key
           if @rules.rules[key]
             entry.instance_exec( content, &@rules.rules[key] )
           end 
-       else
-         if @rules.rules[:text][last_key]
-           entry.instance_exec(  line.chomp.strip, &@rules.rules[:text][last_key]) 
-         end
-       end
+        else
+          if @rules.rules[:text][last_key]
+            entry.instance_exec(  line.chomp.strip, &@rules.rules[:text][last_key]) 
+          end
+        end
       end   
     end
      
