@@ -31,12 +31,29 @@ module Swiss
 
     attr_reader :separator
 
-    def initialize
-      @separator = DEFAULT_SEPARATOR
+    def initialize( separator=nil )
+      if separator.nil?
+        @separator = DEFAULT_SEPARATOR
+      else
+        @separator = separator
+      end
     end
 
     def define_parser( &body )
       Parser.new( self, body )
+    end
+    
+    def refine( &proc )
+      new_rules = Rules.new( @separator )
+      new_rules.instance_eval(&proc)
+      new_rules
+    end
+
+    private
+
+
+    def set_separator( str )
+      @separator = str
     end
 
   end
@@ -66,7 +83,7 @@ module Swiss
       unless @size
         size = 0
         @input.each_line do |line|
-          if line.include? @rules.separator
+          if separator?( line )
             size += 1
           end
         end
@@ -74,7 +91,13 @@ module Swiss
       end
       @size
     end
-        
+     
+    private
+
+    def separator?( line )
+      line.strip == @rules.separator
+    end
+   
   end
 
 
