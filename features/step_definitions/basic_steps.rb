@@ -17,10 +17,20 @@ end
 
 Given /^I define a simple rule to extract "([^\"]*)"$/ do |key|
   @rules = @rules.refine do
-    with( key ) {|content| @text = content}
+    with( key ) do |content| 
+      @text = content
+    end
   end
 end
 
+Given /^I define a simple rule to extract text after "([^\"]*)"$/ do |key|
+  @rules = @rules.refine do 
+    with_text_after( key ) do |content|
+      @text = "" if @text.nil?
+      @text << content
+    end
+  end
+end
 
 Given /^I define a parser which counts entry$/ do
   @parser = @rules.define_parser do |entries|

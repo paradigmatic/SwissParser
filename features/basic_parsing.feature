@@ -12,12 +12,12 @@ abcd
 AA x2
 BB y2
 CC z2
-abcd
+efgh
 //
 AA x3
 BB y3
 CC z3
-abcd
+ijkl
 //
 """
 
@@ -45,10 +45,19 @@ jjdhhd
     And I run the parser on sample data
   Then the result is "2"
 
-Scenario: I can define a simple rule
+Scenario: I can define a simple 'with' rule
   Given the default rules
     And I define a simple rule to extract "BB"
     And I define a simple parser which returns an array
     And I run the parser on sample data
   Then the result evals to "%w{ y1 y2 y3}"
+
+Scenario: I can define a simple 'with_text_after' rule
+  Given the default rules
+    And I define a simple rule to extract text after "CC"
+    And I define a simple parser which returns an array
+    And I run the parser on sample data
+  Then the result evals to "%w{ abcd efgh ijkl }"
+
+
 

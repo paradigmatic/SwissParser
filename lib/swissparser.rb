@@ -19,47 +19,12 @@ along with SwissParser.  If not, see <http://www.gnu.org/licenses/>.
 
 require 'open-uri'
 require 'swissparser/entries'
+require 'swissparser/rules'
 
 module Swiss
 
   VERSION = "0.90.0"
 
-  class Rules
-    
-    DEFAULT_SEPARATOR = "//"
-
-    attr_reader :separator, :rules
-
-    def initialize( separator=nil, rules={} )
-      if separator.nil?
-        @separator = DEFAULT_SEPARATOR
-      else
-        @separator = separator
-      end
-      @rules = rules
-    end
-
-    def define_parser( &body )
-      Parser.new( self, body )
-    end
-    
-    def refine( &proc )
-      new_rules = Rules.new( @separator, @rules )
-      new_rules.instance_eval(&proc)
-      new_rules
-    end
-
-    private
-
-    def with( key, &proc )
-      @rules[key] = proc
-    end
-
-    def set_separator( str )
-      @separator = str
-    end
-
-  end
   
   class Parser
 
@@ -76,5 +41,6 @@ module Swiss
   end
 
   DefaultRules = Rules.new
+  DefaultRules.freeze
 
 end

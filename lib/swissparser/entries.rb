@@ -22,14 +22,25 @@ module Swiss
 
     def each()
       #Fiber.new do
-      ctx = Entry.new
+      entry = Entry.new
+      last_key = nil
       @input.each_line do |line|
-        if line =~ /^(\S+)\s+(.*)$/ && @rules.rules[$1]
-          ctx.instance_exec( $2, & @rules.rules[$1] )
-        elsif separator?( line )
-          yield ctx
-          ctx = Entry.new
-        end
+        line.chomp!
+       if separator?( line )
+         yield entry
+         last_key = nil
+         entry = Entry.new
+       elsif line =~ /^(\S+)\s+(.*)$/
+         key,content = $1,$2
+         last_key = key
+          if @rules.rules[key]
+            entry.instance_exec( content, &@rules.rules[key] )
+          end 
+       else
+         if @rules.rules[:text][last_key]
+           entry.instance_exec(  line.chomp.strip, &@rules.rules[:text][last_key]) 
+         end
+       end
       end   
     end
      
@@ -44,6 +55,7 @@ module Swiss
 
   class Entry
 
+
     def method_missing(name, *args, &block) 
       #TODO better fail
       fail if args.size > 0
@@ -51,7 +63,7 @@ module Swiss
       instance_variable_get( iv )
    end
 
-   module InstanceExecHelper     #:nodoc:
+    module InstanceExecHelper     #:nodoc:
     end 
     
     include InstanceExecHelper
