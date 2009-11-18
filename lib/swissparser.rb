@@ -25,5 +25,59 @@ module Swiss
 
   VERSION = "1.0.0"
 
+  class Rules
+    
+    DEFAULT_SEPARATOR = "//"
+
+    attr_reader :separator
+
+    def initialize
+      @separator = DEFAULT_SEPARATOR
+    end
+
+    def define_parser( &body )
+      Parser.new( self, body )
+    end
+
+  end
+  
+  class Parser
+
+    def initialize( rules, body )
+      @rules = rules
+      @body = body
+    end
+
+    def parse( input )
+      entries = Entries.new( @rules, input )
+      @body.call( entries )
+    end
+
+  end
+
+  class Entries
+
+    def initialize( rules, input )
+      @rules = rules
+      @input = input
+    end
+
+    def size
+      unless @size
+        size = 0
+        @input.each_line do |line|
+          if line.include? @rules.separator
+            size += 1
+          end
+        end
+        @size = size
+      end
+      @size
+    end
+        
+  end
+
+
+  DefaultRules = Rules.new
 
 end

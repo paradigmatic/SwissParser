@@ -13,7 +13,7 @@ task :default => :features
 
 Cucumber::Rake::Task.new(:features) do |t|
   t.cucumber_opts = "--format pretty"
-  t.rcov = true
+  #t.rcov = true
 end
 
 CLOBBER << "coverage/"
