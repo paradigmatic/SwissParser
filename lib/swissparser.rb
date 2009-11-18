@@ -33,8 +33,8 @@ module Swiss
       @body = body
     end
 
-    def parse( input )
-      entries = Entries.new( @rules, input )
+    def parse( input, opt={} )
+      entries = Entries.new( @rules, input, opt )
       @body.call( entries )
     end
 

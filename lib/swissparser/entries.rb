@@ -2,9 +2,10 @@ module Swiss
 
   class Entries
 
-    def initialize( rules, input )
+    def initialize( rules, input, opt )
       @rules = rules
       @input = input
+      @opt = opt
     end
 
     def size
@@ -21,15 +22,14 @@ module Swiss
     end
 
     def each()
-      #Fiber.new do
-      entry = Entry.new
+      entry = Entry.new( @opt )
       last_key = nil
       @input.each_line do |line|
         line.chomp!
         if separator?( line )
           yield entry
           last_key = nil
-          entry = Entry.new
+          entry = Entry.new( @opt )
         elsif line =~ /^(\S+)\s+(.*)$/
           key,content = $1,$2
           last_key = key
@@ -38,7 +38,10 @@ module Swiss
           end 
         else
           if @rules.rules[:text][last_key]
-            entry.instance_exec(  line.chomp.strip, &@rules.rules[:text][last_key]) 
+            entry.instance_exec(  
+                                line.chomp.strip, 
+                                &@rules.rules[:text][last_key]
+                                ) 
           end
         end
       end   
@@ -55,6 +58,13 @@ module Swiss
 
   class Entry
 
+    def initialize( opt )
+      @opt__ = opt
+    end
+
+    def option(key)
+      @opt__[key]
+    end
 
     def method_missing(name, *args, &block) 
       #TODO better fail

@@ -68,7 +68,11 @@ Given /^I define a simple parser which returns an array$/ do
 end
 
 Given /^I run the parser on sample data$/ do
-  @result = @parser.parse( @data )
+  @result = if @opt.nil?
+              @parser.parse( @data )
+            else 
+              @parser.parse( @data, @opt )
+            end
 end
 
 
