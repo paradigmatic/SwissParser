@@ -38,6 +38,18 @@ module Swiss
       @body.call( entries )
     end
 
+    def parse_file( filename, opt={} )
+      File.open( filename, 'r' ) do |file|
+        parse( file, opt )
+      end
+    end
+
+    def parse_uri( uri, opt={} )
+      open( uri ) do |file|
+        parse( file, opt )
+      end
+    end
+
   end
 
   DefaultRules = Rules.new
