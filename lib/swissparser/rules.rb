@@ -28,10 +28,19 @@ module Swiss
       new_rules
     end
 
+    def get_helpers
+      @helpers
+    end
+
+
     private
 
     def with( key, &proc )
       @rules[key] = proc
+    end
+
+    def helpers( &proc )
+      @helpers = proc
     end
 
     def with_text_after( key, &proc )

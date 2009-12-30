@@ -21,15 +21,15 @@ module Swiss
       @size
     end
 
-    def each()
-      entry = Entry.new( @opt )
+    def each() 
+      entry = new_entry
       last_key = nil
       @input.each_line do |line|
         line.chomp!
         if separator?( line )
           yield entry
           last_key = nil
-          entry = Entry.new( @opt )
+          entry = new_entry
         elsif line =~ /^(\S+)\s+(.*)$/
           key,content = $1,$2
           last_key = key
@@ -49,6 +49,14 @@ module Swiss
      
     private
 
+    def new_entry()
+      entry = Entry.new( @opt )
+      if( @rules.get_helpers )
+        entry.add_helpers( @rules.get_helpers )
+      end
+      entry
+    end
+
     def separator?( line )
       line.strip == @rules.separator
     end
@@ -64,6 +72,10 @@ module Swiss
 
     def option(key)
       @opt__[key]
+    end
+
+    def add_helpers( block )
+      instance_eval( &block )
     end
 
     def method_missing(name, *args, &block) 
