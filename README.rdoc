@@ -4,9 +4,12 @@
 
 == DESCRIPTION:
 
-Simple DSL to define parser for flat files formats common in biofinformatics, such as Swissprot/Uniprot, KEGG, TREMBL, etc.
+Simple DSL to define parser for flat files formats common in biofinformatics, such as Swissprot, Uniprot, KEGG, TREMBL, etc.
 
-SwissParser API is now stable. The code was tested on entire Uniprot and KEGG releases and functional testing guarantees that existing features will not break after an update.
+SwissParser API was changed in its version 1.0.0 to simplify parser
+definition. The code was tested on entire Uniprot and KEGG releases
+and functional testing guarantees that existing features will not
+break after an update.
 
 == FEATURES:
 
@@ -14,7 +17,7 @@ SwissParser API is now stable. The code was tested on entire Uniprot and KEGG re
 * The whole parsing workflow is configurable.
 * Able to parse remote files accessible from a web or an FTP server.
 * Users can create new parsers by extending existing parsers.
-* Parser rules have access to global parameters and user defined helper methods.
+* Parser rules have access to parameters and user defined helper methods.
 
 == USAGE:
 
