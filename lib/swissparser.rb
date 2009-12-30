@@ -28,7 +28,7 @@ module Swiss
   
   class Parser
 
-    def initialize( rules, body )
+    def initialize( rules, &body )
       @rules = rules
       @body = body
     end
