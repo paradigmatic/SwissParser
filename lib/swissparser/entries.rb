@@ -8,7 +8,7 @@ module Swiss
       @opt = opt
     end
 
-    def size
+    def size()
       unless @size
         size = 0
         @input.each_line do |line|
@@ -51,8 +51,8 @@ module Swiss
 
     def new_entry()
       entry = Entry.new( @opt )
-      if( @rules.get_helpers )
-        entry.add_helpers( @rules.get_helpers )
+      @rules.get_helpers.each do |helper|
+        entry.add_helpers( helper )
       end
       entry
     end

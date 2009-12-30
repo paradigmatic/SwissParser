@@ -12,12 +12,21 @@ module HelperTest
       def bar( text )
         "BAR: #{text}"
       end
+      def decorate( text )
+        "-= #{text} =-"
+      end
+    end
+
+    helpers do
+      def bar( text )
+        "BazAR: #{text}"
+      end
     end
 
 
     # Parse the uniprot id
     with("ID") do |content|
-      @foo = bar(content)
+      @foo = bar(decorate(content))
     end
     
   end

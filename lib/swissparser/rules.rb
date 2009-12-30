@@ -16,6 +16,7 @@ module Swiss
       if @rules[:text].nil?
         @rules[:text] = {}
       end
+      @helpers = []
     end
 
     def define_parser( &body )
@@ -32,7 +33,6 @@ module Swiss
       @helpers
     end
 
-
     private
 
     def with( key, &proc )
@@ -40,7 +40,7 @@ module Swiss
     end
 
     def helpers( &proc )
-      @helpers = proc
+      @helpers << proc
     end
 
     def with_text_after( key, &proc )
