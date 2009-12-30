@@ -16,19 +16,24 @@ Given /^I set option "([^\"]*)" = "([^\"]*)"$/ do |key, val|
   @opt[key] = val
 end
 
-Given /^I define a simple rule to return helper "([^\"]*)" with "([^\"]*)"$/ do |helper, key|
+Given /^I define a simple rule to return "bar" via helper with "([^\"]*)"$/ do |key|
     @rules = @rules.refine do
-    with( key ) do |content|
-      puts "I'm in calling method #{helper}"
-      @text = send( helper)
+    helpers do
+      def foo( )
+        "bar"
+      end
     end
+    with( key ) do |content|
+      @text = foo
+    end
+
   end
 end
 
 Given /^I define and helper "foo" which returns "([^\"]*)"$/ do |value|
   @rules = @rules.refine do
     helpers do
-      def foo( )
+      def foob( )
         value
       end
     end

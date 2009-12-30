@@ -6,7 +6,7 @@ module Swiss
 
     attr_reader :separator, :rules
 
-    def initialize( separator=nil, rules={} )
+    def initialize( separator=nil, rules={}, helpers=[] )
       if separator.nil?
         @separator = DEFAULT_SEPARATOR
       else
@@ -16,7 +16,7 @@ module Swiss
       if @rules[:text].nil?
         @rules[:text] = {}
       end
-      @helpers = []
+      @helpers = helpers
     end
 
     def define_parser( &body )
@@ -24,7 +24,7 @@ module Swiss
     end
     
     def refine( &proc )
-      new_rules = Rules.new( @separator, copy( @rules ) )
+      new_rules = Rules.new( @separator, copy( @rules ), copy( @helpers) )
       new_rules.instance_eval(&proc)
       new_rules
     end
@@ -51,13 +51,23 @@ module Swiss
       @separator = str
     end
 
-    def copy(hash)
-      new_h = {}
-      hash.each { |k,v| new_h[k] = v }
-      if hash[:text] 
-        new_h[:text] = copy( hash[:text] )
+    def copy(object)
+      case object
+        when Hash
+        hash = object
+        new_h = {}
+        hash.each { |k,v| new_h[k] = v }
+        if hash[:text] 
+          new_h[:text] = copy( hash[:text] )
+        end
+        new_h
+        when Array
+        ary = object
+        new_ary = []
+        ary.each { |e| new_ary << e }
+        new_ary
       end
-      new_h
+
     end
 
   end

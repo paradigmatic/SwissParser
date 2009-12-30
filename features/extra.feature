@@ -41,11 +41,10 @@ Scenario: Parsing from URI
   When I run it on remote file "http://www.example.com/input.txt"
   Then OpenUri.open should be called with "http://www.example.com/input.txt"
 
-#Scenario: Helper Methods
-#  Given the default rules
-#    And I define a simple rule to return helper "foo" with "BB"
-#    And I define and helper "foo" which returns "bar"
-#    And I define a simple parser which returns an array
-#    And I run the parser on sample data
-#  Then the result evals to "%w{ bar bar bar}"
+Scenario: Helper Methods
+  Given the default rules
+    And I define a simple rule to return "bar" via helper with "BB"
+    And I define a simple parser which returns an array
+    And I run the parser on sample data
+  Then the result evals to "%w{ bar bar bar}"
 

@@ -49,16 +49,14 @@ Given /^I define a simple rule to return "([^\"]*)" with "([^\"]*)"$/ do |val, k
   end
 end
 
-
-
 Given /^I define a parser which counts entry$/ do
-  @parser = @rules.define_parser do |entries|
+  @parser =  Swiss::Parser.new(@rules) do |entries|
     entries.size 
   end
 end
 
 Given /^I define a simple parser which returns an array$/ do
-  @parser = @rules.define_parser do |entries|
+  @parser = Swiss::Parser.new(@rules) do |entries|
     result = []
     entries.each do |entry|
       result << entry.text

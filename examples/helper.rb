@@ -30,8 +30,15 @@ module HelperTest
     end
     
   end
+ 
+  Rules2 = Rules.refine do
+    with("ID") do |content|
+      @foo = bar "blah"
+    end
+  end
 
-  Parser = Swiss::Parser.new( Rules ) do |entries|
+
+  Parser = Swiss::Parser.new( Rules2 ) do |entries|
     results = []
     entries.each do |e|
       results << e.foo
