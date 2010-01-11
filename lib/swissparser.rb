@@ -1,5 +1,5 @@
 =begin
-Copyright (C) 2009 Paradigmatic
+Copyright (C) 2009,2010 Paradigmatic
 
 This file is part of SwissParser.
 
