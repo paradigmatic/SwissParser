@@ -51,6 +51,8 @@ module Uniprot
     
   end
 
+  #With the rules defined above, creates a parser
+  # which returns an array of Protein instances.
   Parser = Swiss::Parser.new( Rules ) do |entries|
     results = []
     entries.each do |e|
