@@ -9,7 +9,7 @@ end
 
 module Kegg
  
-  Rules = Swiss::DefaultRules.refine do
+  Parser = Swiss::Rules.define do
     
     helpers do
       def parse_gene_ids(string)
@@ -53,9 +53,7 @@ module Kegg
         parse_gene_ids( content )
       end
     end
-  end
-
-  Parser = Swiss::Parser.new( Rules ) do |entries|
+  end.make_parser do |entries|
     results = []
     entries.each do |entry|
       e = Enzyme.new

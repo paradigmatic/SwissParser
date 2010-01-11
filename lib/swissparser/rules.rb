@@ -40,6 +40,11 @@ module Swiss
       @helpers = helpers
     end
 
+    # Defines a new set of rules.
+    def self.define( &proc )
+        Swiss::DefaultRules.refine &proc
+    end
+      
     # Extends an existing parser by allowing to redefine rules. Helper
     # methods can be redefined too.
     def refine( &proc )
@@ -48,7 +53,13 @@ module Swiss
       new_rules
     end
 
-    # Returns a array with all the helper method blocks
+    # Makes a parser from a ruleset. Takes a proc argument specifying the
+    # parser behavior.
+    def make_parser( &proc )
+      Swiss::Parser.new( self, &proc )
+    end
+
+    # Returns an array with all the helper method blocks defined previously.
     def get_helpers
       @helpers
     end

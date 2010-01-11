@@ -16,7 +16,7 @@ end
  
 module Uniprot
  
-  Rules = Swiss::DefaultRules.refine do
+  Rules = Swiss::Rules.define do
       
     # Parse the uniprot id
     with("ID") do |content|
@@ -53,7 +53,7 @@ module Uniprot
 
   #With the rules defined above, creates a parser
   # which returns an array of Protein instances.
-  Parser = Swiss::Parser.new( Rules ) do |entries|
+  Parser = Rules.make_parser do |entries|
     results = []
     entries.each do |e|
       p = Protein.new
