@@ -14,8 +14,8 @@ break after an update.
 
 === Compatibility with 0.x versions
 
-The 1.x versions represent an API change which is **not backward
-compatible**. However, the rules definitions and helper need small
+The 1.x versions represent an API change which is *not* *backward*
+*compatible*. However, the rules definitions and helper need small
 changes. A wiki page will soon give instructions for updating your
 parsers.
 

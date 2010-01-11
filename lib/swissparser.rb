@@ -23,7 +23,7 @@ require 'swissparser/rules'
 
 module Swiss
 
-  VERSION = "0.90.0"
+  VERSION = "1.0.0"
 
   # Parser for a typical bioinformatic flat file, like
   # SwissProt/Uniprot, KEGG, etc.
