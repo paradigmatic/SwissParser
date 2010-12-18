@@ -29,12 +29,14 @@ Scenario: Parsing options
     And I run the parser on sample data
   Then the result evals to "%w{ bar bar bar}"
 
+@skip
 Scenario: Parsing from file
   Given the default rules
     And I define a simple parser which returns an array
   When I run the parser on file "input.txt"
   Then File.open should be called with "input.txt"
- 
+
+@skip
 Scenario: Parsing from URI
   Given the default rules
     And I define a simple parser which returns an array  

@@ -1,5 +1,5 @@
 require 'swissparser'
-require 'spec/expectations'
+require 'rspec'
 
 Given /^sample data:$/ do |string|
   @data = string

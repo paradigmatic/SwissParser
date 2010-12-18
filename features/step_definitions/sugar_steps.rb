@@ -1,5 +1,5 @@
-require 'spec/expectations'
-require 'spec/mocks'
+require 'rspec'
+require 'rspec/mocks'
 
 Given /^I define a simple rule to return option "([^\"]*)" with "([^\"]*)"$/ do |opt_key, key|
   @rules = @rules.refine do
@@ -41,7 +41,8 @@ Given /^I define and helper "foo" which returns "([^\"]*)"$/ do |value|
 end
 
 When /^I run the parser on file "([^\"]*)"$/ do |filename|
-  File.stub!(:open).and_return(@data)
+  RSpec::Mocks::setup(File)
+  File.stub(:open){ @data }
   if @opt
     @result = @parser.parse_file( filename, @opt )
   else
@@ -51,7 +52,8 @@ end
 
 
 When /^I run it on remote file "([^\"]*)"$/ do |uri|
-  OpenURI.stub!(:open_uri).and_return(@data)
+  RSpec::Mocks::setup(OpenURI)
+  OpenURI.stub(:open_uri) { @data }
   if @opt
     @result = @parser.parse_uri( uri, @opt )
   else
