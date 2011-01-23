@@ -56,6 +56,12 @@ module Swiss
           if @rules.rules[key]
             entry.instance_exec( content, &@rules.rules[key] )
           end 
+        elsif line =~ /^(\S+)\s*$/
+          key = $1
+          last_key = key
+          if @rules.rules[key]
+            entry.instance_exec( "", &@rules.rules[key] )
+          end
         else
           if @rules.rules[:text][last_key]
             entry.instance_exec(  

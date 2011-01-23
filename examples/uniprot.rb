@@ -78,8 +78,6 @@ if $0 == __FILE__
  
   proteins = Uniprot::Parser.parse_file( filename ) 
 
-  proteins.each do |e|
-    puts e.to_yaml
-  end
- 
+  puts proteins.size
+
 end

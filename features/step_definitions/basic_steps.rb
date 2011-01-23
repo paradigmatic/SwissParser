@@ -65,6 +65,17 @@ Given /^I define a simple parser which returns an array$/ do
   end
 end
 
+Given /^I define a rule which adds the key to an array with "([^\"]*)"$/ do |key|
+  @rules = @rules.refine do
+    with( key ) do |content| 
+      @text = [] if @text.nil?
+      @text << key
+    end
+  end
+
+end
+
+
 Given /^I run the parser on sample data$/ do
   @result = if @opt.nil?
               @parser.parse( @data )

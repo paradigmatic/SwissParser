@@ -1,3 +1,8 @@
+== Next release
+
+* 1 bug fix:
+  - Handles line with a key but no content
+
 == 1.0.0 / 2010-01-11
 
 * New release, the syntax for defining rules and parsers was simplified.

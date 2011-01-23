@@ -1,3 +1,7 @@
+require 'rake/testtask'
+require 'rake/rdoctask'
+require 'cucumber/rake/task'
+
 begin
   require 'bones'
 rescue LoadError
@@ -6,8 +10,6 @@ end
 
 ensure_in_path 'lib'
 require 'swissparser'
-
-require 'cucumber/rake/task'
 
 task :default => :features
 
@@ -18,7 +20,9 @@ end
 
 CLOBBER << "coverage/"
 
-Bones {
+=begin
+Bones do
+  require 'rake/rdoctask'
   name  'swissparser'
   authors  'paradigmatic'
   email  'paradigmatic@streum.org'
@@ -29,6 +33,6 @@ Bones {
   history_file 'CHANGELOG.rdoc'
   ignore_file  '.gitignore'
   rdoc.exclude ["examples/","features/"]
-}
-
+end
+=end
 # EOF

@@ -7,17 +7,17 @@ Background:
 AA x1
 BB y1
 CC z1
-abcd
+  abcd
 //
 AA x2
 BB y2
 CC z2
-efgh
+  efgh
 //
 AA x3
 BB y3
 CC z3
-ijkl
+  ijkl
 //
 """
 
@@ -76,4 +76,19 @@ Scenario: I can redefine rules
     And I run the parser on sample data
   Then the result evals to "%w{foo foo foo}"
 
+Scenario: I can parse a lone key
+  Given sample data:
+"""
+AA Foo
+BB
+CC Bar
+//
+"""
+    And the default rules
+    And I define a rule which adds the key to an array with "AA"
+    And I define a rule which adds the key to an array with "BB"
+    And I define a rule which adds the key to an array with "CC"
+    And I define a simple parser which returns an array
+    And I run the parser on sample data
+  Then the result evals to "[%W{AA BB CC}]"
 
