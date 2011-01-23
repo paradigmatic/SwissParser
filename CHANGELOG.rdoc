@@ -1,4 +1,4 @@
-== Next release
+== 1.0.1 / 2011-01-23
 
 * 1 bug fix:
   - Handles line with a key but no content

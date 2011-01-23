@@ -42,7 +42,7 @@ Thanks to rvm it was successfuly tested with
 versions:
 
   * ruby-1.8.7-p302
-  * ruby-1.9.2-p0
+  * ruby-1.9.2-p136
   * jruby-1.5.2
 
 
