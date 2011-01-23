@@ -45,7 +45,11 @@ module Swiss
     # result.
     def parse( input, opt={} )
       entries = Entries.new( @rules, input, opt )
-      @body.call( entries )
+      if @body.arity == 2
+        @body.call( entries, opt )
+      else
+        @body.call( entries )
+      end
     end
 
     # Parses a file specified by +filename+. An optional hash of

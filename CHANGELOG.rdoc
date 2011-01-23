@@ -3,6 +3,11 @@
 * 1 bug fix:
   - Handles line with a key but no content
 
+* 1 new minor feature
+  - The parser hash option can be passed to the parse method block:
+    
+    Parser = Rules.make_parser do |entries, options|
+ 
 == 1.0.0 / 2010-01-11
 
 * New release, the syntax for defining rules and parsers was simplified.
